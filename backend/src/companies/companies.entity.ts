@@ -1,5 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Column, Entity, PrimaryColumn } from 'typeorm';
+import { Deal } from '../deals/deals.entity';
+import { Column, Entity, JoinTable, OneToMany, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class Company {
@@ -19,4 +20,11 @@ export class Company {
   @ApiProperty()
   @Column({ nullable: true })
   description: string;
+
+  @ApiProperty()
+  @OneToMany(() => Deal, (deal) => deal.company, {
+    onDelete: 'CASCADE',
+  })
+  @JoinTable()
+  deals: Deal[];
 }
