@@ -4,6 +4,7 @@ import {
   HttpException,
   HttpStatus,
   Post,
+  Query,
 } from '@nestjs/common';
 import { CompaniesService } from './companies.service';
 import {
@@ -17,6 +18,7 @@ import {
 import * as path from 'path';
 import * as fs from 'fs';
 import { Company } from './companies.entity';
+import { PageOptionsDto } from '../page-options.dto';
 
 @ApiTags('companies')
 @Controller('companies')
@@ -33,12 +35,12 @@ export class CompaniesController {
   @ApiNotFoundResponse({
     description: 'Companies not found',
   })
-  async findAll() {
-    const res = await this.service.findAll();
-    if (res.length === 0) {
+  async findAll(@Query() pageOptionsDto: PageOptionsDto) {
+    const res = await this.service.findAll(pageOptionsDto);
+    if (res.data.length === 0) {
       throw new HttpException('Companies not found', HttpStatus.NOT_FOUND);
     }
-    return { status: 200, body: res };
+    return res;
   }
 
   @Post()
@@ -46,8 +48,9 @@ export class CompaniesController {
   @ApiCreatedResponse({ description: 'Company data inserted' })
   @ApiBadRequestResponse({ description: 'Companies already exist' })
   async createAll() {
-    const res = await this.service.findAll();
-    if (res.length !== 0) {
+    const pageOptionsDto = new PageOptionsDto();
+    const res = await this.service.findAll(pageOptionsDto);
+    if (res.data.length !== 0) {
       throw new HttpException('Invalid Request', HttpStatus.BAD_REQUEST);
     }
     try {
