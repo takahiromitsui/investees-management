@@ -6,7 +6,14 @@ import {
   Post,
 } from '@nestjs/common';
 import { CompaniesService } from './companies.service';
-import { ApiTags } from '@nestjs/swagger';
+import {
+  ApiBadRequestResponse,
+  ApiCreatedResponse,
+  ApiNotFoundResponse,
+  ApiOkResponse,
+  ApiOperation,
+  ApiTags,
+} from '@nestjs/swagger';
 import * as path from 'path';
 import * as fs from 'fs';
 import { Company } from './companies.entity';
@@ -17,15 +24,27 @@ export class CompaniesController {
   constructor(public service: CompaniesService) {}
 
   @Get()
+  @ApiOperation({ summary: 'Fetch a list of companies' })
+  @ApiOkResponse({
+    description: 'List of companies',
+    type: Company,
+    isArray: true,
+  })
+  @ApiNotFoundResponse({
+    description: 'Companies not found',
+  })
   async findAll() {
     const res = await this.service.findAll();
     if (res.length === 0) {
-      throw new HttpException('Companies not exist', HttpStatus.NOT_FOUND);
+      throw new HttpException('Companies not found', HttpStatus.NOT_FOUND);
     }
     return { status: 200, body: res };
   }
 
   @Post()
+  @ApiOperation({ summary: 'Insert predefined json to company table' })
+  @ApiCreatedResponse({ description: 'Company data inserted' })
+  @ApiBadRequestResponse({ description: 'Companies already exist' })
   async createAll() {
     const res = await this.service.findAll();
     if (res.length !== 0) {
@@ -46,7 +65,7 @@ export class CompaniesController {
         } as Company;
       });
       await this.service.insert(companies);
-      return { status: 200, body: 'Company data inserted' };
+      return { status: 201, body: 'Company data inserted' };
     } catch (e) {
       throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
     }

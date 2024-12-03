@@ -3,6 +3,7 @@ import { Column, Entity, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class Company {
+  @ApiProperty()
   @PrimaryColumn()
   id: number;
 
