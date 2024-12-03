@@ -37,7 +37,7 @@ export class CompaniesController {
   })
   async findAll(@Query() pageOptionsDto: PageOptionsDto) {
     const res = await this.service.findAll(pageOptionsDto);
-    if (res.data.length === 0) {
+    if (!res.data || res.data.length === 0) {
       throw new HttpException('Companies not found', HttpStatus.NOT_FOUND);
     }
     return res;

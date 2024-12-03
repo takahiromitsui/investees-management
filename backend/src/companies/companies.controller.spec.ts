@@ -1,6 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { CompaniesController } from './companies.controller';
 import { CompaniesService } from './companies.service';
+import { PageOptionsDto } from '../page-options.dto';
+import { PageDto } from '../page.dto';
+import { PageMetaDto } from '../page-meta.dto';
 
 describe('CompaniesController', () => {
   let controller: CompaniesController;
@@ -21,7 +24,15 @@ describe('CompaniesController', () => {
     },
   ];
   const mockCompaniesService = {
-    findAll: jest.fn(() => Promise.resolve(mockCompanies)),
+    findAll: jest.fn().mockResolvedValue(
+      new PageDto(
+        mockCompanies,
+        new PageMetaDto({
+          itemCount: mockCompanies.length,
+          pageOptionsDto: new PageOptionsDto(),
+        }),
+      ),
+    ),
   };
 
   beforeEach(async () => {
@@ -40,7 +51,9 @@ describe('CompaniesController', () => {
     expect(controller).toBeDefined();
   });
   it('should return an array of companies', async () => {
-    const res = await controller.findAll();
-    expect(res).toEqual({ status: 200, body: mockCompanies });
+    const pageOptionsDto = new PageOptionsDto();
+    const res = await controller.findAll(pageOptionsDto);
+    expect(res.data).toHaveLength(2);
+    expect(res.meta.itemCount).toBe(2);
   });
 });

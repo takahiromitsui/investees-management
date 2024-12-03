@@ -4,7 +4,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { PageOptionsDto } from '../page-options.dto';
 import { PageMetaDto } from '../page-meta.dto';
-import { PageDto } from 'src/page.dto';
+import { PageDto } from '../page.dto';
 
 @Injectable()
 export class CompaniesService {
