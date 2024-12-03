@@ -28,4 +28,13 @@ export class CompaniesService {
   async insert(companies: Company[]) {
     await this.repo.insert(companies);
   }
+
+  async findOne(id: number) {
+    const company = await this.repo.findOne({
+      where: {
+        id: id,
+      },
+    });
+    return company;
+  }
 }

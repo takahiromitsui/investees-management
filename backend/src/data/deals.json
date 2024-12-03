@@ -1,0 +1,6002 @@
+{
+  "0": {
+    "date": 1640907534000,
+    "funding_amount": 1692194.0,
+    "funding_round": "Series A",
+    "company_id": 799
+  },
+  "1": {
+    "date": 1566147853000,
+    "funding_amount": 1670131.0,
+    "funding_round": "Series B",
+    "company_id": 355
+  },
+  "2": {
+    "date": 1552915176000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 198
+  },
+  "3": {
+    "date": 1609513637000,
+    "funding_amount": 2157817.0,
+    "funding_round": "Series C",
+    "company_id": 578
+  },
+  "4": {
+    "date": 1628856933000,
+    "funding_amount": 1106090.0,
+    "funding_round": "Series B",
+    "company_id": 887
+  },
+  "5": {
+    "date": 1611175240000,
+    "funding_amount": 2422093.0,
+    "funding_round": "Seed",
+    "company_id": 641
+  },
+  "6": {
+    "date": 1627969556000,
+    "funding_amount": 780832.0,
+    "funding_round": "Series C",
+    "company_id": 950
+  },
+  "7": {
+    "date": 1644828286000,
+    "funding_amount": 2989647.0,
+    "funding_round": "Seed",
+    "company_id": 74
+  },
+  "8": {
+    "date": 1565701733000,
+    "funding_amount": 3324416.0,
+    "funding_round": "Series B",
+    "company_id": 959
+  },
+  "9": {
+    "date": 1588260127000,
+    "funding_amount": 766852.0,
+    "funding_round": "Seed",
+    "company_id": 19
+  },
+  "10": {
+    "date": 1575039365000,
+    "funding_amount": 3369246.0,
+    "funding_round": "Series B",
+    "company_id": 556
+  },
+  "11": {
+    "date": 1546424692000,
+    "funding_amount": 353009.0,
+    "funding_round": "Seed",
+    "company_id": 314
+  },
+  "12": {
+    "date": 1570960878000,
+    "funding_amount": 1125711.0,
+    "funding_round": "Seed",
+    "company_id": 932
+  },
+  "13": {
+    "date": 1568750965000,
+    "funding_amount": 48185.0,
+    "funding_round": "Series C",
+    "company_id": 340
+  },
+  "14": {
+    "date": 1636062455000,
+    "funding_amount": 2147160.0,
+    "funding_round": "Series B",
+    "company_id": 622
+  },
+  "15": {
+    "date": 1597111710000,
+    "funding_amount": 3274582.0,
+    "funding_round": "Series B",
+    "company_id": 349
+  },
+  "16": {
+    "date": 1583404713000,
+    "funding_amount": 1919976.0,
+    "funding_round": "Series C",
+    "company_id": 814
+  },
+  "17": {
+    "date": 1604281586000,
+    "funding_amount": 1016408.0,
+    "funding_round": "Series C",
+    "company_id": 569
+  },
+  "18": {
+    "date": 1552675034000,
+    "funding_amount": 4464894.0,
+    "funding_round": "Series C",
+    "company_id": 170
+  },
+  "19": {
+    "date": 1563137797000,
+    "funding_amount": 3644170.0,
+    "funding_round": "Series A",
+    "company_id": 343
+  },
+  "20": {
+    "date": 1645405159000,
+    "funding_amount": 2633502.0,
+    "funding_round": "Series A",
+    "company_id": 687
+  },
+  "21": {
+    "date": 1631899866000,
+    "funding_amount": 2097783.0,
+    "funding_round": "Seed",
+    "company_id": 952
+  },
+  "22": {
+    "date": 1575593718000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 755
+  },
+  "23": {
+    "date": 1564453470000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 955
+  },
+  "24": {
+    "date": 1582242843000,
+    "funding_amount": 862078.0,
+    "funding_round": "Series B",
+    "company_id": 575
+  },
+  "25": {
+    "date": 1641794622000,
+    "funding_amount": 3741856.0,
+    "funding_round": "Series A",
+    "company_id": 374
+  },
+  "26": {
+    "date": 1556365576000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 117
+  },
+  "27": {
+    "date": 1564493067000,
+    "funding_amount": 2921707.0,
+    "funding_round": "Series B",
+    "company_id": 514
+  },
+  "28": {
+    "date": 1592228131000,
+    "funding_amount": 4797096.0,
+    "funding_round": "Series B",
+    "company_id": 114
+  },
+  "29": {
+    "date": 1616409921000,
+    "funding_amount": 1715626.0,
+    "funding_round": "Series C",
+    "company_id": 579
+  },
+  "30": {
+    "date": 1609706087000,
+    "funding_amount": 4015252.0,
+    "funding_round": "Seed",
+    "company_id": 660
+  },
+  "31": {
+    "date": 1576315234000,
+    "funding_amount": 3997074.0,
+    "funding_round": "Series C",
+    "company_id": 94
+  },
+  "32": {
+    "date": 1628944793000,
+    "funding_amount": 3882900.0,
+    "funding_round": "Seed",
+    "company_id": 633
+  },
+  "33": {
+    "date": 1550808499000,
+    "funding_amount": 570491.0,
+    "funding_round": "Series C",
+    "company_id": 974
+  },
+  "34": {
+    "date": 1552459262000,
+    "funding_amount": 500156.0,
+    "funding_round": "Series A",
+    "company_id": 140
+  },
+  "35": {
+    "date": 1643243786000,
+    "funding_amount": 1141567.0,
+    "funding_round": "Seed",
+    "company_id": 362
+  },
+  "36": {
+    "date": 1604884588000,
+    "funding_amount": 2546946.0,
+    "funding_round": "Series C",
+    "company_id": 218
+  },
+  "37": {
+    "date": 1576487450000,
+    "funding_amount": 4918963.0,
+    "funding_round": "Series A",
+    "company_id": 394
+  },
+  "38": {
+    "date": 1564654111000,
+    "funding_amount": 3065208.0,
+    "funding_round": "Series A",
+    "company_id": 523
+  },
+  "39": {
+    "date": 1643253416000,
+    "funding_amount": 508865.0,
+    "funding_round": "Series B",
+    "company_id": 609
+  },
+  "40": {
+    "date": 1613221375000,
+    "funding_amount": 3613366.0,
+    "funding_round": "Series B",
+    "company_id": 892
+  },
+  "41": {
+    "date": 1608598482000,
+    "funding_amount": 3065666.0,
+    "funding_round": "Series B",
+    "company_id": 7
+  },
+  "42": {
+    "date": 1556546016000,
+    "funding_amount": 712283.0,
+    "funding_round": "Series C",
+    "company_id": 385
+  },
+  "43": {
+    "date": 1611240360000,
+    "funding_amount": 1039525.0,
+    "funding_round": "Series A",
+    "company_id": 700
+  },
+  "44": {
+    "date": 1636310665000,
+    "funding_amount": 4006992.0,
+    "funding_round": "Series B",
+    "company_id": 803
+  },
+  "45": {
+    "date": 1629715551000,
+    "funding_amount": 279822.0,
+    "funding_round": "Series B",
+    "company_id": 431
+  },
+  "46": {
+    "date": 1575609996000,
+    "funding_amount": 4548865.0,
+    "funding_round": "Series C",
+    "company_id": 353
+  },
+  "47": {
+    "date": 1615292483000,
+    "funding_amount": 3925524.0,
+    "funding_round": "Series C",
+    "company_id": 430
+  },
+  "48": {
+    "date": 1642078206000,
+    "funding_amount": 3235298.0,
+    "funding_round": "Seed",
+    "company_id": 435
+  },
+  "49": {
+    "date": 1583826355000,
+    "funding_amount": 2353245.0,
+    "funding_round": "Series B",
+    "company_id": 599
+  },
+  "50": {
+    "date": 1562123940000,
+    "funding_amount": 3836409.0,
+    "funding_round": "Series C",
+    "company_id": 161
+  },
+  "51": {
+    "date": 1595246527000,
+    "funding_amount": 2019240.0,
+    "funding_round": "Series C",
+    "company_id": 184
+  },
+  "52": {
+    "date": 1641825083000,
+    "funding_amount": 2811427.0,
+    "funding_round": "Series C",
+    "company_id": 368
+  },
+  "53": {
+    "date": 1603785473000,
+    "funding_amount": 918456.0,
+    "funding_round": "Series C",
+    "company_id": 772
+  },
+  "54": {
+    "date": 1557994133000,
+    "funding_amount": 3483428.0,
+    "funding_round": "Series B",
+    "company_id": 479
+  },
+  "55": {
+    "date": 1572119243000,
+    "funding_amount": 4787627.0,
+    "funding_round": "Seed",
+    "company_id": 428
+  },
+  "56": {
+    "date": 1599636901000,
+    "funding_amount": 391250.0,
+    "funding_round": "Seed",
+    "company_id": 694
+  },
+  "57": {
+    "date": 1601745811000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 528
+  },
+  "58": {
+    "date": 1554247744000,
+    "funding_amount": 3721517.0,
+    "funding_round": "Series B",
+    "company_id": 143
+  },
+  "59": {
+    "date": 1598201833000,
+    "funding_amount": 3081726.0,
+    "funding_round": "Seed",
+    "company_id": 462
+  },
+  "60": {
+    "date": 1572688491000,
+    "funding_amount": 4894265.0,
+    "funding_round": "Series A",
+    "company_id": 376
+  },
+  "61": {
+    "date": 1573590495000,
+    "funding_amount": 2856571.0,
+    "funding_round": "Series C",
+    "company_id": 928
+  },
+  "62": {
+    "date": 1579136643000,
+    "funding_amount": 892081.0,
+    "funding_round": "Series B",
+    "company_id": 823
+  },
+  "63": {
+    "date": 1603122133000,
+    "funding_amount": 1554310.0,
+    "funding_round": "Series C",
+    "company_id": 99
+  },
+  "64": {
+    "date": 1591011452000,
+    "funding_amount": 1550513.0,
+    "funding_round": "Seed",
+    "company_id": 966
+  },
+  "65": {
+    "date": 1582196589000,
+    "funding_amount": 3607120.0,
+    "funding_round": "Seed",
+    "company_id": 809
+  },
+  "66": {
+    "date": 1558034648000,
+    "funding_amount": 4357850.0,
+    "funding_round": "Series B",
+    "company_id": 523
+  },
+  "67": {
+    "date": 1570787632000,
+    "funding_amount": 4571230.0,
+    "funding_round": "Series A",
+    "company_id": 877
+  },
+  "68": {
+    "date": 1561415077000,
+    "funding_amount": 2906070.0,
+    "funding_round": "Series A",
+    "company_id": 382
+  },
+  "69": {
+    "date": 1607519320000,
+    "funding_amount": 1452070.0,
+    "funding_round": "Series A",
+    "company_id": 548
+  },
+  "70": {
+    "date": 1562853275000,
+    "funding_amount": 4506720.0,
+    "funding_round": "Series C",
+    "company_id": 752
+  },
+  "71": {
+    "date": 1599120582000,
+    "funding_amount": 3473287.0,
+    "funding_round": "Series C",
+    "company_id": 487
+  },
+  "72": {
+    "date": 1622816521000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 39
+  },
+  "73": {
+    "date": 1608496933000,
+    "funding_amount": 4194775.0,
+    "funding_round": "Seed",
+    "company_id": 596
+  },
+  "74": {
+    "date": 1642498804000,
+    "funding_amount": 505508.0,
+    "funding_round": "Seed",
+    "company_id": 302
+  },
+  "75": {
+    "date": 1569523581000,
+    "funding_amount": 2950122.0,
+    "funding_round": "Series C",
+    "company_id": 877
+  },
+  "76": {
+    "date": 1616250172000,
+    "funding_amount": 4465842.0,
+    "funding_round": "Seed",
+    "company_id": 63
+  },
+  "77": {
+    "date": 1598357626000,
+    "funding_amount": 2968626.0,
+    "funding_round": "Series B",
+    "company_id": 246
+  },
+  "78": {
+    "date": 1616305801000,
+    "funding_amount": 2211958.0,
+    "funding_round": "Seed",
+    "company_id": 2
+  },
+  "79": {
+    "date": 1631282232000,
+    "funding_amount": 3659072.0,
+    "funding_round": "Series B",
+    "company_id": 332
+  },
+  "80": {
+    "date": 1636639055000,
+    "funding_amount": 1941289.0,
+    "funding_round": "Series C",
+    "company_id": 256
+  },
+  "81": {
+    "date": 1556284078000,
+    "funding_amount": 362385.0,
+    "funding_round": "Series A",
+    "company_id": 544
+  },
+  "82": {
+    "date": 1557221636000,
+    "funding_amount": 3631941.0,
+    "funding_round": "Series A",
+    "company_id": 751
+  },
+  "83": {
+    "date": 1624994940000,
+    "funding_amount": 1861738.0,
+    "funding_round": "Series C",
+    "company_id": 527
+  },
+  "84": {
+    "date": 1614197389000,
+    "funding_amount": 3390212.0,
+    "funding_round": "Series C",
+    "company_id": 658
+  },
+  "85": {
+    "date": 1604888895000,
+    "funding_amount": 3005102.0,
+    "funding_round": "Series C",
+    "company_id": 307
+  },
+  "86": {
+    "date": 1600121229000,
+    "funding_amount": 54580.0,
+    "funding_round": "Series B",
+    "company_id": 715
+  },
+  "87": {
+    "date": 1620377150000,
+    "funding_amount": 2980684.0,
+    "funding_round": "Series B",
+    "company_id": 995
+  },
+  "88": {
+    "date": 1609430136000,
+    "funding_amount": 2328335.0,
+    "funding_round": "Series A",
+    "company_id": 901
+  },
+  "89": {
+    "date": 1597900441000,
+    "funding_amount": 3568919.0,
+    "funding_round": "Series B",
+    "company_id": 628
+  },
+  "90": {
+    "date": 1636862456000,
+    "funding_amount": 4032476.0,
+    "funding_round": "Seed",
+    "company_id": 174
+  },
+  "91": {
+    "date": 1599283969000,
+    "funding_amount": 4087350.0,
+    "funding_round": "Series C",
+    "company_id": 521
+  },
+  "92": {
+    "date": 1569515620000,
+    "funding_amount": 2690475.0,
+    "funding_round": "Series C",
+    "company_id": 135
+  },
+  "93": {
+    "date": 1618742005000,
+    "funding_amount": 3961292.0,
+    "funding_round": "Seed",
+    "company_id": 922
+  },
+  "94": {
+    "date": 1624824580000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 52
+  },
+  "95": {
+    "date": 1610745594000,
+    "funding_amount": 4980071.0,
+    "funding_round": "Seed",
+    "company_id": 153
+  },
+  "96": {
+    "date": 1611900303000,
+    "funding_amount": 1110659.0,
+    "funding_round": "Series A",
+    "company_id": 756
+  },
+  "97": {
+    "date": 1557786311000,
+    "funding_amount": 3028044.0,
+    "funding_round": "Series A",
+    "company_id": 728
+  },
+  "98": {
+    "date": 1557178970000,
+    "funding_amount": 2396344.0,
+    "funding_round": "Series C",
+    "company_id": 118
+  },
+  "99": {
+    "date": 1589058124000,
+    "funding_amount": 1769039.0,
+    "funding_round": "Series B",
+    "company_id": 584
+  },
+  "100": {
+    "date": 1623561767000,
+    "funding_amount": 2910512.0,
+    "funding_round": "Series B",
+    "company_id": 488
+  },
+  "101": {
+    "date": 1564269132000,
+    "funding_amount": 2286888.0,
+    "funding_round": "Series B",
+    "company_id": 943
+  },
+  "102": {
+    "date": 1629517170000,
+    "funding_amount": 4551402.0,
+    "funding_round": "Series B",
+    "company_id": 241
+  },
+  "103": {
+    "date": 1629926235000,
+    "funding_amount": 3053904.0,
+    "funding_round": "Series B",
+    "company_id": 548
+  },
+  "104": {
+    "date": 1575478440000,
+    "funding_amount": 676846.0,
+    "funding_round": "Seed",
+    "company_id": 777
+  },
+  "105": {
+    "date": 1636550386000,
+    "funding_amount": 3108278.0,
+    "funding_round": "Seed",
+    "company_id": 649
+  },
+  "106": {
+    "date": 1570309303000,
+    "funding_amount": 2671008.0,
+    "funding_round": "Series B",
+    "company_id": 336
+  },
+  "107": {
+    "date": 1587078604000,
+    "funding_amount": 1227881.0,
+    "funding_round": "Series C",
+    "company_id": 138
+  },
+  "108": {
+    "date": 1593494712000,
+    "funding_amount": 681246.0,
+    "funding_round": "Series B",
+    "company_id": 401
+  },
+  "109": {
+    "date": 1635086679000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 650
+  },
+  "110": {
+    "date": 1627871793000,
+    "funding_amount": 1915275.0,
+    "funding_round": "Series B",
+    "company_id": 258
+  },
+  "111": {
+    "date": 1596608365000,
+    "funding_amount": 1053175.0,
+    "funding_round": "Series B",
+    "company_id": 458
+  },
+  "112": {
+    "date": 1637208801000,
+    "funding_amount": 2055601.0,
+    "funding_round": "Seed",
+    "company_id": 492
+  },
+  "113": {
+    "date": 1550307481000,
+    "funding_amount": 322457.0,
+    "funding_round": "Series B",
+    "company_id": 959
+  },
+  "114": {
+    "date": 1591620539000,
+    "funding_amount": 213351.0,
+    "funding_round": "Series A",
+    "company_id": 490
+  },
+  "115": {
+    "date": 1593428073000,
+    "funding_amount": 1485163.0,
+    "funding_round": "Seed",
+    "company_id": 187
+  },
+  "116": {
+    "date": 1547460183000,
+    "funding_amount": 1787311.0,
+    "funding_round": "Series C",
+    "company_id": 694
+  },
+  "117": {
+    "date": 1631986837000,
+    "funding_amount": 3855940.0,
+    "funding_round": "Series A",
+    "company_id": 936
+  },
+  "118": {
+    "date": 1622577176000,
+    "funding_amount": 3229285.0,
+    "funding_round": "Series B",
+    "company_id": 311
+  },
+  "119": {
+    "date": 1587354237000,
+    "funding_amount": 1908602.0,
+    "funding_round": "Series C",
+    "company_id": 20
+  },
+  "120": {
+    "date": 1579663105000,
+    "funding_amount": 2930537.0,
+    "funding_round": "Seed",
+    "company_id": 342
+  },
+  "121": {
+    "date": 1570232949000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 230
+  },
+  "122": {
+    "date": 1551136113000,
+    "funding_amount": 3287105.0,
+    "funding_round": "Seed",
+    "company_id": 338
+  },
+  "123": {
+    "date": 1614306055000,
+    "funding_amount": 572218.0,
+    "funding_round": "Series A",
+    "company_id": 577
+  },
+  "124": {
+    "date": 1589098173000,
+    "funding_amount": 834536.0,
+    "funding_round": "Series A",
+    "company_id": 764
+  },
+  "125": {
+    "date": 1640502767000,
+    "funding_amount": 2617101.0,
+    "funding_round": "Series C",
+    "company_id": 340
+  },
+  "126": {
+    "date": 1598491450000,
+    "funding_amount": 1549220.0,
+    "funding_round": "Series A",
+    "company_id": 470
+  },
+  "127": {
+    "date": 1570739778000,
+    "funding_amount": 3608528.0,
+    "funding_round": "Seed",
+    "company_id": 331
+  },
+  "128": {
+    "date": 1548922844000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 106
+  },
+  "129": {
+    "date": 1640900720000,
+    "funding_amount": 4414394.0,
+    "funding_round": "Series C",
+    "company_id": 603
+  },
+  "130": {
+    "date": 1608847728000,
+    "funding_amount": 1137777.0,
+    "funding_round": "Seed",
+    "company_id": 567
+  },
+  "131": {
+    "date": 1645127750000,
+    "funding_amount": 3433183.0,
+    "funding_round": "Series A",
+    "company_id": 93
+  },
+  "132": {
+    "date": 1555715648000,
+    "funding_amount": 1066091.0,
+    "funding_round": "Series B",
+    "company_id": 2
+  },
+  "133": {
+    "date": 1555520775000,
+    "funding_amount": 4660106.0,
+    "funding_round": "Series C",
+    "company_id": 592
+  },
+  "134": {
+    "date": 1627966208000,
+    "funding_amount": 4014243.0,
+    "funding_round": "Seed",
+    "company_id": 522
+  },
+  "135": {
+    "date": 1645959567000,
+    "funding_amount": 1718705.0,
+    "funding_round": "Series B",
+    "company_id": 720
+  },
+  "136": {
+    "date": 1577441111000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 76
+  },
+  "137": {
+    "date": 1550184606000,
+    "funding_amount": 1288660.0,
+    "funding_round": "Series A",
+    "company_id": 603
+  },
+  "138": {
+    "date": 1625392279000,
+    "funding_amount": 1575899.0,
+    "funding_round": "Seed",
+    "company_id": 390
+  },
+  "139": {
+    "date": 1614144157000,
+    "funding_amount": 1913822.0,
+    "funding_round": "Series C",
+    "company_id": 616
+  },
+  "140": {
+    "date": 1573160594000,
+    "funding_amount": 170528.0,
+    "funding_round": "Seed",
+    "company_id": 882
+  },
+  "141": {
+    "date": 1602183307000,
+    "funding_amount": 3898825.0,
+    "funding_round": "Series C",
+    "company_id": 926
+  },
+  "142": {
+    "date": 1647135082000,
+    "funding_amount": 3120910.0,
+    "funding_round": "Series C",
+    "company_id": 309
+  },
+  "143": {
+    "date": 1635009475000,
+    "funding_amount": 4397159.0,
+    "funding_round": "Seed",
+    "company_id": 223
+  },
+  "144": {
+    "date": 1594075749000,
+    "funding_amount": 1328942.0,
+    "funding_round": "Seed",
+    "company_id": 860
+  },
+  "145": {
+    "date": 1644796645000,
+    "funding_amount": 1048012.0,
+    "funding_round": "Series B",
+    "company_id": 129
+  },
+  "146": {
+    "date": 1574594199000,
+    "funding_amount": 3934222.0,
+    "funding_round": "Seed",
+    "company_id": 134
+  },
+  "147": {
+    "date": 1613531411000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 983
+  },
+  "148": {
+    "date": 1558775249000,
+    "funding_amount": 4116535.0,
+    "funding_round": "Series A",
+    "company_id": 391
+  },
+  "149": {
+    "date": 1587436097000,
+    "funding_amount": 1716453.0,
+    "funding_round": "Series C",
+    "company_id": 572
+  },
+  "150": {
+    "date": 1564287214000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 902
+  },
+  "151": {
+    "date": 1573520784000,
+    "funding_amount": 3546062.0,
+    "funding_round": "Series C",
+    "company_id": 965
+  },
+  "152": {
+    "date": 1647138131000,
+    "funding_amount": 3769618.0,
+    "funding_round": "Series A",
+    "company_id": 14
+  },
+  "153": {
+    "date": 1614888182000,
+    "funding_amount": 4771245.0,
+    "funding_round": "Seed",
+    "company_id": 319
+  },
+  "154": {
+    "date": 1608495878000,
+    "funding_amount": 3393803.0,
+    "funding_round": "Series A",
+    "company_id": 127
+  },
+  "155": {
+    "date": 1574715174000,
+    "funding_amount": 1474962.0,
+    "funding_round": "Series C",
+    "company_id": 338
+  },
+  "156": {
+    "date": 1611118864000,
+    "funding_amount": 1678084.0,
+    "funding_round": "Series A",
+    "company_id": 57
+  },
+  "157": {
+    "date": 1621094544000,
+    "funding_amount": 1071896.0,
+    "funding_round": "Seed",
+    "company_id": 686
+  },
+  "158": {
+    "date": 1556622560000,
+    "funding_amount": 2325887.0,
+    "funding_round": "Seed",
+    "company_id": 974
+  },
+  "159": {
+    "date": 1575499467000,
+    "funding_amount": 4682727.0,
+    "funding_round": "Series B",
+    "company_id": 519
+  },
+  "160": {
+    "date": 1621140306000,
+    "funding_amount": 4892715.0,
+    "funding_round": "Series C",
+    "company_id": 17
+  },
+  "161": {
+    "date": 1640601623000,
+    "funding_amount": 1621107.0,
+    "funding_round": "Series C",
+    "company_id": 809
+  },
+  "162": {
+    "date": 1639437384000,
+    "funding_amount": 365009.0,
+    "funding_round": "Series C",
+    "company_id": 915
+  },
+  "163": {
+    "date": 1587368077000,
+    "funding_amount": 2764449.0,
+    "funding_round": "Seed",
+    "company_id": 467
+  },
+  "164": {
+    "date": 1595504755000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 800
+  },
+  "165": {
+    "date": 1572290519000,
+    "funding_amount": 175828.0,
+    "funding_round": "Series A",
+    "company_id": 320
+  },
+  "166": {
+    "date": 1584167677000,
+    "funding_amount": 2185538.0,
+    "funding_round": "Series C",
+    "company_id": 253
+  },
+  "167": {
+    "date": 1594040528000,
+    "funding_amount": 2284719.0,
+    "funding_round": "Series A",
+    "company_id": 353
+  },
+  "168": {
+    "date": 1592434307000,
+    "funding_amount": 113467.0,
+    "funding_round": "Seed",
+    "company_id": 616
+  },
+  "169": {
+    "date": 1597798932000,
+    "funding_amount": 3408314.0,
+    "funding_round": "Series A",
+    "company_id": 287
+  },
+  "170": {
+    "date": 1601312301000,
+    "funding_amount": 3811820.0,
+    "funding_round": "Seed",
+    "company_id": 277
+  },
+  "171": {
+    "date": 1613951483000,
+    "funding_amount": 4855122.0,
+    "funding_round": "Seed",
+    "company_id": 703
+  },
+  "172": {
+    "date": 1577888751000,
+    "funding_amount": 4795929.0,
+    "funding_round": "Series B",
+    "company_id": 991
+  },
+  "173": {
+    "date": 1619456989000,
+    "funding_amount": 2766888.0,
+    "funding_round": "Series A",
+    "company_id": 282
+  },
+  "174": {
+    "date": 1610322234000,
+    "funding_amount": 3732253.0,
+    "funding_round": "Seed",
+    "company_id": 500
+  },
+  "175": {
+    "date": 1572309925000,
+    "funding_amount": 2220989.0,
+    "funding_round": "Seed",
+    "company_id": 367
+  },
+  "176": {
+    "date": 1645281558000,
+    "funding_amount": 3500932.0,
+    "funding_round": "Series B",
+    "company_id": 129
+  },
+  "177": {
+    "date": 1619066034000,
+    "funding_amount": 1916845.0,
+    "funding_round": "Series B",
+    "company_id": 186
+  },
+  "178": {
+    "date": 1619738407000,
+    "funding_amount": 4905838.0,
+    "funding_round": "Series B",
+    "company_id": 830
+  },
+  "179": {
+    "date": 1598387125000,
+    "funding_amount": 4168955.0,
+    "funding_round": "Series B",
+    "company_id": 267
+  },
+  "180": {
+    "date": 1641769083000,
+    "funding_amount": 1424722.0,
+    "funding_round": "Seed",
+    "company_id": 881
+  },
+  "181": {
+    "date": 1553759388000,
+    "funding_amount": 2758443.0,
+    "funding_round": "Series A",
+    "company_id": 588
+  },
+  "182": {
+    "date": 1573146999000,
+    "funding_amount": 3663771.0,
+    "funding_round": "Series A",
+    "company_id": 958
+  },
+  "183": {
+    "date": 1546379521000,
+    "funding_amount": 2205105.0,
+    "funding_round": "Seed",
+    "company_id": 368
+  },
+  "184": {
+    "date": 1570974982000,
+    "funding_amount": 3818583.0,
+    "funding_round": "Series B",
+    "company_id": 739
+  },
+  "185": {
+    "date": 1569200330000,
+    "funding_amount": 4600173.0,
+    "funding_round": "Series B",
+    "company_id": 773
+  },
+  "186": {
+    "date": 1567394883000,
+    "funding_amount": 3912962.0,
+    "funding_round": "Seed",
+    "company_id": 513
+  },
+  "187": {
+    "date": 1617039854000,
+    "funding_amount": 3910870.0,
+    "funding_round": "Seed",
+    "company_id": 8
+  },
+  "188": {
+    "date": 1634342290000,
+    "funding_amount": 4392569.0,
+    "funding_round": "Series A",
+    "company_id": 351
+  },
+  "189": {
+    "date": 1594031124000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 491
+  },
+  "190": {
+    "date": 1611093272000,
+    "funding_amount": 1448910.0,
+    "funding_round": "Series B",
+    "company_id": 629
+  },
+  "191": {
+    "date": 1638514508000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 220
+  },
+  "192": {
+    "date": 1642880463000,
+    "funding_amount": 4327552.0,
+    "funding_round": "Series B",
+    "company_id": 175
+  },
+  "193": {
+    "date": 1584846657000,
+    "funding_amount": 1105826.0,
+    "funding_round": "Series B",
+    "company_id": 458
+  },
+  "194": {
+    "date": 1619171485000,
+    "funding_amount": 280765.0,
+    "funding_round": "Seed",
+    "company_id": 810
+  },
+  "195": {
+    "date": 1577984626000,
+    "funding_amount": 1474341.0,
+    "funding_round": "Series A",
+    "company_id": 653
+  },
+  "196": {
+    "date": 1612105206000,
+    "funding_amount": 607123.0,
+    "funding_round": "Series B",
+    "company_id": 861
+  },
+  "197": {
+    "date": 1558132363000,
+    "funding_amount": 3969333.0,
+    "funding_round": "Series B",
+    "company_id": 531
+  },
+  "198": {
+    "date": 1604661772000,
+    "funding_amount": 1497803.0,
+    "funding_round": "Series C",
+    "company_id": 182
+  },
+  "199": {
+    "date": 1589982961000,
+    "funding_amount": 2459441.0,
+    "funding_round": "Series C",
+    "company_id": 874
+  },
+  "200": {
+    "date": 1558066809000,
+    "funding_amount": 4655618.0,
+    "funding_round": "Seed",
+    "company_id": 412
+  },
+  "201": {
+    "date": 1611622896000,
+    "funding_amount": 871378.0,
+    "funding_round": "Series C",
+    "company_id": 303
+  },
+  "202": {
+    "date": 1546342942000,
+    "funding_amount": 3248282.0,
+    "funding_round": "Series A",
+    "company_id": 914
+  },
+  "203": {
+    "date": 1632634759000,
+    "funding_amount": 1425250.0,
+    "funding_round": "Series A",
+    "company_id": 602
+  },
+  "204": {
+    "date": 1602655123000,
+    "funding_amount": 3804802.0,
+    "funding_round": "Series B",
+    "company_id": 661
+  },
+  "205": {
+    "date": 1643958223000,
+    "funding_amount": 4757234.0,
+    "funding_round": "Series A",
+    "company_id": 461
+  },
+  "206": {
+    "date": 1559387290000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 510
+  },
+  "207": {
+    "date": 1631327851000,
+    "funding_amount": 2248136.0,
+    "funding_round": "Series B",
+    "company_id": 813
+  },
+  "208": {
+    "date": 1556322546000,
+    "funding_amount": 3002937.0,
+    "funding_round": "Seed",
+    "company_id": 396
+  },
+  "209": {
+    "date": 1562683063000,
+    "funding_amount": 3258040.0,
+    "funding_round": "Seed",
+    "company_id": 543
+  },
+  "210": {
+    "date": 1580351088000,
+    "funding_amount": 3337899.0,
+    "funding_round": "Series A",
+    "company_id": 70
+  },
+  "211": {
+    "date": 1558426209000,
+    "funding_amount": 2278800.0,
+    "funding_round": "Series B",
+    "company_id": 436
+  },
+  "212": {
+    "date": 1595186987000,
+    "funding_amount": 520845.0,
+    "funding_round": "Series C",
+    "company_id": 228
+  },
+  "213": {
+    "date": 1611940553000,
+    "funding_amount": 2275400.0,
+    "funding_round": "Series A",
+    "company_id": 835
+  },
+  "214": {
+    "date": 1575274260000,
+    "funding_amount": 4281119.0,
+    "funding_round": "Series A",
+    "company_id": 874
+  },
+  "215": {
+    "date": 1627075579000,
+    "funding_amount": 3727865.0,
+    "funding_round": "Series C",
+    "company_id": 57
+  },
+  "216": {
+    "date": 1602052440000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 67
+  },
+  "217": {
+    "date": 1548486013000,
+    "funding_amount": 1207451.0,
+    "funding_round": "Series A",
+    "company_id": 180
+  },
+  "218": {
+    "date": 1580900288000,
+    "funding_amount": 3765730.0,
+    "funding_round": "Series B",
+    "company_id": 919
+  },
+  "219": {
+    "date": 1586158406000,
+    "funding_amount": 319596.0,
+    "funding_round": "Series C",
+    "company_id": 677
+  },
+  "220": {
+    "date": 1554965517000,
+    "funding_amount": 4479960.0,
+    "funding_round": "Series B",
+    "company_id": 371
+  },
+  "221": {
+    "date": 1630140691000,
+    "funding_amount": 696080.0,
+    "funding_round": "Seed",
+    "company_id": 934
+  },
+  "222": {
+    "date": 1556765875000,
+    "funding_amount": 2949825.0,
+    "funding_round": "Series C",
+    "company_id": 174
+  },
+  "223": {
+    "date": 1609727373000,
+    "funding_amount": 4067800.0,
+    "funding_round": "Series B",
+    "company_id": 713
+  },
+  "224": {
+    "date": 1552904457000,
+    "funding_amount": 3146853.0,
+    "funding_round": "Series A",
+    "company_id": 940
+  },
+  "225": {
+    "date": 1614465400000,
+    "funding_amount": 4535088.0,
+    "funding_round": "Series A",
+    "company_id": 608
+  },
+  "226": {
+    "date": 1633621003000,
+    "funding_amount": 67333.0,
+    "funding_round": "Series C",
+    "company_id": 545
+  },
+  "227": {
+    "date": 1574616333000,
+    "funding_amount": 884054.0,
+    "funding_round": "Series A",
+    "company_id": 311
+  },
+  "228": {
+    "date": 1549299637000,
+    "funding_amount": 2359573.0,
+    "funding_round": "Series B",
+    "company_id": 224
+  },
+  "229": {
+    "date": 1583696596000,
+    "funding_amount": 3238743.0,
+    "funding_round": "Series A",
+    "company_id": 648
+  },
+  "230": {
+    "date": 1627261498000,
+    "funding_amount": 4210244.0,
+    "funding_round": "Series B",
+    "company_id": 675
+  },
+  "231": {
+    "date": 1559141320000,
+    "funding_amount": 4813866.0,
+    "funding_round": "Series C",
+    "company_id": 938
+  },
+  "232": {
+    "date": 1578760663000,
+    "funding_amount": 2946238.0,
+    "funding_round": "Seed",
+    "company_id": 901
+  },
+  "233": {
+    "date": 1596278212000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 376
+  },
+  "234": {
+    "date": 1618116023000,
+    "funding_amount": 4790508.0,
+    "funding_round": "Series C",
+    "company_id": 634
+  },
+  "235": {
+    "date": 1557627116000,
+    "funding_amount": 413918.0,
+    "funding_round": "Series A",
+    "company_id": 465
+  },
+  "236": {
+    "date": 1571241648000,
+    "funding_amount": 2734178.0,
+    "funding_round": "Seed",
+    "company_id": 550
+  },
+  "237": {
+    "date": 1640646402000,
+    "funding_amount": 2788773.0,
+    "funding_round": "Series C",
+    "company_id": 703
+  },
+  "238": {
+    "date": 1645449978000,
+    "funding_amount": 2193980.0,
+    "funding_round": "Series A",
+    "company_id": 477
+  },
+  "239": {
+    "date": 1553048546000,
+    "funding_amount": 4717313.0,
+    "funding_round": "Series B",
+    "company_id": 501
+  },
+  "240": {
+    "date": 1632919687000,
+    "funding_amount": 2641077.0,
+    "funding_round": "Series B",
+    "company_id": 637
+  },
+  "241": {
+    "date": 1558680555000,
+    "funding_amount": 2893515.0,
+    "funding_round": "Series A",
+    "company_id": 756
+  },
+  "242": {
+    "date": 1616633954000,
+    "funding_amount": 4176228.0,
+    "funding_round": "Series A",
+    "company_id": 539
+  },
+  "243": {
+    "date": 1637083905000,
+    "funding_amount": 3761916.0,
+    "funding_round": "Seed",
+    "company_id": 67
+  },
+  "244": {
+    "date": 1592551997000,
+    "funding_amount": 1019425.0,
+    "funding_round": "Series A",
+    "company_id": 26
+  },
+  "245": {
+    "date": 1575743176000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 176
+  },
+  "246": {
+    "date": 1576600136000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 805
+  },
+  "247": {
+    "date": 1623710144000,
+    "funding_amount": 1584226.0,
+    "funding_round": "Series C",
+    "company_id": 709
+  },
+  "248": {
+    "date": 1578609562000,
+    "funding_amount": 3663163.0,
+    "funding_round": "Series A",
+    "company_id": 902
+  },
+  "249": {
+    "date": 1638687977000,
+    "funding_amount": 1132917.0,
+    "funding_round": "Series A",
+    "company_id": 510
+  },
+  "250": {
+    "date": 1575773844000,
+    "funding_amount": 545737.0,
+    "funding_round": "Seed",
+    "company_id": 212
+  },
+  "251": {
+    "date": 1601438719000,
+    "funding_amount": 4561758.0,
+    "funding_round": "Series A",
+    "company_id": 726
+  },
+  "252": {
+    "date": 1618721729000,
+    "funding_amount": 1206376.0,
+    "funding_round": "Seed",
+    "company_id": 264
+  },
+  "253": {
+    "date": 1568292996000,
+    "funding_amount": 3398650.0,
+    "funding_round": "Series C",
+    "company_id": 729
+  },
+  "254": {
+    "date": 1618356641000,
+    "funding_amount": 4585936.0,
+    "funding_round": "Series B",
+    "company_id": 940
+  },
+  "255": {
+    "date": 1599673178000,
+    "funding_amount": 4548787.0,
+    "funding_round": "Series B",
+    "company_id": 709
+  },
+  "256": {
+    "date": 1624427753000,
+    "funding_amount": 3743957.0,
+    "funding_round": "Seed",
+    "company_id": 886
+  },
+  "257": {
+    "date": 1640231370000,
+    "funding_amount": 3037156.0,
+    "funding_round": "Series A",
+    "company_id": 543
+  },
+  "258": {
+    "date": 1619513636000,
+    "funding_amount": 4559614.0,
+    "funding_round": "Series A",
+    "company_id": 924
+  },
+  "259": {
+    "date": 1613225102000,
+    "funding_amount": 1506574.0,
+    "funding_round": "Series A",
+    "company_id": 394
+  },
+  "260": {
+    "date": 1606720642000,
+    "funding_amount": 1949912.0,
+    "funding_round": "Series C",
+    "company_id": 804
+  },
+  "261": {
+    "date": 1641802688000,
+    "funding_amount": 4792422.0,
+    "funding_round": "Seed",
+    "company_id": 641
+  },
+  "262": {
+    "date": 1635679189000,
+    "funding_amount": 2944466.0,
+    "funding_round": "Series C",
+    "company_id": 421
+  },
+  "263": {
+    "date": 1554914030000,
+    "funding_amount": 2994387.0,
+    "funding_round": "Series B",
+    "company_id": 737
+  },
+  "264": {
+    "date": 1581954232000,
+    "funding_amount": 1284579.0,
+    "funding_round": "Series C",
+    "company_id": 303
+  },
+  "265": {
+    "date": 1615789607000,
+    "funding_amount": 4500663.0,
+    "funding_round": "Series A",
+    "company_id": 600
+  },
+  "266": {
+    "date": 1631649408000,
+    "funding_amount": 3133009.0,
+    "funding_round": "Series B",
+    "company_id": 267
+  },
+  "267": {
+    "date": 1604357451000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 591
+  },
+  "268": {
+    "date": 1624437710000,
+    "funding_amount": 4071702.0,
+    "funding_round": "Series A",
+    "company_id": 339
+  },
+  "269": {
+    "date": 1633477482000,
+    "funding_amount": 4349269.0,
+    "funding_round": "Seed",
+    "company_id": 926
+  },
+  "270": {
+    "date": 1640158841000,
+    "funding_amount": 4973493.0,
+    "funding_round": "Series B",
+    "company_id": 226
+  },
+  "271": {
+    "date": 1609194723000,
+    "funding_amount": 95352.0,
+    "funding_round": "Series A",
+    "company_id": 27
+  },
+  "272": {
+    "date": 1561939676000,
+    "funding_amount": 4779401.0,
+    "funding_round": "Series B",
+    "company_id": 128
+  },
+  "273": {
+    "date": 1600899062000,
+    "funding_amount": 2310812.0,
+    "funding_round": "Seed",
+    "company_id": 62
+  },
+  "274": {
+    "date": 1601176806000,
+    "funding_amount": 732775.0,
+    "funding_round": "Series C",
+    "company_id": 474
+  },
+  "275": {
+    "date": 1629969715000,
+    "funding_amount": 2519228.0,
+    "funding_round": "Series B",
+    "company_id": 896
+  },
+  "276": {
+    "date": 1600588134000,
+    "funding_amount": 919797.0,
+    "funding_round": "Series C",
+    "company_id": 532
+  },
+  "277": {
+    "date": 1615088541000,
+    "funding_amount": 3638763.0,
+    "funding_round": "Series A",
+    "company_id": 638
+  },
+  "278": {
+    "date": 1619345813000,
+    "funding_amount": 4093121.0,
+    "funding_round": "Seed",
+    "company_id": 467
+  },
+  "279": {
+    "date": 1553583949000,
+    "funding_amount": 2882225.0,
+    "funding_round": "Series A",
+    "company_id": 353
+  },
+  "280": {
+    "date": 1582023571000,
+    "funding_amount": 4295075.0,
+    "funding_round": "Seed",
+    "company_id": 262
+  },
+  "281": {
+    "date": 1571234852000,
+    "funding_amount": 3404112.0,
+    "funding_round": "Series C",
+    "company_id": 944
+  },
+  "282": {
+    "date": 1599449473000,
+    "funding_amount": 753088.0,
+    "funding_round": "Series B",
+    "company_id": 617
+  },
+  "283": {
+    "date": 1617546695000,
+    "funding_amount": 4602853.0,
+    "funding_round": "Series A",
+    "company_id": 15
+  },
+  "284": {
+    "date": 1635396598000,
+    "funding_amount": 3250566.0,
+    "funding_round": "Seed",
+    "company_id": 244
+  },
+  "285": {
+    "date": 1639678479000,
+    "funding_amount": 582210.0,
+    "funding_round": "Series B",
+    "company_id": 416
+  },
+  "286": {
+    "date": 1623912161000,
+    "funding_amount": 1934169.0,
+    "funding_round": "Series B",
+    "company_id": 183
+  },
+  "287": {
+    "date": 1598538709000,
+    "funding_amount": 2845291.0,
+    "funding_round": "Seed",
+    "company_id": 274
+  },
+  "288": {
+    "date": 1629943143000,
+    "funding_amount": 1178616.0,
+    "funding_round": "Series B",
+    "company_id": 781
+  },
+  "289": {
+    "date": 1579951731000,
+    "funding_amount": 4130772.0,
+    "funding_round": "Series B",
+    "company_id": 305
+  },
+  "290": {
+    "date": 1566293038000,
+    "funding_amount": 4591129.0,
+    "funding_round": "Series B",
+    "company_id": 799
+  },
+  "291": {
+    "date": 1637019204000,
+    "funding_amount": 4108169.0,
+    "funding_round": "Series B",
+    "company_id": 418
+  },
+  "292": {
+    "date": 1571056220000,
+    "funding_amount": 1167157.0,
+    "funding_round": "Series B",
+    "company_id": 361
+  },
+  "293": {
+    "date": 1634865540000,
+    "funding_amount": 2405404.0,
+    "funding_round": "Seed",
+    "company_id": 904
+  },
+  "294": {
+    "date": 1644044770000,
+    "funding_amount": 1906159.0,
+    "funding_round": "Series C",
+    "company_id": 412
+  },
+  "295": {
+    "date": 1554660955000,
+    "funding_amount": 2856368.0,
+    "funding_round": "Series C",
+    "company_id": 353
+  },
+  "296": {
+    "date": 1556342082000,
+    "funding_amount": 3830613.0,
+    "funding_round": "Series A",
+    "company_id": 738
+  },
+  "297": {
+    "date": 1598880438000,
+    "funding_amount": 1150766.0,
+    "funding_round": "Seed",
+    "company_id": 602
+  },
+  "298": {
+    "date": 1631876215000,
+    "funding_amount": 3193360.0,
+    "funding_round": "Series C",
+    "company_id": 272
+  },
+  "299": {
+    "date": 1601290638000,
+    "funding_amount": 4984232.0,
+    "funding_round": "Series A",
+    "company_id": 826
+  },
+  "300": {
+    "date": 1580028901000,
+    "funding_amount": 814511.0,
+    "funding_round": "Series B",
+    "company_id": 838
+  },
+  "301": {
+    "date": 1607257326000,
+    "funding_amount": 2168979.0,
+    "funding_round": "Series A",
+    "company_id": 354
+  },
+  "302": {
+    "date": 1627485858000,
+    "funding_amount": 2109339.0,
+    "funding_round": "Seed",
+    "company_id": 866
+  },
+  "303": {
+    "date": 1599527584000,
+    "funding_amount": 765209.0,
+    "funding_round": "Series B",
+    "company_id": 428
+  },
+  "304": {
+    "date": 1572389529000,
+    "funding_amount": 4248688.0,
+    "funding_round": "Seed",
+    "company_id": 698
+  },
+  "305": {
+    "date": 1571529188000,
+    "funding_amount": 3688145.0,
+    "funding_round": "Series C",
+    "company_id": 171
+  },
+  "306": {
+    "date": 1616154510000,
+    "funding_amount": 255033.0,
+    "funding_round": "Series B",
+    "company_id": 93
+  },
+  "307": {
+    "date": 1587907464000,
+    "funding_amount": 4345703.0,
+    "funding_round": "Series B",
+    "company_id": 442
+  },
+  "308": {
+    "date": 1596388119000,
+    "funding_amount": 4911332.0,
+    "funding_round": "Series A",
+    "company_id": 987
+  },
+  "309": {
+    "date": 1630615558000,
+    "funding_amount": 4161664.0,
+    "funding_round": "Series C",
+    "company_id": 340
+  },
+  "310": {
+    "date": 1622739039000,
+    "funding_amount": 3768392.0,
+    "funding_round": "Seed",
+    "company_id": 668
+  },
+  "311": {
+    "date": 1602416372000,
+    "funding_amount": 620881.0,
+    "funding_round": "Seed",
+    "company_id": 461
+  },
+  "312": {
+    "date": 1597351889000,
+    "funding_amount": 2944663.0,
+    "funding_round": "Seed",
+    "company_id": 427
+  },
+  "313": {
+    "date": 1583137754000,
+    "funding_amount": 606406.0,
+    "funding_round": "Series A",
+    "company_id": 872
+  },
+  "314": {
+    "date": 1635883868000,
+    "funding_amount": 4528146.0,
+    "funding_round": "Seed",
+    "company_id": 613
+  },
+  "315": {
+    "date": 1552986380000,
+    "funding_amount": 2745610.0,
+    "funding_round": "Series C",
+    "company_id": 675
+  },
+  "316": {
+    "date": 1556886783000,
+    "funding_amount": 4769116.0,
+    "funding_round": "Seed",
+    "company_id": 11
+  },
+  "317": {
+    "date": 1643067027000,
+    "funding_amount": 4237809.0,
+    "funding_round": "Seed",
+    "company_id": 215
+  },
+  "318": {
+    "date": 1584432457000,
+    "funding_amount": 756461.0,
+    "funding_round": "Series C",
+    "company_id": 606
+  },
+  "319": {
+    "date": 1594776070000,
+    "funding_amount": 4307405.0,
+    "funding_round": "Series B",
+    "company_id": 820
+  },
+  "320": {
+    "date": 1641936673000,
+    "funding_amount": 2391572.0,
+    "funding_round": "Series A",
+    "company_id": 464
+  },
+  "321": {
+    "date": 1628139569000,
+    "funding_amount": 2918584.0,
+    "funding_round": "Series B",
+    "company_id": 38
+  },
+  "322": {
+    "date": 1622607398000,
+    "funding_amount": 2516282.0,
+    "funding_round": "Series C",
+    "company_id": 942
+  },
+  "323": {
+    "date": 1612407582000,
+    "funding_amount": 2820099.0,
+    "funding_round": "Series B",
+    "company_id": 135
+  },
+  "324": {
+    "date": 1585928339000,
+    "funding_amount": 4898669.0,
+    "funding_round": "Series C",
+    "company_id": 431
+  },
+  "325": {
+    "date": 1637022339000,
+    "funding_amount": 3429089.0,
+    "funding_round": "Seed",
+    "company_id": 572
+  },
+  "326": {
+    "date": 1560587727000,
+    "funding_amount": 4178981.0,
+    "funding_round": "Series C",
+    "company_id": 159
+  },
+  "327": {
+    "date": 1561841173000,
+    "funding_amount": 4454834.0,
+    "funding_round": "Series B",
+    "company_id": 79
+  },
+  "328": {
+    "date": 1577856446000,
+    "funding_amount": 1962294.0,
+    "funding_round": "Series B",
+    "company_id": 179
+  },
+  "329": {
+    "date": 1591024130000,
+    "funding_amount": 2663991.0,
+    "funding_round": "Series B",
+    "company_id": 446
+  },
+  "330": {
+    "date": 1631996540000,
+    "funding_amount": 768099.0,
+    "funding_round": "Seed",
+    "company_id": 955
+  },
+  "331": {
+    "date": 1600000075000,
+    "funding_amount": 1904513.0,
+    "funding_round": "Seed",
+    "company_id": 548
+  },
+  "332": {
+    "date": 1639392314000,
+    "funding_amount": 1980521.0,
+    "funding_round": "Seed",
+    "company_id": 812
+  },
+  "333": {
+    "date": 1552143957000,
+    "funding_amount": 4523990.0,
+    "funding_round": "Seed",
+    "company_id": 308
+  },
+  "334": {
+    "date": 1566043915000,
+    "funding_amount": 4563372.0,
+    "funding_round": "Series B",
+    "company_id": 22
+  },
+  "335": {
+    "date": 1609247779000,
+    "funding_amount": 4728738.0,
+    "funding_round": "Seed",
+    "company_id": 650
+  },
+  "336": {
+    "date": 1558742114000,
+    "funding_amount": 653240.0,
+    "funding_round": "Series B",
+    "company_id": 161
+  },
+  "337": {
+    "date": 1560040608000,
+    "funding_amount": 1246344.0,
+    "funding_round": "Series A",
+    "company_id": 295
+  },
+  "338": {
+    "date": 1548613550000,
+    "funding_amount": 4982399.0,
+    "funding_round": "Series C",
+    "company_id": 531
+  },
+  "339": {
+    "date": 1571423867000,
+    "funding_amount": 4837198.0,
+    "funding_round": "Series C",
+    "company_id": 749
+  },
+  "340": {
+    "date": 1551804499000,
+    "funding_amount": 4940126.0,
+    "funding_round": "Series A",
+    "company_id": 183
+  },
+  "341": {
+    "date": 1549391351000,
+    "funding_amount": 4472007.0,
+    "funding_round": "Series A",
+    "company_id": 114
+  },
+  "342": {
+    "date": 1633595723000,
+    "funding_amount": 2315272.0,
+    "funding_round": "Seed",
+    "company_id": 13
+  },
+  "343": {
+    "date": 1547308181000,
+    "funding_amount": 2982112.0,
+    "funding_round": "Series C",
+    "company_id": 72
+  },
+  "344": {
+    "date": 1595057117000,
+    "funding_amount": 2013736.0,
+    "funding_round": "Seed",
+    "company_id": 200
+  },
+  "345": {
+    "date": 1587904015000,
+    "funding_amount": 426630.0,
+    "funding_round": "Series A",
+    "company_id": 243
+  },
+  "346": {
+    "date": 1596181158000,
+    "funding_amount": 247555.0,
+    "funding_round": "Seed",
+    "company_id": 325
+  },
+  "347": {
+    "date": 1638575661000,
+    "funding_amount": 1801447.0,
+    "funding_round": "Series B",
+    "company_id": 439
+  },
+  "348": {
+    "date": 1640090314000,
+    "funding_amount": 425951.0,
+    "funding_round": "Series C",
+    "company_id": 568
+  },
+  "349": {
+    "date": 1587809470000,
+    "funding_amount": 335010.0,
+    "funding_round": "Series A",
+    "company_id": 124
+  },
+  "350": {
+    "date": 1567813679000,
+    "funding_amount": 837461.0,
+    "funding_round": "Series C",
+    "company_id": 268
+  },
+  "351": {
+    "date": 1633560955000,
+    "funding_amount": 2320651.0,
+    "funding_round": "Seed",
+    "company_id": 686
+  },
+  "352": {
+    "date": 1596772020000,
+    "funding_amount": 1385009.0,
+    "funding_round": "Seed",
+    "company_id": 984
+  },
+  "353": {
+    "date": 1612663630000,
+    "funding_amount": 1314287.0,
+    "funding_round": "Series C",
+    "company_id": 706
+  },
+  "354": {
+    "date": 1605334275000,
+    "funding_amount": 2983543.0,
+    "funding_round": "Series B",
+    "company_id": 470
+  },
+  "355": {
+    "date": 1565172344000,
+    "funding_amount": 4059780.0,
+    "funding_round": "Series C",
+    "company_id": 644
+  },
+  "356": {
+    "date": 1571021825000,
+    "funding_amount": 1420684.0,
+    "funding_round": "Series B",
+    "company_id": 16
+  },
+  "357": {
+    "date": 1577761664000,
+    "funding_amount": 4732630.0,
+    "funding_round": "Seed",
+    "company_id": 914
+  },
+  "358": {
+    "date": 1598302796000,
+    "funding_amount": 3441549.0,
+    "funding_round": "Series A",
+    "company_id": 792
+  },
+  "359": {
+    "date": 1561833944000,
+    "funding_amount": 4747793.0,
+    "funding_round": "Series A",
+    "company_id": 497
+  },
+  "360": {
+    "date": 1577941786000,
+    "funding_amount": 882374.0,
+    "funding_round": "Seed",
+    "company_id": 277
+  },
+  "361": {
+    "date": 1584472710000,
+    "funding_amount": 1944302.0,
+    "funding_round": "Seed",
+    "company_id": 701
+  },
+  "362": {
+    "date": 1592297528000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 641
+  },
+  "363": {
+    "date": 1591897525000,
+    "funding_amount": 1468349.0,
+    "funding_round": "Series C",
+    "company_id": 93
+  },
+  "364": {
+    "date": 1611802363000,
+    "funding_amount": 990928.0,
+    "funding_round": "Series B",
+    "company_id": 375
+  },
+  "365": {
+    "date": 1578364965000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 975
+  },
+  "366": {
+    "date": 1643412423000,
+    "funding_amount": 3779344.0,
+    "funding_round": "Series A",
+    "company_id": 690
+  },
+  "367": {
+    "date": 1589874687000,
+    "funding_amount": 4739051.0,
+    "funding_round": "Series A",
+    "company_id": 9
+  },
+  "368": {
+    "date": 1552617011000,
+    "funding_amount": 3438365.0,
+    "funding_round": "Series B",
+    "company_id": 397
+  },
+  "369": {
+    "date": 1643282097000,
+    "funding_amount": 188988.0,
+    "funding_round": "Seed",
+    "company_id": 109
+  },
+  "370": {
+    "date": 1621365755000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 306
+  },
+  "371": {
+    "date": 1577061188000,
+    "funding_amount": 3247544.0,
+    "funding_round": "Series C",
+    "company_id": 703
+  },
+  "372": {
+    "date": 1575655622000,
+    "funding_amount": 1364178.0,
+    "funding_round": "Seed",
+    "company_id": 721
+  },
+  "373": {
+    "date": 1587532680000,
+    "funding_amount": 4271160.0,
+    "funding_round": "Series A",
+    "company_id": 101
+  },
+  "374": {
+    "date": 1600676463000,
+    "funding_amount": 2360829.0,
+    "funding_round": "Series B",
+    "company_id": 909
+  },
+  "375": {
+    "date": 1598261975000,
+    "funding_amount": 2876256.0,
+    "funding_round": "Seed",
+    "company_id": 723
+  },
+  "376": {
+    "date": 1592631111000,
+    "funding_amount": 3390013.0,
+    "funding_round": "Series C",
+    "company_id": 919
+  },
+  "377": {
+    "date": 1548983208000,
+    "funding_amount": 253271.0,
+    "funding_round": "Seed",
+    "company_id": 72
+  },
+  "378": {
+    "date": 1562264454000,
+    "funding_amount": 3567611.0,
+    "funding_round": "Seed",
+    "company_id": 349
+  },
+  "379": {
+    "date": 1567821916000,
+    "funding_amount": 1265386.0,
+    "funding_round": "Series A",
+    "company_id": 959
+  },
+  "380": {
+    "date": 1629886180000,
+    "funding_amount": 3111356.0,
+    "funding_round": "Series A",
+    "company_id": 159
+  },
+  "381": {
+    "date": 1643504673000,
+    "funding_amount": 768957.0,
+    "funding_round": "Seed",
+    "company_id": 821
+  },
+  "382": {
+    "date": 1577714671000,
+    "funding_amount": 3724691.0,
+    "funding_round": "Series A",
+    "company_id": 185
+  },
+  "383": {
+    "date": 1599159873000,
+    "funding_amount": 2726552.0,
+    "funding_round": "Series C",
+    "company_id": 69
+  },
+  "384": {
+    "date": 1577584545000,
+    "funding_amount": 346152.0,
+    "funding_round": "Series B",
+    "company_id": 644
+  },
+  "385": {
+    "date": 1561579433000,
+    "funding_amount": 504540.0,
+    "funding_round": "Series C",
+    "company_id": 439
+  },
+  "386": {
+    "date": 1586064181000,
+    "funding_amount": 1415206.0,
+    "funding_round": "Series A",
+    "company_id": 859
+  },
+  "387": {
+    "date": 1600726729000,
+    "funding_amount": 2270763.0,
+    "funding_round": "Series A",
+    "company_id": 290
+  },
+  "388": {
+    "date": 1552984070000,
+    "funding_amount": 553004.0,
+    "funding_round": "Seed",
+    "company_id": 484
+  },
+  "389": {
+    "date": 1585170835000,
+    "funding_amount": 2663704.0,
+    "funding_round": "Series A",
+    "company_id": 253
+  },
+  "390": {
+    "date": 1584938280000,
+    "funding_amount": 4449883.0,
+    "funding_round": "Series A",
+    "company_id": 907
+  },
+  "391": {
+    "date": 1556598419000,
+    "funding_amount": 1293459.0,
+    "funding_round": "Series C",
+    "company_id": 369
+  },
+  "392": {
+    "date": 1558914517000,
+    "funding_amount": 122916.0,
+    "funding_round": "Series C",
+    "company_id": 950
+  },
+  "393": {
+    "date": 1550311136000,
+    "funding_amount": 4468911.0,
+    "funding_round": "Series A",
+    "company_id": 79
+  },
+  "394": {
+    "date": 1635986492000,
+    "funding_amount": 3675973.0,
+    "funding_round": "Series C",
+    "company_id": 383
+  },
+  "395": {
+    "date": 1579846392000,
+    "funding_amount": 2080403.0,
+    "funding_round": "Series B",
+    "company_id": 997
+  },
+  "396": {
+    "date": 1597982220000,
+    "funding_amount": 1898236.0,
+    "funding_round": "Seed",
+    "company_id": 812
+  },
+  "397": {
+    "date": 1639208350000,
+    "funding_amount": 747037.0,
+    "funding_round": "Series A",
+    "company_id": 167
+  },
+  "398": {
+    "date": 1609483415000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 231
+  },
+  "399": {
+    "date": 1571048640000,
+    "funding_amount": 3923583.0,
+    "funding_round": "Series B",
+    "company_id": 759
+  },
+  "400": {
+    "date": 1574088699000,
+    "funding_amount": 3985168.0,
+    "funding_round": "Series A",
+    "company_id": 440
+  },
+  "401": {
+    "date": 1609939029000,
+    "funding_amount": 1598004.0,
+    "funding_round": "Series A",
+    "company_id": 232
+  },
+  "402": {
+    "date": 1638787699000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 994
+  },
+  "403": {
+    "date": 1597025542000,
+    "funding_amount": 4477981.0,
+    "funding_round": "Seed",
+    "company_id": 611
+  },
+  "404": {
+    "date": 1631662207000,
+    "funding_amount": 1392043.0,
+    "funding_round": "Series B",
+    "company_id": 504
+  },
+  "405": {
+    "date": 1591825872000,
+    "funding_amount": 4548633.0,
+    "funding_round": "Seed",
+    "company_id": 284
+  },
+  "406": {
+    "date": 1585145042000,
+    "funding_amount": 1114136.0,
+    "funding_round": "Series C",
+    "company_id": 426
+  },
+  "407": {
+    "date": 1635711005000,
+    "funding_amount": 4978059.0,
+    "funding_round": "Series A",
+    "company_id": 21
+  },
+  "408": {
+    "date": 1586902322000,
+    "funding_amount": 3082409.0,
+    "funding_round": "Seed",
+    "company_id": 444
+  },
+  "409": {
+    "date": 1549087653000,
+    "funding_amount": 4710487.0,
+    "funding_round": "Series A",
+    "company_id": 522
+  },
+  "410": {
+    "date": 1642351025000,
+    "funding_amount": 2017364.0,
+    "funding_round": "Series B",
+    "company_id": 28
+  },
+  "411": {
+    "date": 1597530101000,
+    "funding_amount": 2654322.0,
+    "funding_round": "Series C",
+    "company_id": 284
+  },
+  "412": {
+    "date": 1640317859000,
+    "funding_amount": 4877292.0,
+    "funding_round": "Seed",
+    "company_id": 245
+  },
+  "413": {
+    "date": 1637415533000,
+    "funding_amount": 666543.0,
+    "funding_round": "Series C",
+    "company_id": 513
+  },
+  "414": {
+    "date": 1548975749000,
+    "funding_amount": 4061966.0,
+    "funding_round": "Series B",
+    "company_id": 69
+  },
+  "415": {
+    "date": 1572304161000,
+    "funding_amount": 722795.0,
+    "funding_round": "Series A",
+    "company_id": 896
+  },
+  "416": {
+    "date": 1630996477000,
+    "funding_amount": 3609669.0,
+    "funding_round": "Series B",
+    "company_id": 645
+  },
+  "417": {
+    "date": 1611582967000,
+    "funding_amount": 284000.0,
+    "funding_round": "Seed",
+    "company_id": 389
+  },
+  "418": {
+    "date": 1574437712000,
+    "funding_amount": 2266467.0,
+    "funding_round": "Series B",
+    "company_id": 583
+  },
+  "419": {
+    "date": 1603554225000,
+    "funding_amount": 564921.0,
+    "funding_round": "Series B",
+    "company_id": 882
+  },
+  "420": {
+    "date": 1561205013000,
+    "funding_amount": 549866.0,
+    "funding_round": "Series B",
+    "company_id": 458
+  },
+  "421": {
+    "date": 1584600150000,
+    "funding_amount": 3870215.0,
+    "funding_round": "Series C",
+    "company_id": 491
+  },
+  "422": {
+    "date": 1593389102000,
+    "funding_amount": 2181281.0,
+    "funding_round": "Series C",
+    "company_id": 665
+  },
+  "423": {
+    "date": 1633376098000,
+    "funding_amount": 2389573.0,
+    "funding_round": "Series B",
+    "company_id": 976
+  },
+  "424": {
+    "date": 1641098817000,
+    "funding_amount": 910275.0,
+    "funding_round": "Seed",
+    "company_id": 500
+  },
+  "425": {
+    "date": 1595713521000,
+    "funding_amount": 4140574.0,
+    "funding_round": "Series A",
+    "company_id": 79
+  },
+  "426": {
+    "date": 1636209904000,
+    "funding_amount": 2433170.0,
+    "funding_round": "Series C",
+    "company_id": 430
+  },
+  "427": {
+    "date": 1596937962000,
+    "funding_amount": 2325325.0,
+    "funding_round": "Series B",
+    "company_id": 945
+  },
+  "428": {
+    "date": 1634334372000,
+    "funding_amount": 2757356.0,
+    "funding_round": "Series C",
+    "company_id": 449
+  },
+  "429": {
+    "date": 1594866550000,
+    "funding_amount": 2054096.0,
+    "funding_round": "Seed",
+    "company_id": 978
+  },
+  "430": {
+    "date": 1623797703000,
+    "funding_amount": 119764.0,
+    "funding_round": "Series C",
+    "company_id": 414
+  },
+  "431": {
+    "date": 1624816481000,
+    "funding_amount": 356160.0,
+    "funding_round": "Series B",
+    "company_id": 213
+  },
+  "432": {
+    "date": 1632675713000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 723
+  },
+  "433": {
+    "date": 1554514412000,
+    "funding_amount": 1498456.0,
+    "funding_round": "Series C",
+    "company_id": 800
+  },
+  "434": {
+    "date": 1630878678000,
+    "funding_amount": 2904041.0,
+    "funding_round": "Series A",
+    "company_id": 553
+  },
+  "435": {
+    "date": 1547648700000,
+    "funding_amount": 879606.0,
+    "funding_round": "Series B",
+    "company_id": 284
+  },
+  "436": {
+    "date": 1636492073000,
+    "funding_amount": 1232163.0,
+    "funding_round": "Series C",
+    "company_id": 563
+  },
+  "437": {
+    "date": 1639753917000,
+    "funding_amount": 586835.0,
+    "funding_round": "Series B",
+    "company_id": 378
+  },
+  "438": {
+    "date": 1553074964000,
+    "funding_amount": 4564728.0,
+    "funding_round": "Series A",
+    "company_id": 694
+  },
+  "439": {
+    "date": 1602623065000,
+    "funding_amount": 1607592.0,
+    "funding_round": "Series C",
+    "company_id": 440
+  },
+  "440": {
+    "date": 1582564991000,
+    "funding_amount": 2656252.0,
+    "funding_round": "Series A",
+    "company_id": 540
+  },
+  "441": {
+    "date": 1617420551000,
+    "funding_amount": 1416467.0,
+    "funding_round": "Series C",
+    "company_id": 572
+  },
+  "442": {
+    "date": 1569723344000,
+    "funding_amount": 3695814.0,
+    "funding_round": "Series A",
+    "company_id": 616
+  },
+  "443": {
+    "date": 1566182679000,
+    "funding_amount": 1960104.0,
+    "funding_round": "Series C",
+    "company_id": 432
+  },
+  "444": {
+    "date": 1563164441000,
+    "funding_amount": 419142.0,
+    "funding_round": "Series A",
+    "company_id": 976
+  },
+  "445": {
+    "date": 1634235217000,
+    "funding_amount": 1731330.0,
+    "funding_round": "Series C",
+    "company_id": 829
+  },
+  "446": {
+    "date": 1572319458000,
+    "funding_amount": 1614185.0,
+    "funding_round": "Seed",
+    "company_id": 759
+  },
+  "447": {
+    "date": 1573680098000,
+    "funding_amount": 2890435.0,
+    "funding_round": "Series A",
+    "company_id": 545
+  },
+  "448": {
+    "date": 1640765084000,
+    "funding_amount": 503558.0,
+    "funding_round": "Series B",
+    "company_id": 300
+  },
+  "449": {
+    "date": 1626786435000,
+    "funding_amount": 3414069.0,
+    "funding_round": "Seed",
+    "company_id": 63
+  },
+  "450": {
+    "date": 1615675143000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 332
+  },
+  "451": {
+    "date": 1585670272000,
+    "funding_amount": 3582465.0,
+    "funding_round": "Seed",
+    "company_id": 390
+  },
+  "452": {
+    "date": 1627756695000,
+    "funding_amount": 503185.0,
+    "funding_round": "Seed",
+    "company_id": 111
+  },
+  "453": {
+    "date": 1632519855000,
+    "funding_amount": 1867465.0,
+    "funding_round": "Series A",
+    "company_id": 600
+  },
+  "454": {
+    "date": 1631662556000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 660
+  },
+  "455": {
+    "date": 1566190325000,
+    "funding_amount": 1193834.0,
+    "funding_round": "Series B",
+    "company_id": 404
+  },
+  "456": {
+    "date": 1631603945000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 277
+  },
+  "457": {
+    "date": 1558080985000,
+    "funding_amount": 3860415.0,
+    "funding_round": "Seed",
+    "company_id": 238
+  },
+  "458": {
+    "date": 1555290553000,
+    "funding_amount": 1276180.0,
+    "funding_round": "Series A",
+    "company_id": 704
+  },
+  "459": {
+    "date": 1636914647000,
+    "funding_amount": 1981286.0,
+    "funding_round": "Series B",
+    "company_id": 248
+  },
+  "460": {
+    "date": 1600637444000,
+    "funding_amount": 4009890.0,
+    "funding_round": "Series B",
+    "company_id": 436
+  },
+  "461": {
+    "date": 1602429691000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 589
+  },
+  "462": {
+    "date": 1612367195000,
+    "funding_amount": 4166384.0,
+    "funding_round": "Seed",
+    "company_id": 184
+  },
+  "463": {
+    "date": 1598785186000,
+    "funding_amount": 3633210.0,
+    "funding_round": "Series B",
+    "company_id": 195
+  },
+  "464": {
+    "date": 1639034258000,
+    "funding_amount": 2109492.0,
+    "funding_round": "Seed",
+    "company_id": 829
+  },
+  "465": {
+    "date": 1598107714000,
+    "funding_amount": 629397.0,
+    "funding_round": "Series A",
+    "company_id": 385
+  },
+  "466": {
+    "date": 1587503843000,
+    "funding_amount": 1263440.0,
+    "funding_round": "Series B",
+    "company_id": 804
+  },
+  "467": {
+    "date": 1639330125000,
+    "funding_amount": 3618028.0,
+    "funding_round": "Series B",
+    "company_id": 101
+  },
+  "468": {
+    "date": 1641429832000,
+    "funding_amount": 2839793.0,
+    "funding_round": "Series A",
+    "company_id": 567
+  },
+  "469": {
+    "date": 1557876750000,
+    "funding_amount": 2340591.0,
+    "funding_round": "Series A",
+    "company_id": 620
+  },
+  "470": {
+    "date": 1551884412000,
+    "funding_amount": 2716342.0,
+    "funding_round": "Series C",
+    "company_id": 166
+  },
+  "471": {
+    "date": 1564582629000,
+    "funding_amount": 933368.0,
+    "funding_round": "Seed",
+    "company_id": 780
+  },
+  "472": {
+    "date": 1624329350000,
+    "funding_amount": 4012461.0,
+    "funding_round": "Series C",
+    "company_id": 170
+  },
+  "473": {
+    "date": 1639861206000,
+    "funding_amount": 1492312.0,
+    "funding_round": "Series A",
+    "company_id": 981
+  },
+  "474": {
+    "date": 1590406019000,
+    "funding_amount": 4919247.0,
+    "funding_round": "Series B",
+    "company_id": 470
+  },
+  "475": {
+    "date": 1621857201000,
+    "funding_amount": 3891668.0,
+    "funding_round": "Series A",
+    "company_id": 129
+  },
+  "476": {
+    "date": 1584644224000,
+    "funding_amount": 4081258.0,
+    "funding_round": "Series C",
+    "company_id": 570
+  },
+  "477": {
+    "date": 1589167282000,
+    "funding_amount": 4070661.0,
+    "funding_round": "Series B",
+    "company_id": 970
+  },
+  "478": {
+    "date": 1610703371000,
+    "funding_amount": 1876860.0,
+    "funding_round": "Series A",
+    "company_id": 148
+  },
+  "479": {
+    "date": 1589287079000,
+    "funding_amount": 1871667.0,
+    "funding_round": "Series C",
+    "company_id": 683
+  },
+  "480": {
+    "date": 1576382474000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 214
+  },
+  "481": {
+    "date": 1557785903000,
+    "funding_amount": 1758745.0,
+    "funding_round": "Series B",
+    "company_id": 131
+  },
+  "482": {
+    "date": 1569538589000,
+    "funding_amount": 3176641.0,
+    "funding_round": "Series C",
+    "company_id": 416
+  },
+  "483": {
+    "date": 1614461032000,
+    "funding_amount": 675768.0,
+    "funding_round": "Seed",
+    "company_id": 436
+  },
+  "484": {
+    "date": 1581952661000,
+    "funding_amount": 2474248.0,
+    "funding_round": "Series B",
+    "company_id": 923
+  },
+  "485": {
+    "date": 1598346950000,
+    "funding_amount": 4741437.0,
+    "funding_round": "Series A",
+    "company_id": 633
+  },
+  "486": {
+    "date": 1550963666000,
+    "funding_amount": 889200.0,
+    "funding_round": "Series C",
+    "company_id": 651
+  },
+  "487": {
+    "date": 1581262366000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 310
+  },
+  "488": {
+    "date": 1560936445000,
+    "funding_amount": 1459067.0,
+    "funding_round": "Seed",
+    "company_id": 99
+  },
+  "489": {
+    "date": 1594063338000,
+    "funding_amount": 3644146.0,
+    "funding_round": "Series A",
+    "company_id": 616
+  },
+  "490": {
+    "date": 1603457632000,
+    "funding_amount": 3169282.0,
+    "funding_round": "Seed",
+    "company_id": 404
+  },
+  "491": {
+    "date": 1557654118000,
+    "funding_amount": 2455665.0,
+    "funding_round": "Series C",
+    "company_id": 764
+  },
+  "492": {
+    "date": 1587895558000,
+    "funding_amount": 227329.0,
+    "funding_round": "Series B",
+    "company_id": 418
+  },
+  "493": {
+    "date": 1642896013000,
+    "funding_amount": 860190.0,
+    "funding_round": "Series C",
+    "company_id": 57
+  },
+  "494": {
+    "date": 1627441512000,
+    "funding_amount": 4215222.0,
+    "funding_round": "Seed",
+    "company_id": 245
+  },
+  "495": {
+    "date": 1628322245000,
+    "funding_amount": 3013662.0,
+    "funding_round": "Seed",
+    "company_id": 731
+  },
+  "496": {
+    "date": 1575505457000,
+    "funding_amount": 2704957.0,
+    "funding_round": "Series A",
+    "company_id": 263
+  },
+  "497": {
+    "date": 1623923000000,
+    "funding_amount": 1810135.0,
+    "funding_round": "Series A",
+    "company_id": 7
+  },
+  "498": {
+    "date": 1582558410000,
+    "funding_amount": 2892013.0,
+    "funding_round": "Series B",
+    "company_id": 160
+  },
+  "499": {
+    "date": 1551224391000,
+    "funding_amount": 71253.0,
+    "funding_round": "Series C",
+    "company_id": 539
+  },
+  "500": {
+    "date": 1570328670000,
+    "funding_amount": 418399.0,
+    "funding_round": "Series B",
+    "company_id": 456
+  },
+  "501": {
+    "date": 1622114584000,
+    "funding_amount": 4341423.0,
+    "funding_round": "Series B",
+    "company_id": 378
+  },
+  "502": {
+    "date": 1568240848000,
+    "funding_amount": 1612778.0,
+    "funding_round": "Series B",
+    "company_id": 341
+  },
+  "503": {
+    "date": 1561259363000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 783
+  },
+  "504": {
+    "date": 1588457724000,
+    "funding_amount": 3657289.0,
+    "funding_round": "Series C",
+    "company_id": 638
+  },
+  "505": {
+    "date": 1589091765000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 535
+  },
+  "506": {
+    "date": 1605755071000,
+    "funding_amount": 1811884.0,
+    "funding_round": "Series A",
+    "company_id": 432
+  },
+  "507": {
+    "date": 1573387893000,
+    "funding_amount": 3492699.0,
+    "funding_round": "Series B",
+    "company_id": 391
+  },
+  "508": {
+    "date": 1577362315000,
+    "funding_amount": 1599161.0,
+    "funding_round": "Series B",
+    "company_id": 444
+  },
+  "509": {
+    "date": 1634475854000,
+    "funding_amount": 3443191.0,
+    "funding_round": "Series B",
+    "company_id": 506
+  },
+  "510": {
+    "date": 1601287837000,
+    "funding_amount": 887410.0,
+    "funding_round": "Series B",
+    "company_id": 605
+  },
+  "511": {
+    "date": 1607177644000,
+    "funding_amount": 1234385.0,
+    "funding_round": "Series B",
+    "company_id": 643
+  },
+  "512": {
+    "date": 1600386195000,
+    "funding_amount": 2911439.0,
+    "funding_round": "Series A",
+    "company_id": 596
+  },
+  "513": {
+    "date": 1567928489000,
+    "funding_amount": 944842.0,
+    "funding_round": "Series B",
+    "company_id": 30
+  },
+  "514": {
+    "date": 1605997897000,
+    "funding_amount": 439160.0,
+    "funding_round": "Series A",
+    "company_id": 864
+  },
+  "515": {
+    "date": 1632543001000,
+    "funding_amount": 2087800.0,
+    "funding_round": "Seed",
+    "company_id": 367
+  },
+  "516": {
+    "date": 1635357335000,
+    "funding_amount": 4678051.0,
+    "funding_round": "Series C",
+    "company_id": 760
+  },
+  "517": {
+    "date": 1582375918000,
+    "funding_amount": 2021969.0,
+    "funding_round": "Seed",
+    "company_id": 421
+  },
+  "518": {
+    "date": 1644689226000,
+    "funding_amount": 350883.0,
+    "funding_round": "Series B",
+    "company_id": 450
+  },
+  "519": {
+    "date": 1588589468000,
+    "funding_amount": 4244822.0,
+    "funding_round": "Series B",
+    "company_id": 704
+  },
+  "520": {
+    "date": 1626914680000,
+    "funding_amount": 3630819.0,
+    "funding_round": "Seed",
+    "company_id": 903
+  },
+  "521": {
+    "date": 1572601242000,
+    "funding_amount": 3395008.0,
+    "funding_round": "Series C",
+    "company_id": 427
+  },
+  "522": {
+    "date": 1619185677000,
+    "funding_amount": 1357077.0,
+    "funding_round": "Series C",
+    "company_id": 965
+  },
+  "523": {
+    "date": 1629434665000,
+    "funding_amount": 3407906.0,
+    "funding_round": "Seed",
+    "company_id": 484
+  },
+  "524": {
+    "date": 1600636192000,
+    "funding_amount": 1704533.0,
+    "funding_round": "Seed",
+    "company_id": 351
+  },
+  "525": {
+    "date": 1590267510000,
+    "funding_amount": 118390.0,
+    "funding_round": "Seed",
+    "company_id": 800
+  },
+  "526": {
+    "date": 1618939764000,
+    "funding_amount": 2959110.0,
+    "funding_round": "Series C",
+    "company_id": 50
+  },
+  "527": {
+    "date": 1628413317000,
+    "funding_amount": 1361583.0,
+    "funding_round": "Series A",
+    "company_id": 242
+  },
+  "528": {
+    "date": 1588333678000,
+    "funding_amount": 3143845.0,
+    "funding_round": "Series C",
+    "company_id": 534
+  },
+  "529": {
+    "date": 1595161341000,
+    "funding_amount": 997068.0,
+    "funding_round": "Seed",
+    "company_id": 925
+  },
+  "530": {
+    "date": 1607489161000,
+    "funding_amount": 2383319.0,
+    "funding_round": "Series C",
+    "company_id": 616
+  },
+  "531": {
+    "date": 1556479852000,
+    "funding_amount": 1266507.0,
+    "funding_round": "Series A",
+    "company_id": 793
+  },
+  "532": {
+    "date": 1558208287000,
+    "funding_amount": 1811731.0,
+    "funding_round": "Series A",
+    "company_id": 796
+  },
+  "533": {
+    "date": 1581891175000,
+    "funding_amount": 2515353.0,
+    "funding_round": "Series A",
+    "company_id": 515
+  },
+  "534": {
+    "date": 1591795674000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 249
+  },
+  "535": {
+    "date": 1604422449000,
+    "funding_amount": 2528863.0,
+    "funding_round": "Series B",
+    "company_id": 199
+  },
+  "536": {
+    "date": 1575398859000,
+    "funding_amount": 2992632.0,
+    "funding_round": "Series C",
+    "company_id": 5
+  },
+  "537": {
+    "date": 1550169985000,
+    "funding_amount": 3427230.0,
+    "funding_round": "Series A",
+    "company_id": 147
+  },
+  "538": {
+    "date": 1572596135000,
+    "funding_amount": 821789.0,
+    "funding_round": "Series B",
+    "company_id": 126
+  },
+  "539": {
+    "date": 1625017428000,
+    "funding_amount": 2251653.0,
+    "funding_round": "Seed",
+    "company_id": 198
+  },
+  "540": {
+    "date": 1636217634000,
+    "funding_amount": 156423.0,
+    "funding_round": "Series B",
+    "company_id": 57
+  },
+  "541": {
+    "date": 1570784293000,
+    "funding_amount": 2205089.0,
+    "funding_round": "Series B",
+    "company_id": 902
+  },
+  "542": {
+    "date": 1594702752000,
+    "funding_amount": 3319323.0,
+    "funding_round": "Series C",
+    "company_id": 424
+  },
+  "543": {
+    "date": 1604521798000,
+    "funding_amount": 4931629.0,
+    "funding_round": "Series B",
+    "company_id": 651
+  },
+  "544": {
+    "date": 1616161451000,
+    "funding_amount": 640012.0,
+    "funding_round": "Series A",
+    "company_id": 193
+  },
+  "545": {
+    "date": 1577814342000,
+    "funding_amount": 4411595.0,
+    "funding_round": "Seed",
+    "company_id": 786
+  },
+  "546": {
+    "date": 1635577360000,
+    "funding_amount": 3070013.0,
+    "funding_round": "Series A",
+    "company_id": 780
+  },
+  "547": {
+    "date": 1582860768000,
+    "funding_amount": 2016286.0,
+    "funding_round": "Seed",
+    "company_id": 342
+  },
+  "548": {
+    "date": 1564299911000,
+    "funding_amount": 1953979.0,
+    "funding_round": "Series B",
+    "company_id": 670
+  },
+  "549": {
+    "date": 1580550233000,
+    "funding_amount": 3867380.0,
+    "funding_round": "Series B",
+    "company_id": 811
+  },
+  "550": {
+    "date": 1593215848000,
+    "funding_amount": 1057119.0,
+    "funding_round": "Series A",
+    "company_id": 593
+  },
+  "551": {
+    "date": 1570844431000,
+    "funding_amount": 1382059.0,
+    "funding_round": "Series A",
+    "company_id": 35
+  },
+  "552": {
+    "date": 1627154967000,
+    "funding_amount": 530982.0,
+    "funding_round": "Series C",
+    "company_id": 89
+  },
+  "553": {
+    "date": 1616362739000,
+    "funding_amount": 2089011.0,
+    "funding_round": "Series C",
+    "company_id": 672
+  },
+  "554": {
+    "date": 1619826473000,
+    "funding_amount": 2340707.0,
+    "funding_round": "Series A",
+    "company_id": 38
+  },
+  "555": {
+    "date": 1551549273000,
+    "funding_amount": 2668238.0,
+    "funding_round": "Series C",
+    "company_id": 338
+  },
+  "556": {
+    "date": 1580545294000,
+    "funding_amount": 3079611.0,
+    "funding_round": "Series C",
+    "company_id": 175
+  },
+  "557": {
+    "date": 1630648253000,
+    "funding_amount": 852221.0,
+    "funding_round": "Series C",
+    "company_id": 815
+  },
+  "558": {
+    "date": 1632457396000,
+    "funding_amount": 4022079.0,
+    "funding_round": "Series A",
+    "company_id": 955
+  },
+  "559": {
+    "date": 1579695991000,
+    "funding_amount": 2099294.0,
+    "funding_round": "Series B",
+    "company_id": 37
+  },
+  "560": {
+    "date": 1572938118000,
+    "funding_amount": 1729207.0,
+    "funding_round": "Series B",
+    "company_id": 808
+  },
+  "561": {
+    "date": 1610420381000,
+    "funding_amount": 2204416.0,
+    "funding_round": "Series B",
+    "company_id": 424
+  },
+  "562": {
+    "date": 1569710145000,
+    "funding_amount": 2316166.0,
+    "funding_round": "Series C",
+    "company_id": 292
+  },
+  "563": {
+    "date": 1591639073000,
+    "funding_amount": 3897181.0,
+    "funding_round": "Series A",
+    "company_id": 343
+  },
+  "564": {
+    "date": 1576492114000,
+    "funding_amount": 552013.0,
+    "funding_round": "Series C",
+    "company_id": 5
+  },
+  "565": {
+    "date": 1635799722000,
+    "funding_amount": 844906.0,
+    "funding_round": "Series A",
+    "company_id": 223
+  },
+  "566": {
+    "date": 1575578026000,
+    "funding_amount": 3581745.0,
+    "funding_round": "Series A",
+    "company_id": 612
+  },
+  "567": {
+    "date": 1632131093000,
+    "funding_amount": 3577891.0,
+    "funding_round": "Seed",
+    "company_id": 857
+  },
+  "568": {
+    "date": 1624671494000,
+    "funding_amount": 1240397.0,
+    "funding_round": "Series B",
+    "company_id": 776
+  },
+  "569": {
+    "date": 1589499548000,
+    "funding_amount": 4518279.0,
+    "funding_round": "Series C",
+    "company_id": 555
+  },
+  "570": {
+    "date": 1548575459000,
+    "funding_amount": 2189573.0,
+    "funding_round": "Series C",
+    "company_id": 630
+  },
+  "571": {
+    "date": 1561596817000,
+    "funding_amount": 2086622.0,
+    "funding_round": "Seed",
+    "company_id": 668
+  },
+  "572": {
+    "date": 1589898756000,
+    "funding_amount": 2652292.0,
+    "funding_round": "Seed",
+    "company_id": 336
+  },
+  "573": {
+    "date": 1599334046000,
+    "funding_amount": 4497127.0,
+    "funding_round": "Seed",
+    "company_id": 201
+  },
+  "574": {
+    "date": 1643759674000,
+    "funding_amount": 442563.0,
+    "funding_round": "Seed",
+    "company_id": 982
+  },
+  "575": {
+    "date": 1614656240000,
+    "funding_amount": 4778174.0,
+    "funding_round": "Seed",
+    "company_id": 934
+  },
+  "576": {
+    "date": 1581510968000,
+    "funding_amount": 2382898.0,
+    "funding_round": "Series A",
+    "company_id": 257
+  },
+  "577": {
+    "date": 1628673623000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 34
+  },
+  "578": {
+    "date": 1547713968000,
+    "funding_amount": 627430.0,
+    "funding_round": "Seed",
+    "company_id": 315
+  },
+  "579": {
+    "date": 1601531833000,
+    "funding_amount": 3890130.0,
+    "funding_round": "Series C",
+    "company_id": 712
+  },
+  "580": {
+    "date": 1551931422000,
+    "funding_amount": 302743.0,
+    "funding_round": "Series A",
+    "company_id": 290
+  },
+  "581": {
+    "date": 1629561307000,
+    "funding_amount": 3084978.0,
+    "funding_round": "Series A",
+    "company_id": 900
+  },
+  "582": {
+    "date": 1635263267000,
+    "funding_amount": 2332178.0,
+    "funding_round": "Series C",
+    "company_id": 235
+  },
+  "583": {
+    "date": 1637008552000,
+    "funding_amount": 1026912.0,
+    "funding_round": "Series A",
+    "company_id": 182
+  },
+  "584": {
+    "date": 1590937272000,
+    "funding_amount": 4379637.0,
+    "funding_round": "Series A",
+    "company_id": 170
+  },
+  "585": {
+    "date": 1571462167000,
+    "funding_amount": 4024044.0,
+    "funding_round": "Series B",
+    "company_id": 178
+  },
+  "586": {
+    "date": 1607786248000,
+    "funding_amount": 448340.0,
+    "funding_round": "Series B",
+    "company_id": 755
+  },
+  "587": {
+    "date": 1568736084000,
+    "funding_amount": 1724704.0,
+    "funding_round": "Series B",
+    "company_id": 32
+  },
+  "588": {
+    "date": 1614769681000,
+    "funding_amount": 2194841.0,
+    "funding_round": "Seed",
+    "company_id": 430
+  },
+  "589": {
+    "date": 1635392775000,
+    "funding_amount": 391606.0,
+    "funding_round": "Seed",
+    "company_id": 751
+  },
+  "590": {
+    "date": 1575665688000,
+    "funding_amount": 1704637.0,
+    "funding_round": "Series C",
+    "company_id": 202
+  },
+  "591": {
+    "date": 1631587622000,
+    "funding_amount": 3487226.0,
+    "funding_round": "Seed",
+    "company_id": 304
+  },
+  "592": {
+    "date": 1570510908000,
+    "funding_amount": 4399025.0,
+    "funding_round": "Series C",
+    "company_id": 924
+  },
+  "593": {
+    "date": 1591101160000,
+    "funding_amount": 998788.0,
+    "funding_round": "Seed",
+    "company_id": 798
+  },
+  "594": {
+    "date": 1553213563000,
+    "funding_amount": 3452593.0,
+    "funding_round": "Series B",
+    "company_id": 204
+  },
+  "595": {
+    "date": 1626325244000,
+    "funding_amount": 331405.0,
+    "funding_round": "Seed",
+    "company_id": 127
+  },
+  "596": {
+    "date": 1601742590000,
+    "funding_amount": 4494397.0,
+    "funding_round": "Series C",
+    "company_id": 25
+  },
+  "597": {
+    "date": 1596245442000,
+    "funding_amount": 1361546.0,
+    "funding_round": "Series A",
+    "company_id": 51
+  },
+  "598": {
+    "date": 1582250475000,
+    "funding_amount": 3519497.0,
+    "funding_round": "Seed",
+    "company_id": 790
+  },
+  "599": {
+    "date": 1633932127000,
+    "funding_amount": 522975.0,
+    "funding_round": "Series B",
+    "company_id": 371
+  },
+  "600": {
+    "date": 1638924609000,
+    "funding_amount": 3926315.0,
+    "funding_round": "Seed",
+    "company_id": 750
+  },
+  "601": {
+    "date": 1564619923000,
+    "funding_amount": 1905072.0,
+    "funding_round": "Series A",
+    "company_id": 590
+  },
+  "602": {
+    "date": 1641549643000,
+    "funding_amount": 3348415.0,
+    "funding_round": "Seed",
+    "company_id": 678
+  },
+  "603": {
+    "date": 1547924742000,
+    "funding_amount": 2082860.0,
+    "funding_round": "Series C",
+    "company_id": 660
+  },
+  "604": {
+    "date": 1608627995000,
+    "funding_amount": 1764155.0,
+    "funding_round": "Series A",
+    "company_id": 382
+  },
+  "605": {
+    "date": 1602779452000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 496
+  },
+  "606": {
+    "date": 1646779764000,
+    "funding_amount": 564897.0,
+    "funding_round": "Series C",
+    "company_id": 651
+  },
+  "607": {
+    "date": 1585007190000,
+    "funding_amount": 185367.0,
+    "funding_round": "Series B",
+    "company_id": 375
+  },
+  "608": {
+    "date": 1626413350000,
+    "funding_amount": 3569497.0,
+    "funding_round": "Series B",
+    "company_id": 920
+  },
+  "609": {
+    "date": 1581457342000,
+    "funding_amount": 4569740.0,
+    "funding_round": "Series C",
+    "company_id": 160
+  },
+  "610": {
+    "date": 1595638821000,
+    "funding_amount": 2531335.0,
+    "funding_round": "Series C",
+    "company_id": 42
+  },
+  "611": {
+    "date": 1646227333000,
+    "funding_amount": 2318369.0,
+    "funding_round": "Series C",
+    "company_id": 19
+  },
+  "612": {
+    "date": 1606669760000,
+    "funding_amount": 1887963.0,
+    "funding_round": "Series A",
+    "company_id": 358
+  },
+  "613": {
+    "date": 1563113413000,
+    "funding_amount": 1092541.0,
+    "funding_round": "Series A",
+    "company_id": 52
+  },
+  "614": {
+    "date": 1629515865000,
+    "funding_amount": 927756.0,
+    "funding_round": "Series B",
+    "company_id": 797
+  },
+  "615": {
+    "date": 1547229149000,
+    "funding_amount": 2056142.0,
+    "funding_round": "Series C",
+    "company_id": 41
+  },
+  "616": {
+    "date": 1595904052000,
+    "funding_amount": 4675170.0,
+    "funding_round": "Seed",
+    "company_id": 480
+  },
+  "617": {
+    "date": 1626876062000,
+    "funding_amount": 3049662.0,
+    "funding_round": "Seed",
+    "company_id": 109
+  },
+  "618": {
+    "date": 1552464718000,
+    "funding_amount": 1286111.0,
+    "funding_round": "Series B",
+    "company_id": 973
+  },
+  "619": {
+    "date": 1617493794000,
+    "funding_amount": 3064136.0,
+    "funding_round": "Series A",
+    "company_id": 186
+  },
+  "620": {
+    "date": 1610601731000,
+    "funding_amount": 3006606.0,
+    "funding_round": "Series C",
+    "company_id": 17
+  },
+  "621": {
+    "date": 1615376205000,
+    "funding_amount": 3971194.0,
+    "funding_round": "Series A",
+    "company_id": 29
+  },
+  "622": {
+    "date": 1591746832000,
+    "funding_amount": 3454719.0,
+    "funding_round": "Seed",
+    "company_id": 104
+  },
+  "623": {
+    "date": 1643468709000,
+    "funding_amount": 300987.0,
+    "funding_round": "Series B",
+    "company_id": 374
+  },
+  "624": {
+    "date": 1604761646000,
+    "funding_amount": 2380711.0,
+    "funding_round": "Series C",
+    "company_id": 554
+  },
+  "625": {
+    "date": 1611510243000,
+    "funding_amount": 4342417.0,
+    "funding_round": "Series B",
+    "company_id": 95
+  },
+  "626": {
+    "date": 1645023493000,
+    "funding_amount": 1473903.0,
+    "funding_round": "Series A",
+    "company_id": 57
+  },
+  "627": {
+    "date": 1613605676000,
+    "funding_amount": 1334396.0,
+    "funding_round": "Series C",
+    "company_id": 830
+  },
+  "628": {
+    "date": 1581730708000,
+    "funding_amount": 3952447.0,
+    "funding_round": "Series C",
+    "company_id": 480
+  },
+  "629": {
+    "date": 1550870128000,
+    "funding_amount": 4749405.0,
+    "funding_round": "Series B",
+    "company_id": 807
+  },
+  "630": {
+    "date": 1602507629000,
+    "funding_amount": 3178264.0,
+    "funding_round": "Series B",
+    "company_id": 287
+  },
+  "631": {
+    "date": 1605168021000,
+    "funding_amount": 2906640.0,
+    "funding_round": "Seed",
+    "company_id": 715
+  },
+  "632": {
+    "date": 1645888598000,
+    "funding_amount": 446400.0,
+    "funding_round": "Series A",
+    "company_id": 144
+  },
+  "633": {
+    "date": 1593819866000,
+    "funding_amount": 2569703.0,
+    "funding_round": "Series A",
+    "company_id": 790
+  },
+  "634": {
+    "date": 1619066179000,
+    "funding_amount": 2267796.0,
+    "funding_round": "Series C",
+    "company_id": 575
+  },
+  "635": {
+    "date": 1575480835000,
+    "funding_amount": 2544638.0,
+    "funding_round": "Series A",
+    "company_id": 25
+  },
+  "636": {
+    "date": 1640957421000,
+    "funding_amount": 1429913.0,
+    "funding_round": "Series A",
+    "company_id": 242
+  },
+  "637": {
+    "date": 1550554891000,
+    "funding_amount": 4226121.0,
+    "funding_round": "Series A",
+    "company_id": 854
+  },
+  "638": {
+    "date": 1626988622000,
+    "funding_amount": 1078759.0,
+    "funding_round": "Series A",
+    "company_id": 514
+  },
+  "639": {
+    "date": 1630978835000,
+    "funding_amount": 2814437.0,
+    "funding_round": "Series C",
+    "company_id": 132
+  },
+  "640": {
+    "date": 1626621102000,
+    "funding_amount": 3631819.0,
+    "funding_round": "Series A",
+    "company_id": 720
+  },
+  "641": {
+    "date": 1547890410000,
+    "funding_amount": 2192350.0,
+    "funding_round": "Series A",
+    "company_id": 725
+  },
+  "642": {
+    "date": 1550133042000,
+    "funding_amount": 1529187.0,
+    "funding_round": "Series B",
+    "company_id": 539
+  },
+  "643": {
+    "date": 1567008929000,
+    "funding_amount": 3569809.0,
+    "funding_round": "Seed",
+    "company_id": 999
+  },
+  "644": {
+    "date": 1586813455000,
+    "funding_amount": 1542270.0,
+    "funding_round": "Seed",
+    "company_id": 698
+  },
+  "645": {
+    "date": 1589013099000,
+    "funding_amount": 4567705.0,
+    "funding_round": "Seed",
+    "company_id": 475
+  },
+  "646": {
+    "date": 1621684928000,
+    "funding_amount": 1292668.0,
+    "funding_round": "Series A",
+    "company_id": 383
+  },
+  "647": {
+    "date": 1558088088000,
+    "funding_amount": 4250224.0,
+    "funding_round": "Seed",
+    "company_id": 536
+  },
+  "648": {
+    "date": 1591617039000,
+    "funding_amount": 1581656.0,
+    "funding_round": "Series C",
+    "company_id": 861
+  },
+  "649": {
+    "date": 1639809939000,
+    "funding_amount": 2901735.0,
+    "funding_round": "Series B",
+    "company_id": 84
+  },
+  "650": {
+    "date": 1572926586000,
+    "funding_amount": 1000800.0,
+    "funding_round": "Series A",
+    "company_id": 730
+  },
+  "651": {
+    "date": 1638933382000,
+    "funding_amount": 4553666.0,
+    "funding_round": "Series B",
+    "company_id": 929
+  },
+  "652": {
+    "date": 1571278529000,
+    "funding_amount": 4790398.0,
+    "funding_round": "Series C",
+    "company_id": 888
+  },
+  "653": {
+    "date": 1617356149000,
+    "funding_amount": 3310455.0,
+    "funding_round": "Series C",
+    "company_id": 121
+  },
+  "654": {
+    "date": 1613088393000,
+    "funding_amount": 1086287.0,
+    "funding_round": "Series C",
+    "company_id": 797
+  },
+  "655": {
+    "date": 1560344405000,
+    "funding_amount": 2729247.0,
+    "funding_round": "Seed",
+    "company_id": 547
+  },
+  "656": {
+    "date": 1560736235000,
+    "funding_amount": 4819262.0,
+    "funding_round": "Series A",
+    "company_id": 813
+  },
+  "657": {
+    "date": 1572503418000,
+    "funding_amount": 1144237.0,
+    "funding_round": "Series C",
+    "company_id": 586
+  },
+  "658": {
+    "date": 1585871091000,
+    "funding_amount": 869080.0,
+    "funding_round": "Series B",
+    "company_id": 506
+  },
+  "659": {
+    "date": 1586524567000,
+    "funding_amount": 3707855.0,
+    "funding_round": "Seed",
+    "company_id": 532
+  },
+  "660": {
+    "date": 1608163364000,
+    "funding_amount": 2394261.0,
+    "funding_round": "Series A",
+    "company_id": 326
+  },
+  "661": {
+    "date": 1550634686000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 789
+  },
+  "662": {
+    "date": 1555092233000,
+    "funding_amount": 4986169.0,
+    "funding_round": "Series A",
+    "company_id": 799
+  },
+  "663": {
+    "date": 1554339135000,
+    "funding_amount": 3105368.0,
+    "funding_round": "Series A",
+    "company_id": 487
+  },
+  "664": {
+    "date": 1583532315000,
+    "funding_amount": 3276349.0,
+    "funding_round": "Series A",
+    "company_id": 128
+  },
+  "665": {
+    "date": 1618597485000,
+    "funding_amount": 1017556.0,
+    "funding_round": "Series C",
+    "company_id": 881
+  },
+  "666": {
+    "date": 1570280141000,
+    "funding_amount": 171222.0,
+    "funding_round": "Series C",
+    "company_id": 18
+  },
+  "667": {
+    "date": 1581951685000,
+    "funding_amount": 2110396.0,
+    "funding_round": "Series B",
+    "company_id": 7
+  },
+  "668": {
+    "date": 1617606531000,
+    "funding_amount": 409606.0,
+    "funding_round": "Series A",
+    "company_id": 197
+  },
+  "669": {
+    "date": 1570770805000,
+    "funding_amount": 3255495.0,
+    "funding_round": "Series B",
+    "company_id": 123
+  },
+  "670": {
+    "date": 1636184702000,
+    "funding_amount": 1389516.0,
+    "funding_round": "Series A",
+    "company_id": 515
+  },
+  "671": {
+    "date": 1557881330000,
+    "funding_amount": 705156.0,
+    "funding_round": "Series B",
+    "company_id": 926
+  },
+  "672": {
+    "date": 1585438450000,
+    "funding_amount": 1602443.0,
+    "funding_round": "Series B",
+    "company_id": 293
+  },
+  "673": {
+    "date": 1620894282000,
+    "funding_amount": 93853.0,
+    "funding_round": "Seed",
+    "company_id": 687
+  },
+  "674": {
+    "date": 1637680532000,
+    "funding_amount": 3727742.0,
+    "funding_round": "Series A",
+    "company_id": 572
+  },
+  "675": {
+    "date": 1625763670000,
+    "funding_amount": 2642309.0,
+    "funding_round": "Series C",
+    "company_id": 979
+  },
+  "676": {
+    "date": 1618597092000,
+    "funding_amount": 4716538.0,
+    "funding_round": "Seed",
+    "company_id": 51
+  },
+  "677": {
+    "date": 1609521669000,
+    "funding_amount": 4003404.0,
+    "funding_round": "Series A",
+    "company_id": 259
+  },
+  "678": {
+    "date": 1638945313000,
+    "funding_amount": 369973.0,
+    "funding_round": "Seed",
+    "company_id": 236
+  },
+  "679": {
+    "date": 1595953727000,
+    "funding_amount": 4737161.0,
+    "funding_round": "Series B",
+    "company_id": 149
+  },
+  "680": {
+    "date": 1578458529000,
+    "funding_amount": 1430002.0,
+    "funding_round": "Series B",
+    "company_id": 284
+  },
+  "681": {
+    "date": 1583164396000,
+    "funding_amount": 3878583.0,
+    "funding_round": "Seed",
+    "company_id": 215
+  },
+  "682": {
+    "date": 1584897505000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 633
+  },
+  "683": {
+    "date": 1600332150000,
+    "funding_amount": 1555323.0,
+    "funding_round": "Seed",
+    "company_id": 629
+  },
+  "684": {
+    "date": 1569259943000,
+    "funding_amount": 4720374.0,
+    "funding_round": "Series B",
+    "company_id": 389
+  },
+  "685": {
+    "date": 1616190852000,
+    "funding_amount": 2892265.0,
+    "funding_round": "Series A",
+    "company_id": 914
+  },
+  "686": {
+    "date": 1576600663000,
+    "funding_amount": 3865762.0,
+    "funding_round": "Series B",
+    "company_id": 770
+  },
+  "687": {
+    "date": 1594587829000,
+    "funding_amount": 196812.0,
+    "funding_round": "Series A",
+    "company_id": 281
+  },
+  "688": {
+    "date": 1617528767000,
+    "funding_amount": 3387871.0,
+    "funding_round": "Series B",
+    "company_id": 375
+  },
+  "689": {
+    "date": 1547393092000,
+    "funding_amount": 4508643.0,
+    "funding_round": "Series B",
+    "company_id": 938
+  },
+  "690": {
+    "date": 1602560826000,
+    "funding_amount": 1189634.0,
+    "funding_round": "Series C",
+    "company_id": 108
+  },
+  "691": {
+    "date": 1550754774000,
+    "funding_amount": 2488390.0,
+    "funding_round": "Seed",
+    "company_id": 370
+  },
+  "692": {
+    "date": 1606944330000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 327
+  },
+  "693": {
+    "date": 1619976813000,
+    "funding_amount": 2738694.0,
+    "funding_round": "Series B",
+    "company_id": 206
+  },
+  "694": {
+    "date": 1570950618000,
+    "funding_amount": 1901589.0,
+    "funding_round": "Seed",
+    "company_id": 681
+  },
+  "695": {
+    "date": 1622619363000,
+    "funding_amount": 2947948.0,
+    "funding_round": "Series B",
+    "company_id": 381
+  },
+  "696": {
+    "date": 1629472617000,
+    "funding_amount": 3121124.0,
+    "funding_round": "Series A",
+    "company_id": 820
+  },
+  "697": {
+    "date": 1645143870000,
+    "funding_amount": 4608298.0,
+    "funding_round": "Seed",
+    "company_id": 561
+  },
+  "698": {
+    "date": 1639748699000,
+    "funding_amount": 48261.0,
+    "funding_round": "Series A",
+    "company_id": 907
+  },
+  "699": {
+    "date": 1634403998000,
+    "funding_amount": 2262120.0,
+    "funding_round": "Series C",
+    "company_id": 913
+  },
+  "700": {
+    "date": 1618155382000,
+    "funding_amount": 2128641.0,
+    "funding_round": "Seed",
+    "company_id": 199
+  },
+  "701": {
+    "date": 1566333507000,
+    "funding_amount": 1071167.0,
+    "funding_round": "Series B",
+    "company_id": 947
+  },
+  "702": {
+    "date": 1616933570000,
+    "funding_amount": 2879608.0,
+    "funding_round": "Series C",
+    "company_id": 389
+  },
+  "703": {
+    "date": 1635219153000,
+    "funding_amount": 3370007.0,
+    "funding_round": "Series A",
+    "company_id": 840
+  },
+  "704": {
+    "date": 1558752680000,
+    "funding_amount": 289531.0,
+    "funding_round": "Series B",
+    "company_id": 363
+  },
+  "705": {
+    "date": 1608271307000,
+    "funding_amount": 55683.0,
+    "funding_round": "Series C",
+    "company_id": 400
+  },
+  "706": {
+    "date": 1627436625000,
+    "funding_amount": 2055081.0,
+    "funding_round": "Series C",
+    "company_id": 297
+  },
+  "707": {
+    "date": 1644801396000,
+    "funding_amount": 3889649.0,
+    "funding_round": "Series C",
+    "company_id": 949
+  },
+  "708": {
+    "date": 1627899069000,
+    "funding_amount": 2699482.0,
+    "funding_round": "Seed",
+    "company_id": 547
+  },
+  "709": {
+    "date": 1571462364000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 74
+  },
+  "710": {
+    "date": 1556330454000,
+    "funding_amount": 1038089.0,
+    "funding_round": "Series A",
+    "company_id": 192
+  },
+  "711": {
+    "date": 1646725126000,
+    "funding_amount": 4600966.0,
+    "funding_round": "Series B",
+    "company_id": 428
+  },
+  "712": {
+    "date": 1595620029000,
+    "funding_amount": 3265811.0,
+    "funding_round": "Series C",
+    "company_id": 697
+  },
+  "713": {
+    "date": 1642302716000,
+    "funding_amount": 1133654.0,
+    "funding_round": "Series A",
+    "company_id": 701
+  },
+  "714": {
+    "date": 1616152599000,
+    "funding_amount": 1547480.0,
+    "funding_round": "Seed",
+    "company_id": 859
+  },
+  "715": {
+    "date": 1550127025000,
+    "funding_amount": 1897654.0,
+    "funding_round": "Series B",
+    "company_id": 407
+  },
+  "716": {
+    "date": 1580257992000,
+    "funding_amount": 4591622.0,
+    "funding_round": "Series B",
+    "company_id": 778
+  },
+  "717": {
+    "date": 1564670300000,
+    "funding_amount": 2519797.0,
+    "funding_round": "Seed",
+    "company_id": 107
+  },
+  "718": {
+    "date": 1572589866000,
+    "funding_amount": 1431245.0,
+    "funding_round": "Series B",
+    "company_id": 849
+  },
+  "719": {
+    "date": 1608801154000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 438
+  },
+  "720": {
+    "date": 1621021308000,
+    "funding_amount": 3437491.0,
+    "funding_round": "Series B",
+    "company_id": 571
+  },
+  "721": {
+    "date": 1588942900000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 693
+  },
+  "722": {
+    "date": 1646522835000,
+    "funding_amount": 209488.0,
+    "funding_round": "Series A",
+    "company_id": 913
+  },
+  "723": {
+    "date": 1628608577000,
+    "funding_amount": 998263.0,
+    "funding_round": "Series A",
+    "company_id": 672
+  },
+  "724": {
+    "date": 1608914598000,
+    "funding_amount": 1740475.0,
+    "funding_round": "Seed",
+    "company_id": 85
+  },
+  "725": {
+    "date": 1582455783000,
+    "funding_amount": 227888.0,
+    "funding_round": "Series C",
+    "company_id": 618
+  },
+  "726": {
+    "date": 1554691023000,
+    "funding_amount": 2097282.0,
+    "funding_round": "Seed",
+    "company_id": 325
+  },
+  "727": {
+    "date": 1580441088000,
+    "funding_amount": 1507422.0,
+    "funding_round": "Series C",
+    "company_id": 870
+  },
+  "728": {
+    "date": 1621858045000,
+    "funding_amount": 4433545.0,
+    "funding_round": "Seed",
+    "company_id": 375
+  },
+  "729": {
+    "date": 1631022833000,
+    "funding_amount": 1492504.0,
+    "funding_round": "Series C",
+    "company_id": 937
+  },
+  "730": {
+    "date": 1563025504000,
+    "funding_amount": 2940381.0,
+    "funding_round": "Series B",
+    "company_id": 87
+  },
+  "731": {
+    "date": 1611033201000,
+    "funding_amount": 1488354.0,
+    "funding_round": "Series A",
+    "company_id": 589
+  },
+  "732": {
+    "date": 1612377996000,
+    "funding_amount": 3332837.0,
+    "funding_round": "Series C",
+    "company_id": 919
+  },
+  "733": {
+    "date": 1562489725000,
+    "funding_amount": 4817844.0,
+    "funding_round": "Series C",
+    "company_id": 199
+  },
+  "734": {
+    "date": 1646129933000,
+    "funding_amount": 36310.0,
+    "funding_round": "Series B",
+    "company_id": 558
+  },
+  "735": {
+    "date": 1624406571000,
+    "funding_amount": 2130036.0,
+    "funding_round": "Series C",
+    "company_id": 909
+  },
+  "736": {
+    "date": 1582144409000,
+    "funding_amount": 3278985.0,
+    "funding_round": "Series B",
+    "company_id": 634
+  },
+  "737": {
+    "date": 1553689842000,
+    "funding_amount": 4108961.0,
+    "funding_round": "Series B",
+    "company_id": 327
+  },
+  "738": {
+    "date": 1608474753000,
+    "funding_amount": 538645.0,
+    "funding_round": "Series C",
+    "company_id": 409
+  },
+  "739": {
+    "date": 1594498396000,
+    "funding_amount": 1570107.0,
+    "funding_round": "Series C",
+    "company_id": 130
+  },
+  "740": {
+    "date": 1602169065000,
+    "funding_amount": 1571642.0,
+    "funding_round": "Seed",
+    "company_id": 693
+  },
+  "741": {
+    "date": 1581795270000,
+    "funding_amount": 4679162.0,
+    "funding_round": "Series B",
+    "company_id": 214
+  },
+  "742": {
+    "date": 1616916091000,
+    "funding_amount": 2543653.0,
+    "funding_round": "Series B",
+    "company_id": 161
+  },
+  "743": {
+    "date": 1586574716000,
+    "funding_amount": 1455839.0,
+    "funding_round": "Series B",
+    "company_id": 155
+  },
+  "744": {
+    "date": 1572878077000,
+    "funding_amount": 2095964.0,
+    "funding_round": "Series B",
+    "company_id": 513
+  },
+  "745": {
+    "date": 1592626751000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 243
+  },
+  "746": {
+    "date": 1573402461000,
+    "funding_amount": 1244610.0,
+    "funding_round": "Series B",
+    "company_id": 651
+  },
+  "747": {
+    "date": 1564297141000,
+    "funding_amount": 3129098.0,
+    "funding_round": "Series B",
+    "company_id": 7
+  },
+  "748": {
+    "date": 1559387729000,
+    "funding_amount": 249112.0,
+    "funding_round": "Series A",
+    "company_id": 731
+  },
+  "749": {
+    "date": 1564961561000,
+    "funding_amount": 2333995.0,
+    "funding_round": "Series B",
+    "company_id": 216
+  },
+  "750": {
+    "date": 1596771109000,
+    "funding_amount": 2448840.0,
+    "funding_round": "Series C",
+    "company_id": 266
+  },
+  "751": {
+    "date": 1645233783000,
+    "funding_amount": 1095395.0,
+    "funding_round": "Seed",
+    "company_id": 86
+  },
+  "752": {
+    "date": 1573167312000,
+    "funding_amount": 4085963.0,
+    "funding_round": "Series B",
+    "company_id": 771
+  },
+  "753": {
+    "date": 1610582156000,
+    "funding_amount": 4397254.0,
+    "funding_round": "Seed",
+    "company_id": 36
+  },
+  "754": {
+    "date": 1569075961000,
+    "funding_amount": 4611627.0,
+    "funding_round": "Seed",
+    "company_id": 906
+  },
+  "755": {
+    "date": 1615318018000,
+    "funding_amount": 4089209.0,
+    "funding_round": "Series A",
+    "company_id": 161
+  },
+  "756": {
+    "date": 1556650891000,
+    "funding_amount": 4655865.0,
+    "funding_round": "Series A",
+    "company_id": 627
+  },
+  "757": {
+    "date": 1569954651000,
+    "funding_amount": 3634437.0,
+    "funding_round": "Series B",
+    "company_id": 423
+  },
+  "758": {
+    "date": 1594292404000,
+    "funding_amount": 2117787.0,
+    "funding_round": "Seed",
+    "company_id": 473
+  },
+  "759": {
+    "date": 1603258608000,
+    "funding_amount": 4247018.0,
+    "funding_round": "Series A",
+    "company_id": 907
+  },
+  "760": {
+    "date": 1574045360000,
+    "funding_amount": 256254.0,
+    "funding_round": "Series B",
+    "company_id": 722
+  },
+  "761": {
+    "date": 1568230951000,
+    "funding_amount": 4549142.0,
+    "funding_round": "Series C",
+    "company_id": 414
+  },
+  "762": {
+    "date": 1613737408000,
+    "funding_amount": 1411052.0,
+    "funding_round": "Series C",
+    "company_id": 858
+  },
+  "763": {
+    "date": 1546505223000,
+    "funding_amount": 3409586.0,
+    "funding_round": "Series C",
+    "company_id": 990
+  },
+  "764": {
+    "date": 1593506298000,
+    "funding_amount": 4353621.0,
+    "funding_round": "Series B",
+    "company_id": 427
+  },
+  "765": {
+    "date": 1646685514000,
+    "funding_amount": 4513332.0,
+    "funding_round": "Seed",
+    "company_id": 388
+  },
+  "766": {
+    "date": 1565338706000,
+    "funding_amount": 1426254.0,
+    "funding_round": "Series A",
+    "company_id": 167
+  },
+  "767": {
+    "date": 1607021176000,
+    "funding_amount": 4823743.0,
+    "funding_round": "Series C",
+    "company_id": 773
+  },
+  "768": {
+    "date": 1571300713000,
+    "funding_amount": 2815418.0,
+    "funding_round": "Seed",
+    "company_id": 63
+  },
+  "769": {
+    "date": 1620030421000,
+    "funding_amount": 621672.0,
+    "funding_round": "Series A",
+    "company_id": 394
+  },
+  "770": {
+    "date": 1587728279000,
+    "funding_amount": 3633292.0,
+    "funding_round": "Series B",
+    "company_id": 794
+  },
+  "771": {
+    "date": 1554468097000,
+    "funding_amount": 3110981.0,
+    "funding_round": "Series C",
+    "company_id": 174
+  },
+  "772": {
+    "date": 1561845300000,
+    "funding_amount": 3334633.0,
+    "funding_round": "Seed",
+    "company_id": 337
+  },
+  "773": {
+    "date": 1622580247000,
+    "funding_amount": 346624.0,
+    "funding_round": "Series A",
+    "company_id": 818
+  },
+  "774": {
+    "date": 1577798144000,
+    "funding_amount": 3549234.0,
+    "funding_round": "Seed",
+    "company_id": 769
+  },
+  "775": {
+    "date": 1580101295000,
+    "funding_amount": 4269059.0,
+    "funding_round": "Series A",
+    "company_id": 175
+  },
+  "776": {
+    "date": 1639983507000,
+    "funding_amount": 988154.0,
+    "funding_round": "Series A",
+    "company_id": 661
+  },
+  "777": {
+    "date": 1559751565000,
+    "funding_amount": 2850590.0,
+    "funding_round": "Seed",
+    "company_id": 224
+  },
+  "778": {
+    "date": 1564268206000,
+    "funding_amount": 711115.0,
+    "funding_round": "Series C",
+    "company_id": 906
+  },
+  "779": {
+    "date": 1560743622000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 656
+  },
+  "780": {
+    "date": 1568121738000,
+    "funding_amount": 3073719.0,
+    "funding_round": "Seed",
+    "company_id": 913
+  },
+  "781": {
+    "date": 1610654890000,
+    "funding_amount": 1569987.0,
+    "funding_round": "Series A",
+    "company_id": 888
+  },
+  "782": {
+    "date": 1561154147000,
+    "funding_amount": 2103248.0,
+    "funding_round": "Seed",
+    "company_id": 691
+  },
+  "783": {
+    "date": 1625635410000,
+    "funding_amount": 3227223.0,
+    "funding_round": "Series B",
+    "company_id": 36
+  },
+  "784": {
+    "date": 1646173997000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 159
+  },
+  "785": {
+    "date": 1632793736000,
+    "funding_amount": 3043182.0,
+    "funding_round": "Series B",
+    "company_id": 765
+  },
+  "786": {
+    "date": 1591556474000,
+    "funding_amount": 851437.0,
+    "funding_round": "Series C",
+    "company_id": 714
+  },
+  "787": {
+    "date": 1588472596000,
+    "funding_amount": 4219898.0,
+    "funding_round": "Seed",
+    "company_id": 738
+  },
+  "788": {
+    "date": 1567031216000,
+    "funding_amount": 3163756.0,
+    "funding_round": "Series B",
+    "company_id": 454
+  },
+  "789": {
+    "date": 1626380531000,
+    "funding_amount": 77304.0,
+    "funding_round": "Series B",
+    "company_id": 432
+  },
+  "790": {
+    "date": 1605736556000,
+    "funding_amount": 2499247.0,
+    "funding_round": "Series B",
+    "company_id": 307
+  },
+  "791": {
+    "date": 1639682871000,
+    "funding_amount": 1914243.0,
+    "funding_round": "Series A",
+    "company_id": 690
+  },
+  "792": {
+    "date": 1597329997000,
+    "funding_amount": 2632526.0,
+    "funding_round": "Series A",
+    "company_id": 287
+  },
+  "793": {
+    "date": 1593317227000,
+    "funding_amount": 4786596.0,
+    "funding_round": "Series A",
+    "company_id": 826
+  },
+  "794": {
+    "date": 1551685739000,
+    "funding_amount": 4783042.0,
+    "funding_round": "Series A",
+    "company_id": 922
+  },
+  "795": {
+    "date": 1590594069000,
+    "funding_amount": 3556162.0,
+    "funding_round": "Series C",
+    "company_id": 964
+  },
+  "796": {
+    "date": 1633504588000,
+    "funding_amount": 1616681.0,
+    "funding_round": "Series B",
+    "company_id": 44
+  },
+  "797": {
+    "date": 1557102526000,
+    "funding_amount": 3442738.0,
+    "funding_round": "Series C",
+    "company_id": 698
+  },
+  "798": {
+    "date": 1647315778000,
+    "funding_amount": 463031.0,
+    "funding_round": "Series C",
+    "company_id": 358
+  },
+  "799": {
+    "date": 1548131998000,
+    "funding_amount": 1352410.0,
+    "funding_round": "Seed",
+    "company_id": 472
+  },
+  "800": {
+    "date": 1637916471000,
+    "funding_amount": 4751752.0,
+    "funding_round": "Seed",
+    "company_id": 284
+  },
+  "801": {
+    "date": 1610012419000,
+    "funding_amount": 4630811.0,
+    "funding_round": "Series B",
+    "company_id": 972
+  },
+  "802": {
+    "date": 1575531200000,
+    "funding_amount": 1559304.0,
+    "funding_round": "Series C",
+    "company_id": 249
+  },
+  "803": {
+    "date": 1635413832000,
+    "funding_amount": 3350558.0,
+    "funding_round": "Seed",
+    "company_id": 130
+  },
+  "804": {
+    "date": 1584595475000,
+    "funding_amount": 4581218.0,
+    "funding_round": "Series B",
+    "company_id": 427
+  },
+  "805": {
+    "date": 1622833538000,
+    "funding_amount": 1319629.0,
+    "funding_round": "Series A",
+    "company_id": 240
+  },
+  "806": {
+    "date": 1557661294000,
+    "funding_amount": 2573825.0,
+    "funding_round": "Series A",
+    "company_id": 253
+  },
+  "807": {
+    "date": 1547611112000,
+    "funding_amount": 2563617.0,
+    "funding_round": "Series B",
+    "company_id": 135
+  },
+  "808": {
+    "date": 1633320435000,
+    "funding_amount": 4307734.0,
+    "funding_round": "Series A",
+    "company_id": 317
+  },
+  "809": {
+    "date": 1580990316000,
+    "funding_amount": 2004596.0,
+    "funding_round": "Series B",
+    "company_id": 70
+  },
+  "810": {
+    "date": 1605945682000,
+    "funding_amount": 274941.0,
+    "funding_round": "Series C",
+    "company_id": 668
+  },
+  "811": {
+    "date": 1582071787000,
+    "funding_amount": 1821755.0,
+    "funding_round": "Series C",
+    "company_id": 779
+  },
+  "812": {
+    "date": 1624712065000,
+    "funding_amount": 1672347.0,
+    "funding_round": "Seed",
+    "company_id": 522
+  },
+  "813": {
+    "date": 1590834162000,
+    "funding_amount": 256293.0,
+    "funding_round": "Series B",
+    "company_id": 995
+  },
+  "814": {
+    "date": 1565844907000,
+    "funding_amount": 224593.0,
+    "funding_round": "Series B",
+    "company_id": 676
+  },
+  "815": {
+    "date": 1611134186000,
+    "funding_amount": 2647836.0,
+    "funding_round": "Series B",
+    "company_id": 651
+  },
+  "816": {
+    "date": 1572035072000,
+    "funding_amount": 2553644.0,
+    "funding_round": "Series C",
+    "company_id": 171
+  },
+  "817": {
+    "date": 1599123183000,
+    "funding_amount": 4455355.0,
+    "funding_round": "Series C",
+    "company_id": 24
+  },
+  "818": {
+    "date": 1634461099000,
+    "funding_amount": 4699010.0,
+    "funding_round": "Series B",
+    "company_id": 931
+  },
+  "819": {
+    "date": 1642638670000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 678
+  },
+  "820": {
+    "date": 1602204573000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 199
+  },
+  "821": {
+    "date": 1551690355000,
+    "funding_amount": 932854.0,
+    "funding_round": "Seed",
+    "company_id": 748
+  },
+  "822": {
+    "date": 1616211501000,
+    "funding_amount": 4762510.0,
+    "funding_round": "Series B",
+    "company_id": 660
+  },
+  "823": {
+    "date": 1577523469000,
+    "funding_amount": 4391600.0,
+    "funding_round": "Series B",
+    "company_id": 717
+  },
+  "824": {
+    "date": 1625613604000,
+    "funding_amount": 3374250.0,
+    "funding_round": "Series B",
+    "company_id": 68
+  },
+  "825": {
+    "date": 1627693993000,
+    "funding_amount": 548321.0,
+    "funding_round": "Series A",
+    "company_id": 821
+  },
+  "826": {
+    "date": 1571847498000,
+    "funding_amount": 976473.0,
+    "funding_round": "Seed",
+    "company_id": 102
+  },
+  "827": {
+    "date": 1598141567000,
+    "funding_amount": 3397420.0,
+    "funding_round": "Series B",
+    "company_id": 473
+  },
+  "828": {
+    "date": 1546613747000,
+    "funding_amount": 4160716.0,
+    "funding_round": "Series B",
+    "company_id": 182
+  },
+  "829": {
+    "date": 1621462120000,
+    "funding_amount": 75212.0,
+    "funding_round": "Series C",
+    "company_id": 497
+  },
+  "830": {
+    "date": 1598396207000,
+    "funding_amount": 4740598.0,
+    "funding_round": "Seed",
+    "company_id": 576
+  },
+  "831": {
+    "date": 1642960001000,
+    "funding_amount": 2815255.0,
+    "funding_round": "Series A",
+    "company_id": 108
+  },
+  "832": {
+    "date": 1559697086000,
+    "funding_amount": 2704715.0,
+    "funding_round": "Series A",
+    "company_id": 200
+  },
+  "833": {
+    "date": 1590554890000,
+    "funding_amount": 4109091.0,
+    "funding_round": "Series A",
+    "company_id": 836
+  },
+  "834": {
+    "date": 1567588209000,
+    "funding_amount": 1202975.0,
+    "funding_round": "Series C",
+    "company_id": 904
+  },
+  "835": {
+    "date": 1552066381000,
+    "funding_amount": 4745351.0,
+    "funding_round": "Series A",
+    "company_id": 696
+  },
+  "836": {
+    "date": 1560758100000,
+    "funding_amount": 2226303.0,
+    "funding_round": "Series A",
+    "company_id": 579
+  },
+  "837": {
+    "date": 1562091614000,
+    "funding_amount": 1150751.0,
+    "funding_round": "Series A",
+    "company_id": 4
+  },
+  "838": {
+    "date": 1607811431000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 520
+  },
+  "839": {
+    "date": 1631208479000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 416
+  },
+  "840": {
+    "date": 1590688958000,
+    "funding_amount": 1319230.0,
+    "funding_round": "Series A",
+    "company_id": 778
+  },
+  "841": {
+    "date": 1560625638000,
+    "funding_amount": 1013392.0,
+    "funding_round": "Seed",
+    "company_id": 474
+  },
+  "842": {
+    "date": 1566232076000,
+    "funding_amount": 4539126.0,
+    "funding_round": "Series C",
+    "company_id": 643
+  },
+  "843": {
+    "date": 1565328005000,
+    "funding_amount": 2676002.0,
+    "funding_round": "Seed",
+    "company_id": 297
+  },
+  "844": {
+    "date": 1595052390000,
+    "funding_amount": 56750.0,
+    "funding_round": "Series B",
+    "company_id": 77
+  },
+  "845": {
+    "date": 1622399661000,
+    "funding_amount": 2856466.0,
+    "funding_round": "Series A",
+    "company_id": 932
+  },
+  "846": {
+    "date": 1574094434000,
+    "funding_amount": 1022935.0,
+    "funding_round": "Series B",
+    "company_id": 264
+  },
+  "847": {
+    "date": 1623436063000,
+    "funding_amount": 3730501.0,
+    "funding_round": "Series B",
+    "company_id": 933
+  },
+  "848": {
+    "date": 1550650887000,
+    "funding_amount": 3114707.0,
+    "funding_round": "Series C",
+    "company_id": 112
+  },
+  "849": {
+    "date": 1605152393000,
+    "funding_amount": 2574815.0,
+    "funding_round": "Series A",
+    "company_id": 773
+  },
+  "850": {
+    "date": 1609415864000,
+    "funding_amount": 3894659.0,
+    "funding_round": "Series C",
+    "company_id": 697
+  },
+  "851": {
+    "date": 1574125130000,
+    "funding_amount": 2152511.0,
+    "funding_round": "Series B",
+    "company_id": 578
+  },
+  "852": {
+    "date": 1629395800000,
+    "funding_amount": 2669813.0,
+    "funding_round": "Series A",
+    "company_id": 154
+  },
+  "853": {
+    "date": 1599584099000,
+    "funding_amount": 4956694.0,
+    "funding_round": "Series A",
+    "company_id": 4
+  },
+  "854": {
+    "date": 1583108062000,
+    "funding_amount": 2949580.0,
+    "funding_round": "Series A",
+    "company_id": 958
+  },
+  "855": {
+    "date": 1614201328000,
+    "funding_amount": 3562755.0,
+    "funding_round": "Seed",
+    "company_id": 496
+  },
+  "856": {
+    "date": 1562864467000,
+    "funding_amount": 453910.0,
+    "funding_round": "Series A",
+    "company_id": 156
+  },
+  "857": {
+    "date": 1564578325000,
+    "funding_amount": 353051.0,
+    "funding_round": "Series C",
+    "company_id": 601
+  },
+  "858": {
+    "date": 1550548878000,
+    "funding_amount": 1777732.0,
+    "funding_round": "Series C",
+    "company_id": 134
+  },
+  "859": {
+    "date": 1621184424000,
+    "funding_amount": 1907351.0,
+    "funding_round": "Series C",
+    "company_id": 990
+  },
+  "860": {
+    "date": 1569051933000,
+    "funding_amount": 3230962.0,
+    "funding_round": "Series C",
+    "company_id": 689
+  },
+  "861": {
+    "date": 1643953703000,
+    "funding_amount": 2802930.0,
+    "funding_round": "Series B",
+    "company_id": 809
+  },
+  "862": {
+    "date": 1561119884000,
+    "funding_amount": 3902072.0,
+    "funding_round": "Series C",
+    "company_id": 194
+  },
+  "863": {
+    "date": 1557162593000,
+    "funding_amount": 1517689.0,
+    "funding_round": "Series C",
+    "company_id": 151
+  },
+  "864": {
+    "date": 1572883079000,
+    "funding_amount": 3589323.0,
+    "funding_round": "Series B",
+    "company_id": 823
+  },
+  "865": {
+    "date": 1596331804000,
+    "funding_amount": 1131009.0,
+    "funding_round": "Series A",
+    "company_id": 105
+  },
+  "866": {
+    "date": 1590260809000,
+    "funding_amount": 1341690.0,
+    "funding_round": "Seed",
+    "company_id": 517
+  },
+  "867": {
+    "date": 1591882095000,
+    "funding_amount": 1933797.0,
+    "funding_round": "Series A",
+    "company_id": 236
+  },
+  "868": {
+    "date": 1556090102000,
+    "funding_amount": 4903968.0,
+    "funding_round": "Series C",
+    "company_id": 171
+  },
+  "869": {
+    "date": 1569682816000,
+    "funding_amount": 3224444.0,
+    "funding_round": "Series C",
+    "company_id": 629
+  },
+  "870": {
+    "date": 1618588062000,
+    "funding_amount": 289575.0,
+    "funding_round": "Series A",
+    "company_id": 615
+  },
+  "871": {
+    "date": 1598678587000,
+    "funding_amount": 4049695.0,
+    "funding_round": "Series C",
+    "company_id": 391
+  },
+  "872": {
+    "date": 1585691343000,
+    "funding_amount": 94284.0,
+    "funding_round": "Series B",
+    "company_id": 844
+  },
+  "873": {
+    "date": 1641776864000,
+    "funding_amount": 25043.0,
+    "funding_round": "Series B",
+    "company_id": 654
+  },
+  "874": {
+    "date": 1611943240000,
+    "funding_amount": 1888830.0,
+    "funding_round": "Series A",
+    "company_id": 246
+  },
+  "875": {
+    "date": 1623149482000,
+    "funding_amount": 2293181.0,
+    "funding_round": "Series A",
+    "company_id": 511
+  },
+  "876": {
+    "date": 1551754574000,
+    "funding_amount": 4375306.0,
+    "funding_round": "Series B",
+    "company_id": 207
+  },
+  "877": {
+    "date": 1618579852000,
+    "funding_amount": 2586389.0,
+    "funding_round": "Series A",
+    "company_id": 943
+  },
+  "878": {
+    "date": 1582999367000,
+    "funding_amount": 3944029.0,
+    "funding_round": "Seed",
+    "company_id": 668
+  },
+  "879": {
+    "date": 1618299541000,
+    "funding_amount": 3448298.0,
+    "funding_round": "Series A",
+    "company_id": 348
+  },
+  "880": {
+    "date": 1601571902000,
+    "funding_amount": null,
+    "funding_round": "Series C",
+    "company_id": 49
+  },
+  "881": {
+    "date": 1633302034000,
+    "funding_amount": 3466519.0,
+    "funding_round": "Series C",
+    "company_id": 536
+  },
+  "882": {
+    "date": 1587516974000,
+    "funding_amount": 4897321.0,
+    "funding_round": "Series A",
+    "company_id": 194
+  },
+  "883": {
+    "date": 1625730275000,
+    "funding_amount": 4520777.0,
+    "funding_round": "Series B",
+    "company_id": 323
+  },
+  "884": {
+    "date": 1587024384000,
+    "funding_amount": 4011901.0,
+    "funding_round": "Seed",
+    "company_id": 454
+  },
+  "885": {
+    "date": 1594382978000,
+    "funding_amount": 4005912.0,
+    "funding_round": "Series A",
+    "company_id": 82
+  },
+  "886": {
+    "date": 1569288028000,
+    "funding_amount": 652661.0,
+    "funding_round": "Series A",
+    "company_id": 531
+  },
+  "887": {
+    "date": 1580304577000,
+    "funding_amount": 2079555.0,
+    "funding_round": "Series A",
+    "company_id": 470
+  },
+  "888": {
+    "date": 1578670990000,
+    "funding_amount": 2397790.0,
+    "funding_round": "Series B",
+    "company_id": 917
+  },
+  "889": {
+    "date": 1631072132000,
+    "funding_amount": 1253370.0,
+    "funding_round": "Series A",
+    "company_id": 305
+  },
+  "890": {
+    "date": 1570126446000,
+    "funding_amount": 1517723.0,
+    "funding_round": "Series A",
+    "company_id": 661
+  },
+  "891": {
+    "date": 1562378226000,
+    "funding_amount": 331620.0,
+    "funding_round": "Series B",
+    "company_id": 559
+  },
+  "892": {
+    "date": 1574391861000,
+    "funding_amount": 4716121.0,
+    "funding_round": "Series C",
+    "company_id": 274
+  },
+  "893": {
+    "date": 1591439892000,
+    "funding_amount": 1220987.0,
+    "funding_round": "Series A",
+    "company_id": 208
+  },
+  "894": {
+    "date": 1574066424000,
+    "funding_amount": null,
+    "funding_round": "Series B",
+    "company_id": 959
+  },
+  "895": {
+    "date": 1554296024000,
+    "funding_amount": 4151097.0,
+    "funding_round": "Series B",
+    "company_id": 441
+  },
+  "896": {
+    "date": 1610408718000,
+    "funding_amount": 603372.0,
+    "funding_round": "Series C",
+    "company_id": 925
+  },
+  "897": {
+    "date": 1630020045000,
+    "funding_amount": 3091233.0,
+    "funding_round": "Series C",
+    "company_id": 991
+  },
+  "898": {
+    "date": 1619694791000,
+    "funding_amount": 880777.0,
+    "funding_round": "Seed",
+    "company_id": 177
+  },
+  "899": {
+    "date": 1592204514000,
+    "funding_amount": 3538951.0,
+    "funding_round": "Series B",
+    "company_id": 833
+  },
+  "900": {
+    "date": 1613545928000,
+    "funding_amount": 1021646.0,
+    "funding_round": "Series A",
+    "company_id": 944
+  },
+  "901": {
+    "date": 1572308532000,
+    "funding_amount": 4761465.0,
+    "funding_round": "Series B",
+    "company_id": 765
+  },
+  "902": {
+    "date": 1616200683000,
+    "funding_amount": 2507472.0,
+    "funding_round": "Seed",
+    "company_id": 54
+  },
+  "903": {
+    "date": 1563421597000,
+    "funding_amount": 2783206.0,
+    "funding_round": "Series C",
+    "company_id": 251
+  },
+  "904": {
+    "date": 1601764344000,
+    "funding_amount": 2190363.0,
+    "funding_round": "Seed",
+    "company_id": 713
+  },
+  "905": {
+    "date": 1581447672000,
+    "funding_amount": 4125043.0,
+    "funding_round": "Seed",
+    "company_id": 135
+  },
+  "906": {
+    "date": 1580544599000,
+    "funding_amount": 3658297.0,
+    "funding_round": "Series A",
+    "company_id": 905
+  },
+  "907": {
+    "date": 1624599565000,
+    "funding_amount": 1528112.0,
+    "funding_round": "Seed",
+    "company_id": 649
+  },
+  "908": {
+    "date": 1560082778000,
+    "funding_amount": 298908.0,
+    "funding_round": "Series A",
+    "company_id": 972
+  },
+  "909": {
+    "date": 1569454801000,
+    "funding_amount": 4748748.0,
+    "funding_round": "Series C",
+    "company_id": 593
+  },
+  "910": {
+    "date": 1622332452000,
+    "funding_amount": 332581.0,
+    "funding_round": "Seed",
+    "company_id": 436
+  },
+  "911": {
+    "date": 1640059857000,
+    "funding_amount": 1058684.0,
+    "funding_round": "Series B",
+    "company_id": 429
+  },
+  "912": {
+    "date": 1570108339000,
+    "funding_amount": 4704922.0,
+    "funding_round": "Series A",
+    "company_id": 745
+  },
+  "913": {
+    "date": 1585375064000,
+    "funding_amount": 590699.0,
+    "funding_round": "Seed",
+    "company_id": 636
+  },
+  "914": {
+    "date": 1605317200000,
+    "funding_amount": 3274785.0,
+    "funding_round": "Seed",
+    "company_id": 346
+  },
+  "915": {
+    "date": 1587084408000,
+    "funding_amount": 4334325.0,
+    "funding_round": "Series C",
+    "company_id": 693
+  },
+  "916": {
+    "date": 1633529934000,
+    "funding_amount": 4819777.0,
+    "funding_round": "Series B",
+    "company_id": 596
+  },
+  "917": {
+    "date": 1575558960000,
+    "funding_amount": 1334687.0,
+    "funding_round": "Seed",
+    "company_id": 369
+  },
+  "918": {
+    "date": 1597401906000,
+    "funding_amount": 2010454.0,
+    "funding_round": "Seed",
+    "company_id": 758
+  },
+  "919": {
+    "date": 1607101105000,
+    "funding_amount": 4183676.0,
+    "funding_round": "Series A",
+    "company_id": 121
+  },
+  "920": {
+    "date": 1591797917000,
+    "funding_amount": 4803283.0,
+    "funding_round": "Series B",
+    "company_id": 739
+  },
+  "921": {
+    "date": 1560786564000,
+    "funding_amount": 403229.0,
+    "funding_round": "Series B",
+    "company_id": 158
+  },
+  "922": {
+    "date": 1628163991000,
+    "funding_amount": 3783376.0,
+    "funding_round": "Series B",
+    "company_id": 41
+  },
+  "923": {
+    "date": 1597965147000,
+    "funding_amount": 4936683.0,
+    "funding_round": "Series A",
+    "company_id": 742
+  },
+  "924": {
+    "date": 1626156914000,
+    "funding_amount": 1877801.0,
+    "funding_round": "Series B",
+    "company_id": 432
+  },
+  "925": {
+    "date": 1641657008000,
+    "funding_amount": 834439.0,
+    "funding_round": "Series C",
+    "company_id": 419
+  },
+  "926": {
+    "date": 1578310779000,
+    "funding_amount": 4206635.0,
+    "funding_round": "Series B",
+    "company_id": 773
+  },
+  "927": {
+    "date": 1570649961000,
+    "funding_amount": 3763302.0,
+    "funding_round": "Seed",
+    "company_id": 526
+  },
+  "928": {
+    "date": 1549274794000,
+    "funding_amount": null,
+    "funding_round": "Series A",
+    "company_id": 809
+  },
+  "929": {
+    "date": 1646614208000,
+    "funding_amount": 4951408.0,
+    "funding_round": "Series B",
+    "company_id": 55
+  },
+  "930": {
+    "date": 1558782621000,
+    "funding_amount": 1162071.0,
+    "funding_round": "Seed",
+    "company_id": 891
+  },
+  "931": {
+    "date": 1597954447000,
+    "funding_amount": 89477.0,
+    "funding_round": "Series B",
+    "company_id": 584
+  },
+  "932": {
+    "date": 1555277349000,
+    "funding_amount": 680108.0,
+    "funding_round": "Series B",
+    "company_id": 739
+  },
+  "933": {
+    "date": 1557348431000,
+    "funding_amount": 4352414.0,
+    "funding_round": "Series A",
+    "company_id": 936
+  },
+  "934": {
+    "date": 1604277372000,
+    "funding_amount": 1690051.0,
+    "funding_round": "Seed",
+    "company_id": 593
+  },
+  "935": {
+    "date": 1643559950000,
+    "funding_amount": 3193112.0,
+    "funding_round": "Seed",
+    "company_id": 255
+  },
+  "936": {
+    "date": 1562991948000,
+    "funding_amount": 1882758.0,
+    "funding_round": "Series C",
+    "company_id": 311
+  },
+  "937": {
+    "date": 1586528853000,
+    "funding_amount": 768108.0,
+    "funding_round": "Series A",
+    "company_id": 543
+  },
+  "938": {
+    "date": 1625157828000,
+    "funding_amount": 407960.0,
+    "funding_round": "Series C",
+    "company_id": 21
+  },
+  "939": {
+    "date": 1597363304000,
+    "funding_amount": 1362945.0,
+    "funding_round": "Series A",
+    "company_id": 316
+  },
+  "940": {
+    "date": 1643065808000,
+    "funding_amount": 4993020.0,
+    "funding_round": "Series A",
+    "company_id": 29
+  },
+  "941": {
+    "date": 1591372518000,
+    "funding_amount": 3628159.0,
+    "funding_round": "Series C",
+    "company_id": 863
+  },
+  "942": {
+    "date": 1623803109000,
+    "funding_amount": 734710.0,
+    "funding_round": "Seed",
+    "company_id": 261
+  },
+  "943": {
+    "date": 1576537828000,
+    "funding_amount": 2702279.0,
+    "funding_round": "Series C",
+    "company_id": 113
+  },
+  "944": {
+    "date": 1600895522000,
+    "funding_amount": 507991.0,
+    "funding_round": "Seed",
+    "company_id": 458
+  },
+  "945": {
+    "date": 1613901092000,
+    "funding_amount": 2951960.0,
+    "funding_round": "Series C",
+    "company_id": 847
+  },
+  "946": {
+    "date": 1547023896000,
+    "funding_amount": 2396713.0,
+    "funding_round": "Series A",
+    "company_id": 608
+  },
+  "947": {
+    "date": 1631584856000,
+    "funding_amount": 1512531.0,
+    "funding_round": "Series A",
+    "company_id": 315
+  },
+  "948": {
+    "date": 1638148552000,
+    "funding_amount": 1238146.0,
+    "funding_round": "Series C",
+    "company_id": 272
+  },
+  "949": {
+    "date": 1614747440000,
+    "funding_amount": 2951767.0,
+    "funding_round": "Series C",
+    "company_id": 716
+  },
+  "950": {
+    "date": 1559859429000,
+    "funding_amount": 4913958.0,
+    "funding_round": "Series B",
+    "company_id": 255
+  },
+  "951": {
+    "date": 1568248668000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 631
+  },
+  "952": {
+    "date": 1634010446000,
+    "funding_amount": 4977113.0,
+    "funding_round": "Series B",
+    "company_id": 552
+  },
+  "953": {
+    "date": 1628646797000,
+    "funding_amount": 3895717.0,
+    "funding_round": "Series A",
+    "company_id": 865
+  },
+  "954": {
+    "date": 1574309117000,
+    "funding_amount": 4887510.0,
+    "funding_round": "Series A",
+    "company_id": 112
+  },
+  "955": {
+    "date": 1557684649000,
+    "funding_amount": 2359280.0,
+    "funding_round": "Series A",
+    "company_id": 572
+  },
+  "956": {
+    "date": 1572187428000,
+    "funding_amount": 3894368.0,
+    "funding_round": "Series C",
+    "company_id": 129
+  },
+  "957": {
+    "date": 1596542671000,
+    "funding_amount": 1567427.0,
+    "funding_round": "Series C",
+    "company_id": 904
+  },
+  "958": {
+    "date": 1570269751000,
+    "funding_amount": 2716147.0,
+    "funding_round": "Series A",
+    "company_id": 440
+  },
+  "959": {
+    "date": 1594713424000,
+    "funding_amount": 3079530.0,
+    "funding_round": "Series B",
+    "company_id": 436
+  },
+  "960": {
+    "date": 1595197225000,
+    "funding_amount": 1588441.0,
+    "funding_round": "Series B",
+    "company_id": 529
+  },
+  "961": {
+    "date": 1634356403000,
+    "funding_amount": 2550529.0,
+    "funding_round": "Series A",
+    "company_id": 552
+  },
+  "962": {
+    "date": 1612150763000,
+    "funding_amount": 1759543.0,
+    "funding_round": "Series B",
+    "company_id": 428
+  },
+  "963": {
+    "date": 1591494086000,
+    "funding_amount": 403775.0,
+    "funding_round": "Series C",
+    "company_id": 744
+  },
+  "964": {
+    "date": 1598018252000,
+    "funding_amount": 526386.0,
+    "funding_round": "Seed",
+    "company_id": 400
+  },
+  "965": {
+    "date": 1594894614000,
+    "funding_amount": 4017479.0,
+    "funding_round": "Series B",
+    "company_id": 560
+  },
+  "966": {
+    "date": 1559936477000,
+    "funding_amount": 2425573.0,
+    "funding_round": "Series A",
+    "company_id": 596
+  },
+  "967": {
+    "date": 1626179379000,
+    "funding_amount": 4328151.0,
+    "funding_round": "Seed",
+    "company_id": 257
+  },
+  "968": {
+    "date": 1632658900000,
+    "funding_amount": 1512935.0,
+    "funding_round": "Series B",
+    "company_id": 777
+  },
+  "969": {
+    "date": 1564697451000,
+    "funding_amount": 3884081.0,
+    "funding_round": "Series A",
+    "company_id": 52
+  },
+  "970": {
+    "date": 1573623994000,
+    "funding_amount": 3211361.0,
+    "funding_round": "Seed",
+    "company_id": 896
+  },
+  "971": {
+    "date": 1551736983000,
+    "funding_amount": 3970478.0,
+    "funding_round": "Seed",
+    "company_id": 448
+  },
+  "972": {
+    "date": 1606906682000,
+    "funding_amount": 4865552.0,
+    "funding_round": "Series A",
+    "company_id": 329
+  },
+  "973": {
+    "date": 1587078617000,
+    "funding_amount": 1959063.0,
+    "funding_round": "Series B",
+    "company_id": 433
+  },
+  "974": {
+    "date": 1634080176000,
+    "funding_amount": null,
+    "funding_round": "Seed",
+    "company_id": 387
+  },
+  "975": {
+    "date": 1635413626000,
+    "funding_amount": 4928972.0,
+    "funding_round": "Series B",
+    "company_id": 478
+  },
+  "976": {
+    "date": 1578135444000,
+    "funding_amount": 1363879.0,
+    "funding_round": "Seed",
+    "company_id": 509
+  },
+  "977": {
+    "date": 1560801670000,
+    "funding_amount": 4642978.0,
+    "funding_round": "Series B",
+    "company_id": 451
+  },
+  "978": {
+    "date": 1564969008000,
+    "funding_amount": 2429737.0,
+    "funding_round": "Seed",
+    "company_id": 364
+  },
+  "979": {
+    "date": 1618324017000,
+    "funding_amount": 620807.0,
+    "funding_round": "Series C",
+    "company_id": 648
+  },
+  "980": {
+    "date": 1584046046000,
+    "funding_amount": 3928066.0,
+    "funding_round": "Series B",
+    "company_id": 231
+  },
+  "981": {
+    "date": 1602277181000,
+    "funding_amount": 3276334.0,
+    "funding_round": "Series B",
+    "company_id": 823
+  },
+  "982": {
+    "date": 1568713682000,
+    "funding_amount": 4813835.0,
+    "funding_round": "Series B",
+    "company_id": 895
+  },
+  "983": {
+    "date": 1629315168000,
+    "funding_amount": 2117740.0,
+    "funding_round": "Series B",
+    "company_id": 880
+  },
+  "984": {
+    "date": 1558328642000,
+    "funding_amount": 342177.0,
+    "funding_round": "Seed",
+    "company_id": 769
+  },
+  "985": {
+    "date": 1548148385000,
+    "funding_amount": 1369406.0,
+    "funding_round": "Series A",
+    "company_id": 258
+  },
+  "986": {
+    "date": 1643117928000,
+    "funding_amount": 1319643.0,
+    "funding_round": "Series B",
+    "company_id": 662
+  },
+  "987": {
+    "date": 1577303948000,
+    "funding_amount": 3488492.0,
+    "funding_round": "Series A",
+    "company_id": 607
+  },
+  "988": {
+    "date": 1555029919000,
+    "funding_amount": 2633452.0,
+    "funding_round": "Series C",
+    "company_id": 818
+  },
+  "989": {
+    "date": 1596587339000,
+    "funding_amount": 2463419.0,
+    "funding_round": "Series A",
+    "company_id": 56
+  },
+  "990": {
+    "date": 1610287340000,
+    "funding_amount": 4297043.0,
+    "funding_round": "Series B",
+    "company_id": 510
+  },
+  "991": {
+    "date": 1590334584000,
+    "funding_amount": 120855.0,
+    "funding_round": "Seed",
+    "company_id": 671
+  },
+  "992": {
+    "date": 1574817145000,
+    "funding_amount": 2128397.0,
+    "funding_round": "Series C",
+    "company_id": 941
+  },
+  "993": {
+    "date": 1606411197000,
+    "funding_amount": 1908156.0,
+    "funding_round": "Seed",
+    "company_id": 317
+  },
+  "994": {
+    "date": 1566661555000,
+    "funding_amount": 4058603.0,
+    "funding_round": "Seed",
+    "company_id": 790
+  },
+  "995": {
+    "date": 1559276134000,
+    "funding_amount": 4355571.0,
+    "funding_round": "Series A",
+    "company_id": 116
+  },
+  "996": {
+    "date": 1585629228000,
+    "funding_amount": 3877903.0,
+    "funding_round": "Series A",
+    "company_id": 862
+  },
+  "997": {
+    "date": 1590189028000,
+    "funding_amount": 1184951.0,
+    "funding_round": "Series B",
+    "company_id": 349
+  },
+  "998": {
+    "date": 1629461470000,
+    "funding_amount": 2041374.0,
+    "funding_round": "Series C",
+    "company_id": 129
+  },
+  "999": {
+    "date": 1639637643000,
+    "funding_amount": 3458974.0,
+    "funding_round": "Series B",
+    "company_id": 610
+  }
+}
