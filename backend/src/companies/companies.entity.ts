@@ -10,12 +10,12 @@ export class Company {
   @Column()
   name: string;
   @ApiProperty()
-  @Column()
+  @Column({ nullable: true })
   country: string;
   @ApiProperty()
   @Column()
   foundingDate: Date;
   @ApiProperty()
-  @Column()
+  @Column({ nullable: true })
   description: string;
 }

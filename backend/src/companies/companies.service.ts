@@ -11,4 +11,8 @@ export class CompaniesService {
     const companies = await this.repo.find();
     return companies;
   }
+
+  async insert(companies: Company[]) {
+    await this.repo.insert(companies);
+  }
 }
