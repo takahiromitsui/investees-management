@@ -11,18 +11,17 @@ export class CompaniesService {
   constructor(@InjectRepository(Company) private repo: Repository<Company>) {}
 
   async findAll(pageOptionsDto: PageOptionsDto) {
-    // const companies = await this.repo.find();
+    const skip = (pageOptionsDto.page - 1) * pageOptionsDto.take;
     const queryBuilder = this.repo.createQueryBuilder('company');
     queryBuilder
       .orderBy('company.id', pageOptionsDto.order)
       .leftJoinAndSelect('company.deals', 'deals')
-      .skip(pageOptionsDto.skip)
+      .skip(skip)
       .take(pageOptionsDto.take);
     const itemCount = await queryBuilder.getCount();
     const { entities } = await queryBuilder.getRawAndEntities();
 
     const pageMetaDto = new PageMetaDto({ itemCount, pageOptionsDto });
-
     return new PageDto(entities, pageMetaDto);
   }
 

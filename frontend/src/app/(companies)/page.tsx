@@ -1,82 +1,53 @@
+'use client';
+import { useState } from 'react';
 import { columns } from './columns';
 import { DataTable } from './data-table';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
 
-async function getData() {
-	return [
-		{
-			id: 1,
-			name: 'Mayer and Sons',
-			country: 'Sweden',
-			foundingDate: '2021-06-11T02:09:34.000Z',
-			description: 'Secured scalable standardization',
-			deals: [],
-		},
-		{
-			id: 2,
-			name: 'Bartoletti and Sons',
-			country: null,
-			foundingDate: '1970-01-01T00:00:00.000Z',
-			description: 'Sharable contextually-based instruction set',
-			deals: [
-				{
-					id: 133,
-					date: '2024-12-04T09:42:51.122Z',
-					fundingAmount: 1066091,
-					fundingRound: 'Series B',
-				},
-				{
-					id: 79,
-					date: '1970-01-19T16:58:25.801Z',
-					fundingAmount: 2211958,
-					fundingRound: 'Seed',
-				},
-			],
-		},
-		{
-			id: 3,
-			name: 'West, Abernathy and Monahan',
-			country: 'Azerbaijan',
-			foundingDate: '2021-01-27T00:08:32.000Z',
-			description: null,
-			deals: [],
-		},
-		{
-			id: 4,
-			name: 'Pagac-Bechtelar',
-			country: 'Indonesia',
-			foundingDate: '1970-01-01T00:00:00.000Z',
-			description: null,
-			deals: [
-				{
-					id: 838,
-					date: '1970-01-19T01:54:51.614Z',
-					fundingAmount: 1150751,
-					fundingRound: 'Series A',
-				},
-				{
-					id: 854,
-					date: '1970-01-19T12:19:44.099Z',
-					fundingAmount: 4956694,
-					fundingRound: 'Series A',
-				},
-			],
-		},
-	];
+const BASE_URL = 'http://localhost:8000';
+const TAKE = 10;
+async function getCompanies(page = 1) {
+	const response = await fetch(
+		`${BASE_URL}/companies?order=ASC&page=${page}&take=${TAKE}`
+	);
+	return response.json();
 }
 
-export default async function Home() {
-	const data = await getData();
-	// const data = companies.map(company => {
-	// 	return {
-	// 		...company,
-	// 		foundingDate: new Date(company.foundingDate).toLocaleDateString(),
-	// 		deals: company.deals.length,
-	// 	};
-	// });
+export default function Home() {
+	const [page, setPage] = useState(1);
+
+	const {
+		data: res,
+		isError,
+		isPending,
+	} = useQuery({
+		queryKey: ['companies', page],
+		queryFn: () => getCompanies(page),
+		placeholderData: keepPreviousData,
+	});
+	if (isPending) {
+		return <div>Loading...</div>;
+	}
+
+	if (isError) {
+		return <div>Error loading data</div>;
+	}
+	const data = res.data;
+
+	const pageCount = res.meta.pageCount;
 
 	return (
 		<div className='container mx-auto py-10'>
-			<DataTable columns={columns} data={data} />
+			<DataTable
+				columns={columns}
+				data={data}
+				page={page}
+				pageCount={pageCount}
+				canPreviousPage={page > 1}
+				canNextPage={page < pageCount}
+				onPreviousPage={() => setPage(old => Math.max(old - 1, 1))}
+				onNextPage={() => setPage(old => (old < pageCount ? old + 1 : old))}
+			/>
 		</div>
 	);
 }
