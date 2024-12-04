@@ -47,6 +47,27 @@ export class CompaniesController {
     return res;
   }
 
+  @Get(':id')
+  @ApiOperation({ summary: 'Fetch a company' })
+  @ApiOkResponse({
+    description: 'Company',
+    type: Company,
+    isArray: false,
+  })
+  @ApiNotFoundResponse({
+    description: 'Company not found',
+  })
+  async findOne(@Param('id') id: string) {
+    const res = await this.service.findOne(+id);
+    if (!res) {
+      throw new HttpException('Companies not found', HttpStatus.NOT_FOUND);
+    }
+    return {
+      status: HttpStatus.OK,
+      body: res,
+    };
+  }
+
   @Patch(':id')
   @ApiOperation({ summary: 'Update a company' })
   @ApiOkResponse({ description: 'Company updated successfully' })

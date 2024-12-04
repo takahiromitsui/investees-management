@@ -11,6 +11,7 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { useRouter } from 'next/navigation';
 
 export type Deal = {
 	id: number;
@@ -27,6 +28,15 @@ export type Company = {
 	description: string | null;
 	deals: Deal[] | [];
 };
+
+export default function DealsDropdownMenuItem({ id }: { id: number }) {
+	const router = useRouter();
+	const handleClick = () => {
+		router.push(`/companies/${id}/deals`);
+	};
+
+	return <DropdownMenuItem onClick={handleClick}>View deals</DropdownMenuItem>;
+}
 
 export const columns: ColumnDef<Company>[] = [
 	{
@@ -59,7 +69,8 @@ export const columns: ColumnDef<Company>[] = [
 	},
 	{
 		id: 'actions',
-		cell: () => {
+		cell: ({ row }) => {
+			const { id } = row.original;
 			return (
 				<DropdownMenu>
 					<DropdownMenuTrigger asChild>
@@ -71,7 +82,10 @@ export const columns: ColumnDef<Company>[] = [
 					<DropdownMenuContent align='end'>
 						<DropdownMenuLabel>Actions</DropdownMenuLabel>
 						<DropdownMenuSeparator />
-						<DropdownMenuItem>View deals</DropdownMenuItem>
+						{/* <DropdownMenuItem onClick={() => console.log('View deals')}>
+							View deals
+						</DropdownMenuItem> */}
+						<DealsDropdownMenuItem id={id} />
 					</DropdownMenuContent>
 				</DropdownMenu>
 			);

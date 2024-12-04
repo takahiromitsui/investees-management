@@ -34,6 +34,7 @@ export class CompaniesService {
       where: {
         id: id,
       },
+      relations: ['deals'],
     });
     return company;
   }
