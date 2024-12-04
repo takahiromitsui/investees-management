@@ -1,6 +1,6 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Deal } from './deals.entity';
+import { Deal, UpdateDeal } from './deals.entity';
 import { Repository } from 'typeorm';
 import { PageOptionsDto } from '../page-options.dto';
 import { PageMetaDto } from '../page-meta.dto';
@@ -26,5 +26,29 @@ export class DealsService {
     const pageMetaDto = new PageMetaDto({ itemCount, pageOptionsDto });
 
     return new PageDto(entities, pageMetaDto);
+  }
+  async update(id: number, updateDeal: UpdateDeal) {
+    const deal = await this.repo.findOne({
+      where: {
+        id: id,
+      },
+    });
+    if (!deal) {
+      throw new NotFoundException(`Deal with id ${id} not found`);
+    }
+    await this.repo
+      .createQueryBuilder()
+      .update(Deal)
+      .set({
+        ...updateDeal,
+      })
+      .where('id = :id', { id: id })
+      .execute();
+
+    return await this.repo.findOne({
+      where: {
+        id: id,
+      },
+    });
   }
 }

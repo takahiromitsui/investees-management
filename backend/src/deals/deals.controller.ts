@@ -1,14 +1,20 @@
 import {
+  Body,
   Controller,
   // Get,
   HttpException,
   HttpStatus,
+  NotFoundException,
+  Param,
+  Patch,
   Post,
   // Query,
 } from '@nestjs/common';
 import {
   ApiBadRequestResponse,
   ApiCreatedResponse,
+  ApiNotFoundResponse,
+  ApiOkResponse,
   // ApiNotFoundResponse,
   // ApiOkResponse,
   ApiOperation,
@@ -17,7 +23,7 @@ import {
 import { DealsService } from './deals.service';
 import * as path from 'path';
 import * as fs from 'fs';
-import { Deal } from './deals.entity';
+import { Deal, UpdateDeal } from './deals.entity';
 import { CompaniesService } from '../companies/companies.service';
 import { PageOptionsDto } from '../page-options.dto';
 
@@ -28,6 +34,25 @@ export class DealsController {
     public service: DealsService,
     public companyService: CompaniesService,
   ) {}
+
+  @Patch(':id')
+  @ApiOperation({ summary: 'Update a deal' })
+  @ApiOkResponse({ description: 'Deal updated successfully' })
+  @ApiNotFoundResponse({ description: 'Deal not found' })
+  async update(@Param('id') id: string, @Body() updateDeal: UpdateDeal) {
+    try {
+      const res = await this.service.update(+id, updateDeal);
+      return {
+        status: HttpStatus.OK,
+        body: res,
+      };
+    } catch (e) {
+      if (e instanceof NotFoundException) {
+        throw new HttpException(e.message, HttpStatus.NOT_FOUND);
+      }
+      throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+  }
 
   // @Get()
   // @ApiOperation({ summary: 'Fetch a list of deals' })

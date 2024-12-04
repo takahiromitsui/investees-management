@@ -25,3 +25,18 @@ export class Deal {
   @JoinColumn()
   company: Company;
 }
+
+@Entity()
+export class UpdateDeal {
+  @ApiProperty({ nullable: true })
+  @Column({ nullable: true })
+  date: Date;
+
+  @ApiProperty({ nullable: true })
+  @Column({ nullable: true })
+  fundingAmount: number;
+
+  @ApiProperty({ nullable: true })
+  @Column({ nullable: true })
+  fundingRound: string;
+}
