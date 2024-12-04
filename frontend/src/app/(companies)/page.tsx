@@ -65,14 +65,14 @@ async function getData() {
 }
 
 export default async function Home() {
-	const companies = await getData();
-	const data = companies.map(company => {
-		return {
-			...company,
-			foundingDate: new Date(company.foundingDate).toLocaleDateString(),
-			deals: company.deals.length,
-		};
-	});
+	const data = await getData();
+	// const data = companies.map(company => {
+	// 	return {
+	// 		...company,
+	// 		foundingDate: new Date(company.foundingDate).toLocaleDateString(),
+	// 		deals: company.deals.length,
+	// 	};
+	// });
 
 	return (
 		<div className='container mx-auto py-10'>
