@@ -15,6 +15,7 @@ export class CompaniesService {
     const queryBuilder = this.repo.createQueryBuilder('company');
     queryBuilder
       .orderBy('company.id', pageOptionsDto.order)
+      .leftJoinAndSelect('company.deals', 'deals')
       .skip(pageOptionsDto.skip)
       .take(pageOptionsDto.take);
     const itemCount = await queryBuilder.getCount();

@@ -12,7 +12,7 @@ export class Deal {
   @Column()
   date: Date;
 
-  @ApiProperty()
+  @ApiProperty({ nullable: true })
   @Column({ nullable: true })
   fundingAmount: number;
 
@@ -20,7 +20,7 @@ export class Deal {
   @Column()
   fundingRound: string;
 
-  @ApiProperty()
+  @ApiProperty({ type: () => Company })
   @ManyToOne(() => Company, (company) => company.deals)
   @JoinColumn()
   company: Company;

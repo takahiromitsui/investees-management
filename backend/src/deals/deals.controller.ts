@@ -1,15 +1,15 @@
 import {
   Controller,
-  Get,
+  // Get,
   HttpException,
   HttpStatus,
   Post,
-  Query,
+  // Query,
 } from '@nestjs/common';
 import {
   ApiBadRequestResponse,
   ApiCreatedResponse,
-  ApiNotFoundResponse,
+  // ApiNotFoundResponse,
   // ApiOkResponse,
   ApiOperation,
   ApiTags,
@@ -29,18 +29,18 @@ export class DealsController {
     public companyService: CompaniesService,
   ) {}
 
-  @Get()
-  @ApiOperation({ summary: 'Fetch a list of deals' })
-  @ApiNotFoundResponse({
-    description: 'Deals not found',
-  })
-  async findAll(@Query() pageOptionsDto: PageOptionsDto) {
-    const res = await this.service.findAll(pageOptionsDto);
-    if (!res.data || res.data.length === 0) {
-      throw new HttpException('Deals not found', HttpStatus.NOT_FOUND);
-    }
-    return res;
-  }
+  // @Get()
+  // @ApiOperation({ summary: 'Fetch a list of deals' })
+  // @ApiNotFoundResponse({
+  //   description: 'Deals not found',
+  // })
+  // async findAll(@Query() pageOptionsDto: PageOptionsDto) {
+  //   const res = await this.service.findAll(pageOptionsDto);
+  //   if (!res.data || res.data.length === 0) {
+  //     throw new HttpException('Deals not found', HttpStatus.NOT_FOUND);
+  //   }
+  //   return res;
+  // }
 
   @Post()
   @ApiOperation({ summary: 'Insert predefined json to deal table' })
