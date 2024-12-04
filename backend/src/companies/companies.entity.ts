@@ -28,3 +28,22 @@ export class Company {
   @JoinTable()
   deals: Deal[];
 }
+
+@Entity()
+export class UpdateCompany {
+  @ApiProperty({ nullable: true })
+  @Column({ nullable: true })
+  name: string;
+
+  @ApiProperty({ nullable: true })
+  @Column({ nullable: true })
+  country: string;
+
+  @ApiProperty({ nullable: true })
+  @Column({ nullable: true })
+  foundingDate: Date;
+
+  @ApiProperty({ nullable: true })
+  @Column({ nullable: true })
+  description: string;
+}

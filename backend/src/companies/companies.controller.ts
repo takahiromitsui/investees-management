@@ -1,8 +1,12 @@
 import {
+  Body,
   Controller,
   Get,
   HttpException,
   HttpStatus,
+  NotFoundException,
+  Param,
+  Patch,
   Post,
   Query,
 } from '@nestjs/common';
@@ -17,7 +21,7 @@ import {
 } from '@nestjs/swagger';
 import * as path from 'path';
 import * as fs from 'fs';
-import { Company } from './companies.entity';
+import { Company, UpdateCompany } from './companies.entity';
 import { PageOptionsDto } from '../page-options.dto';
 
 @ApiTags('companies')
@@ -41,6 +45,25 @@ export class CompaniesController {
       throw new HttpException('Companies not found', HttpStatus.NOT_FOUND);
     }
     return res;
+  }
+
+  @Patch(':id')
+  @ApiOperation({ summary: 'Update a company' })
+  @ApiOkResponse({ description: 'Company updated successfully' })
+  @ApiNotFoundResponse({ description: 'Company not found' })
+  async update(@Param('id') id: string, @Body() updateCompany: UpdateCompany) {
+    try {
+      const res = await this.service.update(+id, updateCompany);
+      return {
+        status: HttpStatus.OK,
+        body: res,
+      };
+    } catch (e) {
+      if (e instanceof NotFoundException) {
+        throw new HttpException(e.message, HttpStatus.NOT_FOUND);
+      }
+      throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
   }
 
   @Post()

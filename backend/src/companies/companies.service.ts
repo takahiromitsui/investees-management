@@ -1,5 +1,5 @@
-import { Injectable } from '@nestjs/common';
-import { Company } from './companies.entity';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { Company, UpdateCompany } from './companies.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { PageOptionsDto } from '../page-options.dto';
@@ -37,5 +37,31 @@ export class CompaniesService {
       },
     });
     return company;
+  }
+
+  async update(id: number, updateCompany: UpdateCompany) {
+    const company = await this.repo.findOne({
+      where: {
+        id: id,
+      },
+    });
+    if (!company) {
+      throw new NotFoundException(`Company with id ${id} not found`);
+    }
+
+    await this.repo
+      .createQueryBuilder()
+      .update(Company)
+      .set({
+        ...updateCompany,
+      })
+      .where('id = :id', { id: id })
+      .execute();
+
+    return await this.repo.findOne({
+      where: {
+        id: id,
+      },
+    });
   }
 }
