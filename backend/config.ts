@@ -1,12 +1,15 @@
 import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 const config: PostgresConnectionOptions = {
   type: 'postgres',
-  host: 'localhost',
-  port: 5432,
-  username: 'postgres',
-  password: 'password',
-  database: 'investees',
+  host: process.env.DATABASE_HOST || 'localhost',
+  port: Number(process.env.PORT) || 5432,
+  username: process.env.DATABASE_USERNAME || 'postgres',
+  password: process.env.DATABASE_PASSWORD || 'password',
+  database: process.env.DATABASE_DATABASE || 'investees',
   synchronize: true,
   migrations: ['src/migration'],
 };
