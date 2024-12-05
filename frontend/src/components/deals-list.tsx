@@ -24,7 +24,7 @@ import {
 	TableRow,
 } from '@/components/ui/table';
 import { Deal } from '@/app/(companies)/columns';
-
+import { toast } from 'sonner';
 
 const dealSchema = z.object({
 	date: z.string().min(1, 'Date is required'),
@@ -34,12 +34,10 @@ const dealSchema = z.object({
 
 type DealsListProps = {
 	deals: Deal[];
-	onUpdate: (updatedDeal: Partial<Deal>) =>void;
+	onUpdate: (updatedDeal: Partial<Deal>) => void;
 };
 
-export function DealsList({ deals, 
-  onUpdate
- }: DealsListProps) {
+export function DealsList({ deals, onUpdate }: DealsListProps) {
 	const [editingDealId, setEditingDealId] = useState<number | null>(null);
 
 	const form = useForm<z.infer<typeof dealSchema>>({
@@ -48,7 +46,8 @@ export function DealsList({ deals,
 
 	const onSubmit = async (data: z.infer<typeof dealSchema>) => {
 		if (editingDealId !== null) {
-			await onUpdate({ id: editingDealId, ...data });
+			onUpdate({ id: editingDealId, ...data });
+			toast.success('Deal updated successfully');
 			setEditingDealId(null);
 		}
 	};
