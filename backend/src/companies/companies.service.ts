@@ -5,14 +5,25 @@ import { Repository } from 'typeorm';
 import { PageOptionsDto } from '../page-options.dto';
 import { PageMetaDto } from '../page-meta.dto';
 import { PageDto } from '../page.dto';
+import { SearchDto } from '../search.dto';
 
 @Injectable()
 export class CompaniesService {
   constructor(@InjectRepository(Company) private repo: Repository<Company>) {}
 
-  async findAll(pageOptionsDto: PageOptionsDto) {
-    const skip = (pageOptionsDto.page - 1) * pageOptionsDto.take;
+  async findAll(pageOptionsDto: PageOptionsDto, searchDto: SearchDto) {
+    let skip: number | undefined;
+    if (pageOptionsDto.page && pageOptionsDto.take) {
+      skip = (pageOptionsDto.page - 1) * pageOptionsDto.take;
+    } else {
+      skip = undefined;
+    }
     const queryBuilder = this.repo.createQueryBuilder('company');
+    if (searchDto.search) {
+      queryBuilder.where('company.name LIKE :search', {
+        search: `%${searchDto.search}%`,
+      });
+    }
     queryBuilder
       .orderBy('company.id', pageOptionsDto.order)
       .leftJoinAndSelect('company.deals', 'deals')

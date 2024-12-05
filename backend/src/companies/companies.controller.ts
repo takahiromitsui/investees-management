@@ -17,12 +17,14 @@ import {
   ApiNotFoundResponse,
   ApiOkResponse,
   ApiOperation,
+  ApiQuery,
   ApiTags,
 } from '@nestjs/swagger';
 import * as path from 'path';
 import * as fs from 'fs';
 import { Company, UpdateCompany } from './companies.entity';
 import { PageOptionsDto } from '../page-options.dto';
+import { SearchDto } from '../search.dto';
 
 @ApiTags('companies')
 @Controller('companies')
@@ -31,6 +33,7 @@ export class CompaniesController {
 
   @Get()
   @ApiOperation({ summary: 'Fetch a list of companies' })
+  @ApiQuery({ name: 'search', required: false, type: String })
   @ApiOkResponse({
     description: 'List of companies',
     type: Company,
@@ -39,8 +42,11 @@ export class CompaniesController {
   @ApiNotFoundResponse({
     description: 'Companies not found',
   })
-  async findAll(@Query() pageOptionsDto: PageOptionsDto) {
-    const res = await this.service.findAll(pageOptionsDto);
+  async findAll(
+    @Query() pageOptionsDto: PageOptionsDto,
+    @Query() searchDto: SearchDto,
+  ) {
+    const res = await this.service.findAll(pageOptionsDto, searchDto);
     if (!res.data || res.data.length === 0) {
       throw new HttpException('Companies not found', HttpStatus.NOT_FOUND);
     }
@@ -93,7 +99,8 @@ export class CompaniesController {
   @ApiBadRequestResponse({ description: 'Companies already exist' })
   async createAll() {
     const pageOptionsDto = new PageOptionsDto();
-    const res = await this.service.findAll(pageOptionsDto);
+    const searchDto = new SearchDto();
+    const res = await this.service.findAll(pageOptionsDto, searchDto);
     if (res.data.length !== 0) {
       throw new HttpException('Invalid Request', HttpStatus.BAD_REQUEST);
     }
