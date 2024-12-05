@@ -25,6 +25,7 @@ import * as fs from 'fs';
 import { Company, UpdateCompany } from './companies.entity';
 import { PageOptionsDto } from '../page-options.dto';
 import { SearchDto } from '../search.dto';
+import { CreateDeal, Deal } from '../deals/deals.entity';
 
 @ApiTags('companies')
 @Controller('companies')
@@ -81,6 +82,25 @@ export class CompaniesController {
   async update(@Param('id') id: string, @Body() updateCompany: UpdateCompany) {
     try {
       const res = await this.service.update(+id, updateCompany);
+      return {
+        status: HttpStatus.OK,
+        body: res,
+      };
+    } catch (e) {
+      if (e instanceof NotFoundException) {
+        throw new HttpException(e.message, HttpStatus.NOT_FOUND);
+      }
+      throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+  }
+
+  @Post(':id/deals')
+  @ApiOperation({ summary: 'Create a deal for a company' })
+  @ApiCreatedResponse({ description: 'Deal created successfully', type: Deal })
+  @ApiNotFoundResponse({ description: 'Company not found' })
+  async createDeal(@Param('id') id: string, @Body() createDeal: CreateDeal) {
+    try {
+      const res = await this.service.createDeal(+id, createDeal);
       return {
         status: HttpStatus.OK,
         body: res,

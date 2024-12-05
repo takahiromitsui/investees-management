@@ -1,10 +1,11 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Deal, UpdateDeal } from './deals.entity';
+import { CreateDeal, Deal, UpdateDeal } from './deals.entity';
 import { Repository } from 'typeorm';
 import { PageOptionsDto } from '../page-options.dto';
 import { PageMetaDto } from '../page-meta.dto';
 import { PageDto } from '../page.dto';
+import { Company } from 'src/companies/companies.entity';
 
 @Injectable()
 export class DealsService {
@@ -50,5 +51,25 @@ export class DealsService {
         id: id,
       },
     });
+  }
+
+  async getLastDealId(): Promise<number> {
+    const lastDeal = await this.repo
+      .createQueryBuilder('deal')
+      .orderBy('deal.id', 'DESC')
+      .getOne();
+
+    return lastDeal ? lastDeal.id : 0;
+  }
+
+  async create(company: Company, createDeal: CreateDeal) {
+    const lastDealId = await this.getLastDealId();
+
+    const deal = this.repo.create({
+      id: lastDealId + 1,
+      ...createDeal,
+      company,
+    });
+    return await this.repo.save(deal);
   }
 }

@@ -6,10 +6,16 @@ import { PageOptionsDto } from '../page-options.dto';
 import { PageMetaDto } from '../page-meta.dto';
 import { PageDto } from '../page.dto';
 import { SearchDto } from '../search.dto';
+import { CreateDeal } from '../deals/deals.entity';
+import { DealsService } from '../deals/deals.service';
 
 @Injectable()
 export class CompaniesService {
-  constructor(@InjectRepository(Company) private repo: Repository<Company>) {}
+  constructor(
+    @InjectRepository(Company)
+    private repo: Repository<Company>,
+    public dealService: DealsService,
+  ) {}
 
   async findAll(pageOptionsDto: PageOptionsDto, searchDto: SearchDto) {
     let skip: number | undefined;
@@ -74,5 +80,17 @@ export class CompaniesService {
         id: id,
       },
     });
+  }
+
+  async createDeal(id: number, createDeal: CreateDeal) {
+    const company = await this.repo.findOne({
+      where: {
+        id: id,
+      },
+    });
+    if (!company) {
+      throw new NotFoundException(`Company with id ${id} not found`);
+    }
+    return await this.dealService.create(company, createDeal);
   }
 }

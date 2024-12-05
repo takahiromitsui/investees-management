@@ -40,3 +40,14 @@ export class UpdateDeal {
   @Column({ nullable: true })
   fundingRound: string;
 }
+
+export class CreateDeal {
+  @ApiProperty()
+  date: string;
+
+  @ApiProperty()
+  fundingAmount: number;
+
+  @ApiProperty()
+  fundingRound: string;
+}
