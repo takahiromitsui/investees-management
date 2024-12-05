@@ -46,6 +46,20 @@ async function updateDeal(dealId: string, data: Partial<Deal>) {
 	return response.json();
 }
 
+async function createDeal(companyId: string, data: Omit<Deal, 'id'>) {
+	const response = await fetch(`${BASE_URL}/companies/${companyId}/deals`, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(data),
+	});
+	if (!response.ok) {
+		throw new Error('Failed to create deal');
+	}
+	return response.json();
+}
+
 export default function CompanyDealsPage() {
 	const params = useParams<{ id: string }>();
 	const router = useRouter();
@@ -72,6 +86,13 @@ export default function CompanyDealsPage() {
 		},
 	});
 
+	const createDealMutation = useMutation({
+		mutationFn: (data: Omit<Deal, 'id'>) => createDeal(params.id, data),
+		onSuccess: () => {
+			queryClient.invalidateQueries({ queryKey: ['company', params.id] });
+		},
+	});
+
 	if (isPending) {
 		return <div>Loading...</div>;
 	}
@@ -92,6 +113,10 @@ export default function CompanyDealsPage() {
 			/>
 			<DealsList
 				deals={company.deals}
+				onCreate={newDeal =>
+					createDealMutation.mutate(newDeal as Omit<Deal, 'id'>)
+				}
+				onDelete={() => console.log('delete')}
 				onUpdate={updatedDeal =>
 					updateDealMutation.mutate({
 						dealId: String(updatedDeal.id!),
