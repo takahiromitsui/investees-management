@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { columns } from './columns';
 import { DataTable } from './data-table';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
+import MaxWidthWrapper from '@/components/max-width-wrapper';
 
 const BASE_URL = 'http://localhost:8000';
 const TAKE = 10;
@@ -37,7 +38,7 @@ export default function Home() {
 	const pageCount = res.meta.pageCount;
 
 	return (
-		<div className='container mx-auto py-10'>
+		<MaxWidthWrapper className='py-10'>
 			<DataTable
 				columns={columns}
 				data={data}
@@ -48,6 +49,6 @@ export default function Home() {
 				onPreviousPage={() => setPage(old => Math.max(old - 1, 1))}
 				onNextPage={() => setPage(old => (old < pageCount ? old + 1 : old))}
 			/>
-		</div>
+		</MaxWidthWrapper>
 	);
 }

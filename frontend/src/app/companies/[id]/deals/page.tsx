@@ -1,10 +1,12 @@
 'use client';
 
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { CompanyInfo } from '@/components/company-info';
 import { DealsList } from '@/components/deals-list';
 import { Company, Deal } from '@/app/(companies)/columns';
+import MaxWidthWrapper from '@/components/max-width-wrapper';
+import { Button } from '@/components/ui/button';
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
@@ -46,6 +48,7 @@ async function updateDeal(dealId: string, data: Partial<Deal>) {
 
 export default function CompanyDealsPage() {
 	const params = useParams<{ id: string }>();
+	const router = useRouter();
 	const queryClient = useQueryClient();
 
 	const { data, isPending, isError } = useQuery({
@@ -80,7 +83,7 @@ export default function CompanyDealsPage() {
 	const { body: company } = data;
 
 	return (
-		<div className='container mx-auto py-10 space-y-8'>
+		<MaxWidthWrapper className='py-10 space-y-8'>
 			<CompanyInfo
 				company={company}
 				onUpdate={updatedCompany =>
@@ -96,6 +99,7 @@ export default function CompanyDealsPage() {
 					})
 				}
 			/>
-		</div>
+			<Button onClick={() => router.back()}>Back to Dashboard</Button>
+		</MaxWidthWrapper>
 	);
 }
