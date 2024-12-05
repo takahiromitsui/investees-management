@@ -30,21 +30,14 @@ async function updateCompany(companyId: string, data: Partial<Company>) {
 	return response.json();
 }
 
-async function updateDeal(
-	companyId: string,
-	dealId: number,
-	data: Partial<Deal>
-) {
-	const response = await fetch(
-		`${BASE_URL}/companies/${companyId}/deals/${dealId}`,
-		{
-			method: 'PATCH',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(data),
-		}
-	);
+async function updateDeal(dealId: string, data: Partial<Deal>) {
+	const response = await fetch(`${BASE_URL}/deals/${dealId}`, {
+		method: 'PATCH',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(data),
+	});
 	if (!response.ok) {
 		throw new Error('Failed to update deal');
 	}
@@ -69,8 +62,8 @@ export default function CompanyDealsPage() {
 	});
 
 	const updateDealMutation = useMutation({
-		mutationFn: ({ dealId, data }: { dealId: number; data: Partial<Deal> }) =>
-			updateDeal(params.id, dealId, data),
+		mutationFn: ({ dealId, data }: { dealId: string; data: Partial<Deal> }) =>
+			updateDeal(dealId, data),
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: ['company', params.id] });
 		},
@@ -96,12 +89,12 @@ export default function CompanyDealsPage() {
 			/>
 			<DealsList
 				deals={company.deals}
-				// onUpdate={updatedDeal =>
-				// 	updateDealMutation.mutate({
-				// 		dealId: updatedDeal.id!,
-				// 		data: updatedDeal,
-				// 	})
-				// }
+				onUpdate={updatedDeal =>
+					updateDealMutation.mutate({
+						dealId: String(updatedDeal.id!),
+						data: updatedDeal,
+					})
+				}
 			/>
 		</div>
 	);

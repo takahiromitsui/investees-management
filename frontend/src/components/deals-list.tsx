@@ -34,11 +34,11 @@ const dealSchema = z.object({
 
 type DealsListProps = {
 	deals: Deal[];
-	// onUpdate: (updatedDeal: Partial<Deal>) => Promise<void>;
+	onUpdate: (updatedDeal: Partial<Deal>) =>void;
 };
 
 export function DealsList({ deals, 
-  // onUpdate
+  onUpdate
  }: DealsListProps) {
 	const [editingDealId, setEditingDealId] = useState<number | null>(null);
 
@@ -48,7 +48,7 @@ export function DealsList({ deals,
 
 	const onSubmit = async (data: z.infer<typeof dealSchema>) => {
 		if (editingDealId !== null) {
-			// await onUpdate({ id: editingDealId, ...data });
+			await onUpdate({ id: editingDealId, ...data });
 			setEditingDealId(null);
 		}
 	};
