@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   // Get,
   HttpException,
   HttpStatus,
@@ -42,6 +43,25 @@ export class DealsController {
   async update(@Param('id') id: string, @Body() updateDeal: UpdateDeal) {
     try {
       const res = await this.service.update(+id, updateDeal);
+      return {
+        status: HttpStatus.OK,
+        body: res,
+      };
+    } catch (e) {
+      if (e instanceof NotFoundException) {
+        throw new HttpException(e.message, HttpStatus.NOT_FOUND);
+      }
+      throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+  }
+
+  @Delete(':id')
+  @ApiOperation({ summary: 'Delete a deal' })
+  @ApiOkResponse({ description: 'Deal deleted successfully' })
+  @ApiNotFoundResponse({ description: 'Deal not found' })
+  async delete(@Param('id') id: string) {
+    try {
+      const res = await this.service.delete(+id);
       return {
         status: HttpStatus.OK,
         body: res,

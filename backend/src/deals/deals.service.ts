@@ -72,4 +72,16 @@ export class DealsService {
     });
     return await this.repo.save(deal);
   }
+
+  async delete(id: number) {
+    const deal = await this.repo.findOne({
+      where: {
+        id: id,
+      },
+    });
+    if (!deal) {
+      throw new NotFoundException(`Deal with id ${id} not found`);
+    }
+    return await this.repo.remove(deal);
+  }
 }

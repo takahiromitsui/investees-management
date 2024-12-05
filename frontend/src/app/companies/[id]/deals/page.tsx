@@ -7,58 +7,13 @@ import { DealsList } from '@/components/deals-list';
 import { Company, Deal } from '@/app/(companies)/columns';
 import MaxWidthWrapper from '@/components/max-width-wrapper';
 import { Button } from '@/components/ui/button';
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
-
-async function getCompanyDeals(companyId: string) {
-	const response = await fetch(`${BASE_URL}/companies/${companyId}`);
-	if (!response.ok) {
-		throw new Error('Failed to fetch company data');
-	}
-	return response.json();
-}
-
-async function updateCompany(companyId: string, data: Partial<Company>) {
-	const response = await fetch(`${BASE_URL}/companies/${companyId}`, {
-		method: 'PATCH',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(data),
-	});
-	if (!response.ok) {
-		throw new Error('Failed to update company');
-	}
-	return response.json();
-}
-
-async function updateDeal(dealId: string, data: Partial<Deal>) {
-	const response = await fetch(`${BASE_URL}/deals/${dealId}`, {
-		method: 'PATCH',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(data),
-	});
-	if (!response.ok) {
-		throw new Error('Failed to update deal');
-	}
-	return response.json();
-}
-
-async function createDeal(companyId: string, data: Omit<Deal, 'id'>) {
-	const response = await fetch(`${BASE_URL}/companies/${companyId}/deals`, {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(data),
-	});
-	if (!response.ok) {
-		throw new Error('Failed to create deal');
-	}
-	return response.json();
-}
+import {
+	createDeal,
+	deleteDeal,
+	getCompanyDeals,
+	updateCompany,
+	updateDeal,
+} from '@/api/deals';
 
 export default function CompanyDealsPage() {
 	const params = useParams<{ id: string }>();
@@ -93,6 +48,13 @@ export default function CompanyDealsPage() {
 		},
 	});
 
+	const deleteDealMutation = useMutation({
+		mutationFn: (id: string) => deleteDeal(id),
+		onSuccess: () => {
+			queryClient.invalidateQueries({ queryKey: ['company', params.id] });
+		},
+	});
+
 	if (isPending) {
 		return <div>Loading...</div>;
 	}
@@ -116,7 +78,7 @@ export default function CompanyDealsPage() {
 				onCreate={newDeal =>
 					createDealMutation.mutate(newDeal as Omit<Deal, 'id'>)
 				}
-				onDelete={() => console.log('delete')}
+				onDelete={id => deleteDealMutation.mutate(String(id))}
 				onUpdate={updatedDeal =>
 					updateDealMutation.mutate({
 						dealId: String(updatedDeal.id!),
