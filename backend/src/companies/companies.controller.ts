@@ -6,6 +6,7 @@ import {
   HttpStatus,
   NotFoundException,
   Param,
+  ParseIntPipe,
   Patch,
   Post,
   Query,
@@ -64,8 +65,8 @@ export class CompaniesController {
   @ApiNotFoundResponse({
     description: 'Company not found',
   })
-  async findOne(@Param('id') id: string) {
-    const res = await this.service.findOne(+id);
+  async findOne(@Param('id', ParseIntPipe) id: number) {
+    const res = await this.service.findOne(id);
     if (!res) {
       throw new HttpException('Companies not found', HttpStatus.NOT_FOUND);
     }
@@ -79,9 +80,12 @@ export class CompaniesController {
   @ApiOperation({ summary: 'Update a company' })
   @ApiOkResponse({ description: 'Company updated successfully' })
   @ApiNotFoundResponse({ description: 'Company not found' })
-  async update(@Param('id') id: string, @Body() updateCompany: UpdateCompany) {
+  async update(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() updateCompany: UpdateCompany,
+  ) {
     try {
-      const res = await this.service.update(+id, updateCompany);
+      const res = await this.service.update(id, updateCompany);
       return {
         status: HttpStatus.OK,
         body: res,
@@ -98,9 +102,12 @@ export class CompaniesController {
   @ApiOperation({ summary: 'Create a deal for a company' })
   @ApiCreatedResponse({ description: 'Deal created successfully', type: Deal })
   @ApiNotFoundResponse({ description: 'Company not found' })
-  async createDeal(@Param('id') id: string, @Body() createDeal: CreateDeal) {
+  async createDeal(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() createDeal: CreateDeal,
+  ) {
     try {
-      const res = await this.service.createDeal(+id, createDeal);
+      const res = await this.service.createDeal(id, createDeal);
       return {
         status: HttpStatus.OK,
         body: res,

@@ -115,7 +115,7 @@ export class DealsController {
         }),
       );
       await this.service.insert(deals);
-      return { status: 201, body: 'Deals data inserted' };
+      return { status: HttpStatus.CREATED, body: 'Deals data inserted' };
     } catch (e) {
       throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
