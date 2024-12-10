@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { Company, UpdateCompany } from './companies.entity';
+import { Company } from './companies.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { PageOptionsDto } from '../page-options.dto';
@@ -8,6 +8,7 @@ import { PageDto } from '../page.dto';
 import { SearchDto } from '../search.dto';
 import { CreateDeal } from '../deals/deals.entity';
 import { DealsService } from '../deals/deals.service';
+import { CreateCompanyDto, UpdateCompanyDto } from './companies.dto';
 
 @Injectable()
 export class CompaniesService {
@@ -56,7 +57,7 @@ export class CompaniesService {
     return company;
   }
 
-  async update(id: number, updateCompany: UpdateCompany) {
+  async update(id: number, updateCompanyDto: UpdateCompanyDto) {
     const company = await this.repo.findOne({
       where: {
         id: id,
@@ -70,7 +71,7 @@ export class CompaniesService {
       .createQueryBuilder()
       .update(Company)
       .set({
-        ...updateCompany,
+        ...updateCompanyDto,
       })
       .where('id = :id', { id: id })
       .execute();
@@ -92,5 +93,23 @@ export class CompaniesService {
       throw new NotFoundException(`Company with id ${id} not found`);
     }
     return await this.dealService.create(company, createDeal);
+  }
+
+  async getLastCompanyId() {
+    const lastCompany = await this.repo
+      .createQueryBuilder('company')
+      .orderBy('company.id', 'DESC')
+      .getOne();
+
+    return lastCompany ? lastCompany.id : 0;
+  }
+
+  async create(createCompanyDto: CreateCompanyDto) {
+    const lastCompanyId = await this.getLastCompanyId();
+    const company = this.repo.create({
+      id: lastCompanyId + 1,
+      ...createCompanyDto,
+    });
+    return await this.repo.save(company);
   }
 }

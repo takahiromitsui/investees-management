@@ -7,6 +7,7 @@ import {
   HttpStatus,
   NotFoundException,
   Param,
+  ParseIntPipe,
   Patch,
   Post,
   // Query,
@@ -40,9 +41,12 @@ export class DealsController {
   @ApiOperation({ summary: 'Update a deal' })
   @ApiOkResponse({ description: 'Deal updated successfully' })
   @ApiNotFoundResponse({ description: 'Deal not found' })
-  async update(@Param('id') id: string, @Body() updateDeal: UpdateDeal) {
+  async update(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() updateDeal: UpdateDeal,
+  ) {
     try {
-      const res = await this.service.update(+id, updateDeal);
+      const res = await this.service.update(id, updateDeal);
       return {
         status: HttpStatus.OK,
         body: res,
@@ -59,9 +63,9 @@ export class DealsController {
   @ApiOperation({ summary: 'Delete a deal' })
   @ApiOkResponse({ description: 'Deal deleted successfully' })
   @ApiNotFoundResponse({ description: 'Deal not found' })
-  async delete(@Param('id') id: string) {
+  async delete(@Param('id', ParseIntPipe) id: number) {
     try {
-      const res = await this.service.delete(+id);
+      const res = await this.service.delete(id);
       return {
         status: HttpStatus.OK,
         body: res,

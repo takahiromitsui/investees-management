@@ -10,6 +10,7 @@ import {
   Patch,
   Post,
   Query,
+  ValidationPipe,
 } from '@nestjs/common';
 import { CompaniesService } from './companies.service';
 import {
@@ -23,10 +24,11 @@ import {
 } from '@nestjs/swagger';
 import * as path from 'path';
 import * as fs from 'fs';
-import { Company, UpdateCompany } from './companies.entity';
+import { Company } from './companies.entity';
 import { PageOptionsDto } from '../page-options.dto';
 import { SearchDto } from '../search.dto';
 import { CreateDeal, Deal } from '../deals/deals.entity';
+import { CreateCompanyDto, UpdateCompanyDto } from './companies.dto';
 
 @ApiTags('companies')
 @Controller('companies')
@@ -76,16 +78,32 @@ export class CompaniesController {
     };
   }
 
+  @Post()
+  @ApiOperation({ summary: 'Create a company' })
+  @ApiOkResponse({ description: 'Company created successfully', type: Company })
+  @ApiNotFoundResponse({ description: 'Failed to create a company' })
+  async create(@Body(ValidationPipe) createCompanyDto: CreateCompanyDto) {
+    try {
+      const company = await this.service.create(createCompanyDto);
+      return {
+        status: HttpStatus.OK,
+        body: company,
+      };
+    } catch (e) {
+      throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+  }
+
   @Patch(':id')
   @ApiOperation({ summary: 'Update a company' })
   @ApiOkResponse({ description: 'Company updated successfully' })
   @ApiNotFoundResponse({ description: 'Company not found' })
   async update(
     @Param('id', ParseIntPipe) id: number,
-    @Body() updateCompany: UpdateCompany,
+    @Body(ValidationPipe) updateCompanyDto: UpdateCompanyDto,
   ) {
     try {
-      const res = await this.service.update(id, updateCompany);
+      const res = await this.service.update(id, updateCompanyDto);
       return {
         status: HttpStatus.OK,
         body: res,
@@ -120,7 +138,7 @@ export class CompaniesController {
     }
   }
 
-  @Post()
+  @Post('/insert')
   @ApiOperation({ summary: 'Insert predefined json to company table' })
   @ApiCreatedResponse({ description: 'Company data inserted' })
   @ApiBadRequestResponse({ description: 'Companies already exist' })
