@@ -11,6 +11,14 @@ A comprehensive platform for managing investees, their associated deals, and key
 - Handles large datasets efficiently with pagination.
 - Built-in API documentation for quick reference.
 
+## Screenshots
+### Frontend
+![Screenshot 2024-12-05 at 16 33 16](https://github.com/user-attachments/assets/340245cb-8aec-4a39-8169-0755c75c3d3b)
+<img width="500" alt="Screenshot 2024-12-05 at 16 29 16" src="https://github.com/user-attachments/assets/dacabda8-a4cc-47ac-ba03-8154c8069c42">
+
+### Backend
+<img width="500" alt="Screenshot 2024-12-05 at 16 26 42" src="https://github.com/user-attachments/assets/ac7c8273-9ef8-4c37-97e8-cc8a26d22a33">
+
 
 ## Tech Stack
 
@@ -77,9 +85,4 @@ To populate the database:
 ### Features Demonstrated:
 - List Companies: View all companies and associated deals with pagination.
 - Edit Functionality: Easily update company or deal information with real-time API integration.
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
