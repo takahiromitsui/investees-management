@@ -1,15 +1,21 @@
-import { Body, Controller, Post, Request, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Post,
+  Request,
+  UseGuards,
+  ValidationPipe,
+} from '@nestjs/common';
 import { LocalAuthGuard } from './local-auth.guard';
 import {
   ApiBody,
-  ApiNotFoundResponse,
   ApiOkResponse,
   ApiOperation,
   ApiUnauthorizedResponse,
   OmitType,
 } from '@nestjs/swagger';
 import { User } from '../users/users.entity';
-import { ValidateUserDto } from './auth.dto';
+import { LoginDto } from './auth.dto';
 
 @Controller('auth')
 export class AuthController {
@@ -19,10 +25,10 @@ export class AuthController {
     type: OmitType(User, ['password'] as const),
   })
   @ApiUnauthorizedResponse({ description: 'Login Failed' })
-  @ApiBody({ type: ValidateUserDto })
+  @ApiBody({ type: LoginDto })
   @UseGuards(LocalAuthGuard)
   @Post('login')
-  login(@Request() req) {
+  login(@Body(ValidationPipe) loginDto: LoginDto, @Request() req) {
     return req.user;
   }
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './users.entity';
-import { Repository } from 'typeorm';
+import { Equal, Repository } from 'typeorm';
 
 @Injectable()
 export class UsersService {
@@ -13,7 +13,7 @@ export class UsersService {
   async findOne(email: string) {
     return await this.repo.findOne({
       where: {
-        email: email,
+        email: Equal(email),
       },
     });
   }

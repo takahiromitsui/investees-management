@@ -1,19 +1,18 @@
 import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { UsersService } from '../users/users.service';
-import { ValidateUserDto } from './auth.dto';
+import { LoginDto } from './auth.dto';
 
 @Injectable()
 export class AuthService {
   constructor(private usersService: UsersService) {}
   private readonly logger = new Logger();
-  async validate(validateUserDto: ValidateUserDto) {
-    const user = await this.usersService.findOne(validateUserDto.email);
-    if (!user) {
-      this.logger.error(`User not found with email ${validateUserDto.email}`);
-      throw new NotFoundException('Invalid password or email');
+  async validate(username: string, password: string) {
+    const user = await this.usersService.findOne(username);
+    if (user && user.password === password) {
+      const { password, ...rest } = user;
+      return rest;
     }
-    const { password, ...rest } = user;
-    this.logger.log(rest);
-    return rest;
+    this.logger.error(`User not found with email ${username}`);
+    throw new NotFoundException('Invalid password or email');
   }
 }

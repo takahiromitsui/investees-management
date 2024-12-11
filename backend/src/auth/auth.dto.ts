@@ -2,11 +2,11 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, MaxLength, MinLength } from 'class-validator';
 import { Column } from 'typeorm';
 
-export class ValidateUserDto {
+export class LoginDto {
   @ApiProperty()
   @Column()
   @IsEmail()
-  email: string;
+  username: string;
 
   @ApiProperty()
   @Column()
