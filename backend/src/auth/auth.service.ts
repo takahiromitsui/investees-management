@@ -4,14 +4,16 @@ import { ValidateUserDto } from './auth.dto';
 
 @Injectable()
 export class AuthService {
-  constructor(private usersService: UsersService, private logger: Logger) {}
-
-  async validateUser(validateUserDto: ValidateUserDto) {
+  constructor(private usersService: UsersService) {}
+  private readonly logger = new Logger();
+  async validate(validateUserDto: ValidateUserDto) {
     const user = await this.usersService.findOne(validateUserDto.email);
     if (!user) {
       this.logger.error(`User not found with email ${validateUserDto.email}`);
       throw new NotFoundException('Invalid password or email');
     }
-    return user;
+    const { password, ...rest } = user;
+    this.logger.log(rest);
+    return rest;
   }
 }
