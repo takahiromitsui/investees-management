@@ -29,6 +29,6 @@ export class AuthController {
   @UseGuards(LocalAuthGuard)
   @Post('login')
   login(@Body(ValidationPipe) loginDto: LoginDto, @Request() req) {
-    return req.user;
+    return { msg: 'Logged in' };
   }
 }

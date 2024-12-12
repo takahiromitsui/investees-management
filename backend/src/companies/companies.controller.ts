@@ -10,6 +10,7 @@ import {
   Patch,
   Post,
   Query,
+  UseGuards,
   ValidationPipe,
 } from '@nestjs/common';
 import { CompaniesService } from './companies.service';
@@ -29,12 +30,14 @@ import { PageOptionsDto } from '../page-options.dto';
 import { SearchDto } from '../search.dto';
 import { CreateDeal, Deal } from '../deals/deals.entity';
 import { CreateCompanyDto, UpdateCompanyDto } from './companies.dto';
+import { AuthenticatedGuard } from '../auth/authenticated.guard';
 
 @ApiTags('companies')
 @Controller('companies')
 export class CompaniesController {
   constructor(public service: CompaniesService) {}
 
+  @UseGuards(AuthenticatedGuard)
   @Get()
   @ApiOperation({ summary: 'Fetch a list of companies' })
   @ApiQuery({ name: 'search', required: false, type: String })
