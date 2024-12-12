@@ -19,8 +19,7 @@ import { Button } from './ui/button';
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
-const signUpSchema = z.object({
-	name: z.string().min(1, 'Name is required'),
+const loginSchema = z.object({
 	email: z.string().email('Invalid email address'),
 	password: z
 		.string()
@@ -28,54 +27,44 @@ const signUpSchema = z.object({
 		.max(40, 'Password must be at most 40 characters'),
 });
 
-export function SignUp() {
-	const form = useForm<z.infer<typeof signUpSchema>>({
-		resolver: zodResolver(signUpSchema),
+export function Login() {
+	const form = useForm<z.infer<typeof loginSchema>>({
+		resolver: zodResolver(loginSchema),
 		defaultValues: {
-			name: '',
 			email: '',
 			password: '',
 		},
 	});
 
-	const onSubmit = async (data: z.infer<typeof signUpSchema>) => {
-		const response = await fetch(`${BASE_URL}/auth/sign-up`, {
+	const onSubmit = async (data: z.infer<typeof loginSchema>) => {
+		const response = await fetch(`${BASE_URL}/auth/login`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(data),
+			body: JSON.stringify({
+				username: data.email,
+				password: data.password,
+			}),
 		});
+		const { message } = await response.json();
 		if (!response.ok) {
-			toast.error('Failed to sign up');
-      return;
+			toast.error(message);
+			return;
 		}
 		toast.success('Sign up successful');
 		// Redirect to the login page
-		redirect('/login');
+		redirect('/');
 	};
 
 	return (
 		<Card className='w-[60%] bg-white shadow-lg'>
 			<CardHeader>
-				<CardTitle>Sign Up</CardTitle>
+				<CardTitle>Login</CardTitle>
 			</CardHeader>
 			<CardContent>
 				<Form {...form}>
 					<form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
-						<FormField
-							control={form.control}
-							name='name'
-							render={({ field }) => (
-								<FormItem>
-									<FormLabel>Name</FormLabel>
-									<FormControl>
-										<Input placeholder='Jane Doe' {...field} />
-									</FormControl>
-									<FormMessage />
-								</FormItem>
-							)}
-						/>
 						<FormField
 							control={form.control}
 							name='email'
@@ -106,7 +95,7 @@ export function SignUp() {
 								</FormItem>
 							)}
 						/>
-						<Button type='submit'>Sign Up</Button>
+						<Button type='submit'>Login</Button>
 					</form>
 				</Form>
 			</CardContent>
