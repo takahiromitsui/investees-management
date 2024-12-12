@@ -1,7 +1,7 @@
 import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { UsersService } from '../users/users.service';
-import { LoginDto } from './auth.dto';
-
+import { CreateUserDto } from '../users/users.dto';
+import * as bcrypt from 'bcrypt';
 @Injectable()
 export class AuthService {
   constructor(private usersService: UsersService) {}
@@ -14,5 +14,20 @@ export class AuthService {
     }
     this.logger.error(`User not found with email ${username}`);
     throw new NotFoundException('Invalid password or email');
+  }
+
+  async signUp(createUserDto: CreateUserDto) {
+    const { password, ...rest } = createUserDto;
+    const hash = await bcrypt.hash(password, 10);
+    const user = await this.usersService.create({
+      ...rest,
+      password: hash,
+    });
+    if (user) {
+      const { password, ...rest } = user;
+      this.logger.log('Succeeded to create a user');
+      return rest;
+    }
+    this.logger.error('Failed to create a user');
   }
 }
