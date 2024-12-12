@@ -3,16 +3,29 @@ import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import * as session from 'express-session';
 import * as passport from 'passport';
+import { RedisStore } from 'connect-redis';
+import { createClient } from 'redis';
+
+const redisClient = createClient();
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
+  redisClient.connect().catch(console.error);
+  const redisStore = new RedisStore({
+    client: redisClient,
+    prefix: 'inverstee-management:',
+  });
   app.use(
     session({
+      store: redisStore,
       secret: 'keyboard cat', // should be in env for production
       resave: false,
       saveUninitialized: false,
-      cookie: { maxAge: 3600000 },
+      cookie: {
+        // secure: false, // true => production
+        httpOnly: true,
+        maxAge: 1000 * 60 * 60,
+      },
     }),
   );
 

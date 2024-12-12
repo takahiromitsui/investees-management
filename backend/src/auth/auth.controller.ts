@@ -35,7 +35,10 @@ export class AuthController {
   @UseGuards(LocalAuthGuard)
   @Post('login')
   login(@Body(ValidationPipe) loginDto: LoginDto, @Request() req) {
-    return { msg: 'Logged in' };
+    return {
+      msg: 'Logged in',
+      body: req.session,
+    };
   }
 
   @ApiOperation({ summary: 'SignUp' })
