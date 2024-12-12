@@ -40,7 +40,11 @@ async function bootstrap() {
     .build();
   const documentFactory = () => SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/docs', app, documentFactory);
-  app.enableCors();
+  app.enableCors({
+    origin: ['http://localhost:3000'],
+    methods: ['POST', 'PUT', 'DELETE', 'GET'],
+    credentials: true,
+  });
   await app.listen(8000);
 }
 bootstrap();
