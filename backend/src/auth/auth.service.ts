@@ -8,11 +8,16 @@ export class AuthService {
   private readonly logger = new Logger();
   async validate(username: string, password: string) {
     const user = await this.usersService.findOne(username);
-    if (user && user.password === password) {
+    if (!user) {
+      this.logger.error(`User not found with email ${username}`);
+      throw new NotFoundException('Invalid password or email');
+    }
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (isMatch) {
       const { password, ...rest } = user;
       return rest;
     }
-    this.logger.error(`User not found with email ${username}`);
+    this.logger.error(`User not found with password ${password}`);
     throw new NotFoundException('Invalid password or email');
   }
 
