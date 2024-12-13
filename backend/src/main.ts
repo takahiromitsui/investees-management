@@ -5,6 +5,7 @@ import * as session from 'express-session';
 import * as passport from 'passport';
 import { RedisStore } from 'connect-redis';
 import { createClient } from 'redis';
+import helmet from 'helmet';
 
 const redisClient = createClient();
 
@@ -31,6 +32,7 @@ async function bootstrap() {
 
   app.use(passport.initialize());
   app.use(passport.session());
+  app.use(helmet());
 
   const config = new DocumentBuilder()
     .setTitle('Investees management')

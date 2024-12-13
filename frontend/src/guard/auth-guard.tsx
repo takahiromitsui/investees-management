@@ -15,7 +15,7 @@ const AuthGuard = ({ children }: PropsWithChildren) => {
 	}, [user, router]);
 
 	if (!user) {
-		return;
+		return <div></div>
 	}
 
 	return <>{children}</>;

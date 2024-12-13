@@ -50,7 +50,6 @@ export function Login() {
 		}
 		toast.success('Sign up successful');
 		// Redirect to the login page
-		console.log(body);
 		setUser(body);
 		redirect('/');
 	};

@@ -20,25 +20,28 @@ import { Button } from '@/components/ui/button';
 
 interface DataTableProps<TData, TValue> {
 	columns: ColumnDef<TData, TValue>[];
-	data: TData[];
+	data: TData[] | [];
 	page: number;
-  pageCount: number;
-  canPreviousPage: boolean;
-  canNextPage: boolean;
-  onPreviousPage: () => void;
-  onNextPage: () => void;
+	pageCount: number;
+	canPreviousPage: boolean;
+	canNextPage: boolean;
+	onPreviousPage: () => void;
+	onNextPage: () => void;
 }
 
 export function DataTable<TData, TValue>({
 	columns,
 	data,
 	page,
-  pageCount,
-  canPreviousPage,
-  canNextPage,
-  onPreviousPage,
-  onNextPage,
+	pageCount,
+	canPreviousPage,
+	canNextPage,
+	onPreviousPage,
+	onNextPage,
 }: DataTableProps<TData, TValue>) {
+	if (!data) {
+		return <div></div>;
+	}
 	const table = useReactTable({
 		data,
 		columns,
@@ -99,15 +102,15 @@ export function DataTable<TData, TValue>({
 				</Table>
 			</div>
 			<div className='flex items-center justify-end space-x-2 py-4'>
-			<Button onClick={onPreviousPage} disabled={!canPreviousPage}>
-          Previous
-        </Button>
-        <span>
-          Page {page} of {pageCount}
-        </span>
-        <Button onClick={onNextPage} disabled={!canNextPage}>
-          Next
-        </Button>
+				<Button onClick={onPreviousPage} disabled={!canPreviousPage}>
+					Previous
+				</Button>
+				<span>
+					Page {page} of {pageCount}
+				</span>
+				<Button onClick={onNextPage} disabled={!canNextPage}>
+					Next
+				</Button>
 			</div>
 		</>
 	);

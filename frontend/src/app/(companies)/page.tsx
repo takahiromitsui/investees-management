@@ -34,7 +34,16 @@ export default function Home() {
 	if (isError) {
 		return <div>Error loading data</div>;
 	}
-	const data = res.data;
+
+	const handleData = () => {
+		if (!res) {
+			return [];
+		}
+
+		return res.data;
+	}
+
+	// const data = res.data;
 
 	const pageCount = res.meta ? res.meta.pageCount : 1;
 	return (
@@ -51,7 +60,7 @@ export default function Home() {
 				</div>
 				<DataTable
 					columns={columns}
-					data={data}
+					data={handleData()}
 					page={page}
 					pageCount={pageCount}
 					canPreviousPage={page > 1}
