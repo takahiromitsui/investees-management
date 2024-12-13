@@ -6,6 +6,7 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import MaxWidthWrapper from '@/components/max-width-wrapper';
 import { Input } from '@/components/ui/input';
 import { getCompanies } from '@/api/companies';
+import AuthGuard from '@/guard/auth-guard';
 
 export default function Home() {
 	const [page, setPage] = useState(1);
@@ -37,26 +38,28 @@ export default function Home() {
 
 	const pageCount = res.meta ? res.meta.pageCount : 1;
 	return (
-		<MaxWidthWrapper className='py-10'>
-			<div className='mb-4'>
-				<Input
-					type='text'
-					value={search}
-					onChange={handleSearchChange}
-					placeholder='Search companies by name'
-					className='border p-2'
+		<AuthGuard>
+			<MaxWidthWrapper className='py-10'>
+				<div className='mb-4'>
+					<Input
+						type='text'
+						value={search}
+						onChange={handleSearchChange}
+						placeholder='Search companies by name'
+						className='border p-2'
+					/>
+				</div>
+				<DataTable
+					columns={columns}
+					data={data}
+					page={page}
+					pageCount={pageCount}
+					canPreviousPage={page > 1}
+					canNextPage={page < pageCount}
+					onPreviousPage={() => setPage(old => Math.max(old - 1, 1))}
+					onNextPage={() => setPage(old => (old < pageCount ? old + 1 : old))}
 				/>
-			</div>
-			<DataTable
-				columns={columns}
-				data={data}
-				page={page}
-				pageCount={pageCount}
-				canPreviousPage={page > 1}
-				canNextPage={page < pageCount}
-				onPreviousPage={() => setPage(old => Math.max(old - 1, 1))}
-				onNextPage={() => setPage(old => (old < pageCount ? old + 1 : old))}
-			/>
-		</MaxWidthWrapper>
+			</MaxWidthWrapper>
+		</AuthGuard>
 	);
 }

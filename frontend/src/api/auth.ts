@@ -23,5 +23,26 @@ export async function postLogin(data: LoginData) {
 			username: data.email,
 			password: data.password,
 		}),
+		credentials: 'include',
+	});
+}
+
+export async function deleteLogout() {
+	return await fetch(`${BASE_URL}/auth/logout`, {
+		method: 'DELETE',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		credentials: 'include',
+	});
+}
+
+export async function getMe() {
+	return await fetch(`${BASE_URL}/auth/me`, {
+		method: 'GET',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		credentials: 'include',
 	});
 }
