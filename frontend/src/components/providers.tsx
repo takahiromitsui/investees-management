@@ -9,25 +9,27 @@ import { getMe } from '@/api/auth';
 
 type User = {
 	id: number;
-	name: string;
-	email: string;
+	name?: string;
+	email?: string;
 };
+interface AuthContextProps {
+	user: User | undefined | null;
+	setUser: React.Dispatch<React.SetStateAction<User | undefined | null>>;
+}
 
-const AuthContext = createContext({ user: null } as {
-	user: User | null | undefined;
-});
+const AuthContext = createContext<AuthContextProps | undefined | null>(
+	undefined
+);
 
 const AuthProvider = ({ children }: PropsWithChildren) => {
-	const {
-		data: user,
-		isLoading,
-		error,
-	} = useQuery<User | null>({
+	const [user, setUser] = useState<User | undefined | null>(undefined);
+	const { isLoading, error } = useQuery<User | null>({
 		queryKey: ['authUser'],
 		queryFn: async () => {
 			const response = await getMe();
 			if (response.ok) {
 				const { body } = await response.json();
+				setUser(body);
 				return body;
 			}
 			return null;
@@ -42,10 +44,18 @@ const AuthProvider = ({ children }: PropsWithChildren) => {
 	if (error) return <div>Error loading user</div>; // Handle error state
 
 	return (
-		<AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>
+		<AuthContext.Provider value={{ user, setUser }}>
+			{children}
+		</AuthContext.Provider>
 	);
 };
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+	const context = useContext(AuthContext);
+	if (!context) {
+		throw new Error('useAuth must be used within an AuthProvider');
+	}
+	return context;
+};
 
 export default function Providers({ children }: PropsWithChildren) {
 	const [queryClient] = useState(() => new QueryClient());

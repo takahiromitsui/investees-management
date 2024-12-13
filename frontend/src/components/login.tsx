@@ -17,6 +17,7 @@ import { toast } from 'sonner';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from './ui/button';
 import { postLogin } from '@/api/auth';
+import { useAuth } from './providers';
 
 const loginSchema = z.object({
 	email: z.string().email('Invalid email address'),
@@ -29,6 +30,7 @@ const loginSchema = z.object({
 export type LoginData = z.infer<typeof loginSchema>;
 
 export function Login() {
+	const { setUser } = useAuth();
 	const form = useForm<z.infer<typeof loginSchema>>({
 		resolver: zodResolver(loginSchema),
 		defaultValues: {
@@ -39,13 +41,15 @@ export function Login() {
 
 	const onSubmit = async (data: LoginData) => {
 		const response = await postLogin(data);
-		const { message } = await response.json();
+		const { body, message } = await response.json();
 		if (!response.ok) {
 			toast.error(message);
 			return;
 		}
 		toast.success('Sign up successful');
 		// Redirect to the login page
+		console.log(body);
+		setUser(body);
 		redirect('/');
 	};
 

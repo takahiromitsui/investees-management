@@ -31,16 +31,17 @@ export class AuthController {
   @ApiOperation({ summary: 'Login' })
   @ApiOkResponse({
     description: 'Logged in successfully',
-    type: OmitType(User, ['password'] as const),
+    type: OmitType(User, ['id', 'name', 'password', 'email'] as const),
   })
   @ApiUnauthorizedResponse({ description: 'Login Failed' })
   @ApiBody({ type: LoginDto })
   @UseGuards(LocalAuthGuard)
   @Post('login')
-  login(@Body(ValidationPipe) loginDto: LoginDto) {
+  login(@Body(ValidationPipe) loginDto: LoginDto, @Request() req) {
     return {
       status: HttpStatus.OK,
       message: 'Logged in',
+      body: req.user,
     };
   }
 
@@ -78,7 +79,7 @@ export class AuthController {
   @ApiUnauthorizedResponse({ description: 'Forgot to login' })
   @UseGuards(AuthenticatedGuard)
   @Get('me')
-  findMe(@Request() req) {
+  async findMe(@Request() req) {
     return {
       status: HttpStatus.OK,
       body: req.user,
@@ -92,7 +93,7 @@ export class AuthController {
   @ApiUnauthorizedResponse({ description: 'Failed to logout' })
   @UseGuards(AuthenticatedGuard)
   @Delete('logout')
-  logout(@Request() req) {
+  async logout(@Request() req) {
     try {
       req.session.destroy();
       return {
