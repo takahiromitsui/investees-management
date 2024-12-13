@@ -23,4 +23,12 @@ export class UsersService {
     const user = this.repo.create(createUserDto);
     return await this.repo.save(user);
   }
+
+  async findOneById(id: number) {
+    return await this.repo.findOne({
+      where: {
+        id: Equal(id),
+      },
+    });
+  }
 }

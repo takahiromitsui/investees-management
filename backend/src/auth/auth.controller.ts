@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Get,
   HttpException,
   HttpStatus,
   Post,
@@ -20,6 +21,7 @@ import { User } from '../users/users.entity';
 import { LoginDto } from './auth.dto';
 import { CreateUserDto } from 'src/users/users.dto';
 import { AuthService } from './auth.service';
+import { AuthenticatedGuard } from './authenticated.guard';
 
 @Controller('auth')
 export class AuthController {
@@ -34,10 +36,9 @@ export class AuthController {
   @ApiBody({ type: LoginDto })
   @UseGuards(LocalAuthGuard)
   @Post('login')
-  login(@Body(ValidationPipe) loginDto: LoginDto, @Request() req) {
+  login(@Body(ValidationPipe) loginDto: LoginDto) {
     return {
       msg: 'Logged in',
-      body: req.session,
     };
   }
 
@@ -65,5 +66,20 @@ export class AuthController {
     } catch (e) {
       throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+  }
+
+  @ApiOperation({ summary: 'Return a logged in user' })
+  @ApiOkResponse({
+    description: 'Found a user successfully',
+    type: OmitType(User, ['password'] as const),
+  })
+  @ApiUnauthorizedResponse({ description: 'Forgot to login' })
+  @UseGuards(AuthenticatedGuard)
+  @Get('me')
+  FindMe(@Request() req) {
+    return {
+      status: HttpStatus.OK,
+      body: req.user,
+    };
   }
 }

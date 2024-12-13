@@ -14,8 +14,9 @@ export class AuthService {
     }
     const isMatch = await bcrypt.compare(password, user.password);
     if (isMatch) {
-      const { password, ...rest } = user;
-      return rest;
+      return {
+        id: user.id,
+      };
     }
     this.logger.error(`User not found with password ${password}`);
     throw new NotFoundException('Invalid password or email');
