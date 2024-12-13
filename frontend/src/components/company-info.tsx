@@ -17,7 +17,6 @@ import {
 	FormMessage,
 } from '@/components/ui/form';
 import { Company } from '@/app/(companies)/columns';
-import { toast } from 'sonner';
 
 const companySchema = z.object({
 	name: z.string().min(1, 'Name is required'),
@@ -48,7 +47,6 @@ export function CompanyInfo({ company, onUpdate }: CompanyInfoProps) {
 
 	const onSubmit = async (data: z.infer<typeof companySchema>) => {
 		onUpdate(data);
-		toast.success('Company updated successfully');
 		setIsEditing(false);
 	};
 

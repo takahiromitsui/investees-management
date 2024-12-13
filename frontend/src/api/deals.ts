@@ -3,7 +3,13 @@ import { Company, Deal } from '@/app/(companies)/columns';
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function getCompanyDeals(companyId: string) {
-	const response = await fetch(`${BASE_URL}/companies/${companyId}`);
+	const response = await fetch(`${BASE_URL}/companies/${companyId}`, {
+		method: 'GET',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		credentials: 'include',
+	});
 	if (!response.ok) {
 		throw new Error('Failed to fetch company data');
 	}
@@ -17,6 +23,7 @@ export async function updateCompany(companyId: string, data: Partial<Company>) {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify(data),
+		credentials: 'include',
 	});
 	if (!response.ok) {
 		throw new Error('Failed to update company');
@@ -31,6 +38,7 @@ export async function updateDeal(dealId: string, data: Partial<Deal>) {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify(data),
+		credentials: 'include',
 	});
 	if (!response.ok) {
 		throw new Error('Failed to update deal');
@@ -45,6 +53,7 @@ export async function createDeal(companyId: string, data: Omit<Deal, 'id'>) {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify(data),
+		credentials: 'include',
 	});
 	if (!response.ok) {
 		throw new Error('Failed to create deal');
@@ -58,6 +67,7 @@ export async function deleteDeal(id: string) {
 		headers: {
 			'Content-Type': 'application/json',
 		},
+		credentials: 'include',
 	});
 	if (!response.ok) {
 		throw new Error('Failed to delete deal');

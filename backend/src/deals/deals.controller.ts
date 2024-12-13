@@ -10,6 +10,7 @@ import {
   ParseIntPipe,
   Patch,
   Post,
+  UseGuards,
   // Query,
 } from '@nestjs/common';
 import {
@@ -28,6 +29,7 @@ import * as fs from 'fs';
 import { Deal, UpdateDeal } from './deals.entity';
 import { CompaniesService } from '../companies/companies.service';
 import { PageOptionsDto } from '../page-options.dto';
+import { AuthenticatedGuard } from 'src/auth/authenticated.guard';
 
 @ApiTags('deals')
 @Controller('deals')
@@ -37,8 +39,9 @@ export class DealsController {
     public companyService: CompaniesService,
   ) {}
 
+  @UseGuards(AuthenticatedGuard)
   @Patch(':id')
-  @ApiOperation({ summary: 'Update a deal' })
+  @ApiOperation({ summary: '(protected) Update a deal' })
   @ApiOkResponse({ description: 'Deal updated successfully' })
   @ApiNotFoundResponse({ description: 'Deal not found' })
   async update(
@@ -59,8 +62,9 @@ export class DealsController {
     }
   }
 
+  @UseGuards(AuthenticatedGuard)
   @Delete(':id')
-  @ApiOperation({ summary: 'Delete a deal' })
+  @ApiOperation({ summary: '(protected) Delete a deal' })
   @ApiOkResponse({ description: 'Deal deleted successfully' })
   @ApiNotFoundResponse({ description: 'Deal not found' })
   async delete(@Param('id', ParseIntPipe) id: number) {
@@ -77,19 +81,6 @@ export class DealsController {
       throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }
-
-  // @Get()
-  // @ApiOperation({ summary: 'Fetch a list of deals' })
-  // @ApiNotFoundResponse({
-  //   description: 'Deals not found',
-  // })
-  // async findAll(@Query() pageOptionsDto: PageOptionsDto) {
-  //   const res = await this.service.findAll(pageOptionsDto);
-  //   if (!res.data || res.data.length === 0) {
-  //     throw new HttpException('Deals not found', HttpStatus.NOT_FOUND);
-  //   }
-  //   return res;
-  // }
 
   @Post()
   @ApiOperation({ summary: 'Insert predefined json to deal table' })

@@ -39,7 +39,7 @@ export class CompaniesController {
 
   @UseGuards(AuthenticatedGuard)
   @Get()
-  @ApiOperation({ summary: 'Fetch a list of companies' })
+  @ApiOperation({ summary: '(protected) Fetch a list of companies' })
   @ApiQuery({ name: 'search', required: false, type: String })
   @ApiOkResponse({
     description: 'List of companies',
@@ -60,8 +60,9 @@ export class CompaniesController {
     return res;
   }
 
+  @UseGuards(AuthenticatedGuard)
   @Get(':id')
-  @ApiOperation({ summary: 'Fetch a company' })
+  @ApiOperation({ summary: '(protected) Fetch a company' })
   @ApiOkResponse({
     description: 'Company',
     type: Company,
@@ -81,8 +82,9 @@ export class CompaniesController {
     };
   }
 
+  @UseGuards(AuthenticatedGuard)
   @Post()
-  @ApiOperation({ summary: 'Create a company' })
+  @ApiOperation({ summary: '(protected) Create a company' })
   @ApiOkResponse({ description: 'Company created successfully', type: Company })
   @ApiNotFoundResponse({ description: 'Failed to create a company' })
   async create(@Body(ValidationPipe) createCompanyDto: CreateCompanyDto) {
@@ -97,8 +99,9 @@ export class CompaniesController {
     }
   }
 
+  @UseGuards(AuthenticatedGuard)
   @Patch(':id')
-  @ApiOperation({ summary: 'Update a company' })
+  @ApiOperation({ summary: '(protected) Update a company' })
   @ApiOkResponse({ description: 'Company updated successfully' })
   @ApiNotFoundResponse({ description: 'Company not found' })
   async update(
@@ -119,8 +122,9 @@ export class CompaniesController {
     }
   }
 
+  @UseGuards(AuthenticatedGuard)
   @Post(':id/deals')
-  @ApiOperation({ summary: 'Create a deal for a company' })
+  @ApiOperation({ summary: '(protected) Create a deal for a company' })
   @ApiCreatedResponse({ description: 'Deal created successfully', type: Deal })
   @ApiNotFoundResponse({ description: 'Company not found' })
   async createDeal(

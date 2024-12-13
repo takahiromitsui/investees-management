@@ -14,6 +14,7 @@ import {
 	updateCompany,
 	updateDeal,
 } from '@/api/deals';
+import { toast } from 'sonner';
 
 export default function CompanyDealsPage() {
 	const params = useParams<{ id: string }>();
@@ -30,6 +31,10 @@ export default function CompanyDealsPage() {
 			updateCompany(params.id, updatedData),
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: ['company', params.id] });
+			toast.success('Company updated successfully');
+		},
+		onError: () => {
+			toast.error('Failed to update Company');
 		},
 	});
 
@@ -38,6 +43,10 @@ export default function CompanyDealsPage() {
 			updateDeal(dealId, data),
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: ['company', params.id] });
+			toast.success('Deal updated successfully');
+		},
+		onError: () => {
+			toast.error('Failed to update Company');
 		},
 	});
 
@@ -45,6 +54,10 @@ export default function CompanyDealsPage() {
 		mutationFn: (data: Omit<Deal, 'id'>) => createDeal(params.id, data),
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: ['company', params.id] });
+			toast.success('New deal created successfully');
+		},
+		onError: () => {
+			toast.error('Failed to update Deal');
 		},
 	});
 
@@ -52,6 +65,10 @@ export default function CompanyDealsPage() {
 		mutationFn: (id: string) => deleteDeal(id),
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: ['company', params.id] });
+			toast.success('Deal deleted successfully');
+		},
+		onError: () => {
+			toast.error('Failed to delete Deal');
 		},
 	});
 
