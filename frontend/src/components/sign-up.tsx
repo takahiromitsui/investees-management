@@ -16,8 +16,8 @@ import { redirect } from 'next/navigation';
 import { toast } from 'sonner';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from './ui/button';
+import { postSignUp } from '@/api/auth';
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const signUpSchema = z.object({
 	name: z.string().min(1, 'Name is required'),
@@ -27,6 +27,8 @@ const signUpSchema = z.object({
 		.min(8, 'Password must be at least 8 characters')
 		.max(40, 'Password must be at most 40 characters'),
 });
+
+export type SignUpData = z.infer<typeof signUpSchema>;
 
 export function SignUp() {
 	const form = useForm<z.infer<typeof signUpSchema>>({
@@ -38,17 +40,11 @@ export function SignUp() {
 		},
 	});
 
-	const onSubmit = async (data: z.infer<typeof signUpSchema>) => {
-		const response = await fetch(`${BASE_URL}/auth/sign-up`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(data),
-		});
+	const onSubmit = async (data: SignUpData) => {
+		const response = await postSignUp(data);
 		if (!response.ok) {
 			toast.error('Failed to sign up');
-      return;
+			return;
 		}
 		toast.success('Sign up successful');
 		// Redirect to the login page

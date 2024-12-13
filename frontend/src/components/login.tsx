@@ -16,8 +16,7 @@ import { redirect } from 'next/navigation';
 import { toast } from 'sonner';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from './ui/button';
-
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+import { postLogin } from '@/api/auth';
 
 const loginSchema = z.object({
 	email: z.string().email('Invalid email address'),
@@ -26,6 +25,8 @@ const loginSchema = z.object({
 		.min(8, 'Password must be at least 8 characters')
 		.max(40, 'Password must be at most 40 characters'),
 });
+
+export type LoginData = z.infer<typeof loginSchema>;
 
 export function Login() {
 	const form = useForm<z.infer<typeof loginSchema>>({
@@ -36,17 +37,8 @@ export function Login() {
 		},
 	});
 
-	const onSubmit = async (data: z.infer<typeof loginSchema>) => {
-		const response = await fetch(`${BASE_URL}/auth/login`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				username: data.email,
-				password: data.password,
-			}),
-		});
+	const onSubmit = async (data: LoginData) => {
+		const response = await postLogin(data);
 		const { message } = await response.json();
 		if (!response.ok) {
 			toast.error(message);
