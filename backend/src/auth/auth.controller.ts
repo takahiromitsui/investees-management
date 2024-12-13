@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   HttpException,
   HttpStatus,
@@ -38,7 +39,8 @@ export class AuthController {
   @Post('login')
   login(@Body(ValidationPipe) loginDto: LoginDto) {
     return {
-      msg: 'Logged in',
+      status: HttpStatus.OK,
+      message: 'Logged in',
     };
   }
 
@@ -76,10 +78,29 @@ export class AuthController {
   @ApiUnauthorizedResponse({ description: 'Forgot to login' })
   @UseGuards(AuthenticatedGuard)
   @Get('me')
-  FindMe(@Request() req) {
+  findMe(@Request() req) {
     return {
       status: HttpStatus.OK,
       body: req.user,
     };
+  }
+
+  @ApiOperation({ summary: 'Logout' })
+  @ApiOkResponse({
+    description: 'Logout successfully',
+  })
+  @ApiUnauthorizedResponse({ description: 'Failed to logout' })
+  @UseGuards(AuthenticatedGuard)
+  @Delete('logout')
+  logout(@Request() req) {
+    try {
+      req.session.destroy();
+      return {
+        status: HttpStatus.OK,
+        message: 'Logged out successfully',
+      };
+    } catch (e) {
+      throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
   }
 }
