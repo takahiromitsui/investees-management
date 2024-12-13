@@ -56,7 +56,7 @@ export default function CompanyDealsPage() {
 	});
 
 	if (isPending) {
-		return <div>Loading...</div>;
+		return <></>;
 	}
 
 	if (isError) {

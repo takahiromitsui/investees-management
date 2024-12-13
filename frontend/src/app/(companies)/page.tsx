@@ -28,7 +28,7 @@ export default function Home() {
 	};
 
 	if (isPending) {
-		return <div>Loading...</div>;
+		return <></>;
 	}
 
 	if (isError) {

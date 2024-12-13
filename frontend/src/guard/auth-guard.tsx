@@ -15,7 +15,7 @@ const AuthGuard = ({ children }: PropsWithChildren) => {
 	}, [user, router]);
 
 	if (!user) {
-		return <div>Loading...</div>; // Show loading spinner while fetching user state
+		return;
 	}
 
 	return <>{children}</>;

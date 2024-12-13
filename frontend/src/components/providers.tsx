@@ -23,7 +23,7 @@ const AuthContext = createContext<AuthContextProps | undefined | null>(
 
 const AuthProvider = ({ children }: PropsWithChildren) => {
 	const [user, setUser] = useState<User | undefined | null>(undefined);
-	const { isLoading, error } = useQuery<User | null>({
+	const { error } = useQuery<User | null>({
 		queryKey: ['authUser'],
 		queryFn: async () => {
 			const response = await getMe();
@@ -40,7 +40,6 @@ const AuthProvider = ({ children }: PropsWithChildren) => {
 		staleTime: 5 * 60 * 1000,
 	});
 
-	if (isLoading) return <div>Loading...</div>; // Handle loading state
 	if (error) return <div>Error loading user</div>; // Handle error state
 
 	return (
