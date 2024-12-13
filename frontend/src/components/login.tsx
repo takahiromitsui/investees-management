@@ -15,9 +15,11 @@ import { Input } from './ui/input';
 import { redirect } from 'next/navigation';
 import { toast } from 'sonner';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from './ui/button';
+import { Button, buttonVariants } from './ui/button';
 import { postLogin } from '@/api/auth';
 import { useAuth } from './providers';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 const loginSchema = z.object({
 	email: z.string().email('Invalid email address'),
@@ -91,7 +93,18 @@ export function Login() {
 								</FormItem>
 							)}
 						/>
-						<Button type='submit'>Login</Button>
+						<div className='flex justify-between items-center'>
+							<Button type='submit'>Login</Button>
+							<Link
+								href='/sign-up'
+								className={buttonVariants({
+									variant: 'link',
+								})}
+							>
+								Don&apos;t have an account? Sign up
+								<ArrowRight className='h-4 w-4 ml-2' />
+							</Link>
+						</div>
 					</form>
 				</Form>
 			</CardContent>

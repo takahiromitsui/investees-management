@@ -15,9 +15,10 @@ import { Input } from './ui/input';
 import { redirect } from 'next/navigation';
 import { toast } from 'sonner';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from './ui/button';
+import { Button, buttonVariants } from './ui/button';
+import Link from 'next/link';
 import { postSignUp } from '@/api/auth';
-
+import { ArrowRight } from 'lucide-react';
 
 const signUpSchema = z.object({
 	name: z.string().min(1, 'Name is required'),
@@ -102,7 +103,18 @@ export function SignUp() {
 								</FormItem>
 							)}
 						/>
-						<Button type='submit'>Sign Up</Button>
+						<div className='flex justify-between items-center'>
+							<Button type='submit'>Sign Up</Button>
+							<Link
+								href='/login'
+								className={buttonVariants({
+									variant: 'link',
+								})}
+							>
+								Already have an account? Login
+								<ArrowRight className='h-4 w-4 ml-2' />
+							</Link>
+						</div>
 					</form>
 				</Form>
 			</CardContent>
