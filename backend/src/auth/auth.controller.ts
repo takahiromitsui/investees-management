@@ -12,6 +12,7 @@ import {
 } from '@nestjs/common';
 import { LocalAuthGuard } from './local-auth.guard';
 import {
+  ApiBearerAuth,
   ApiBody,
   ApiOkResponse,
   ApiOperation,
@@ -23,6 +24,7 @@ import { LoginDto } from './auth.dto';
 import { CreateUserDto } from 'src/users/users.dto';
 import { AuthService } from './auth.service';
 import { AuthenticatedGuard } from './authenticated.guard';
+import { JwtAuthGuard } from './jwt-auth.guard';
 
 @Controller('auth')
 export class AuthController {
@@ -103,5 +105,33 @@ export class AuthController {
     } catch (e) {
       throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+  }
+
+  @ApiOperation({ summary: 'JWT Login' })
+  @ApiOkResponse({
+    description: 'JWT Logged in successfully',
+  })
+  @ApiUnauthorizedResponse({ description: 'JWT Login Failed' })
+  @ApiBody({ type: LoginDto })
+  @UseGuards(LocalAuthGuard)
+  @Post('jwt-login')
+  jwtLogin(@Body(ValidationPipe) loginDto: LoginDto, @Request() req) {
+    return this.authService.login(req.user);
+  }
+
+  @ApiOperation({ summary: 'Return a logged in user with JWT' })
+  @ApiOkResponse({
+    description: 'Found a user successfully',
+    type: OmitType(User, ['password'] as const),
+  })
+  @ApiUnauthorizedResponse({ description: 'Forgot to login' })
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @Get('jwt-me')
+  async jwtFindMe(@Request() req) {
+    return {
+      status: HttpStatus.OK,
+      body: req.user,
+    };
   }
 }
