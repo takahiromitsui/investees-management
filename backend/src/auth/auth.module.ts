@@ -3,11 +3,11 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { UsersModule } from 'src/users/users.module';
 import { PassportModule } from '@nestjs/passport';
-import { LocalStrategy } from './local.strategy';
-import { AuthenticatedGuard } from './authenticated.guard';
-import { SessionSerializer } from './session.serializer';
+import { LocalStrategy } from './strategies/local.strategy';
+import { AuthenticatedGuard } from './guards/authenticated.guard';
+import { SessionSerializer } from './serializers/session.serializer';
 import { JwtModule } from '@nestjs/jwt';
-import { JwtStrategy } from './jwt.strategy';
+import { JwtStrategy } from './strategies/jwt.strategy';
 
 @Module({
   providers: [
@@ -25,7 +25,7 @@ import { JwtStrategy } from './jwt.strategy';
     }),
     JwtModule.register({
       secret: 'SECRET', // this should obviously be in env for production
-      signOptions: { expiresIn: '60s' },
+      signOptions: { expiresIn: '60s' }, // access token
     }),
   ],
   exports: [AuthenticatedGuard],

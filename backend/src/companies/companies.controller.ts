@@ -30,7 +30,7 @@ import { PageOptionsDto } from '../page-options.dto';
 import { SearchDto } from '../search.dto';
 import { CreateDeal, Deal } from '../deals/deals.entity';
 import { CreateCompanyDto, UpdateCompanyDto } from './companies.dto';
-import { AuthenticatedGuard } from '../auth/authenticated.guard';
+import { AuthenticatedGuard } from '../auth/guards/authenticated.guard';
 
 @ApiTags('companies')
 @Controller('companies')

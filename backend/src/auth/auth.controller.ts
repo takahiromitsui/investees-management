@@ -5,12 +5,13 @@ import {
   Get,
   HttpException,
   HttpStatus,
+  Logger,
   Post,
   Request,
   UseGuards,
   ValidationPipe,
 } from '@nestjs/common';
-import { LocalAuthGuard } from './local-auth.guard';
+import { LocalAuthGuard } from './guards/local-auth.guard';
 import {
   ApiBearerAuth,
   ApiBody,
@@ -20,16 +21,16 @@ import {
   OmitType,
 } from '@nestjs/swagger';
 import { User } from '../users/users.entity';
-import { LoginDto } from './auth.dto';
+import { LoginDto } from './dtos/auth.dto';
 import { CreateUserDto } from 'src/users/users.dto';
 import { AuthService } from './auth.service';
-import { AuthenticatedGuard } from './authenticated.guard';
-import { JwtAuthGuard } from './jwt-auth.guard';
+import { AuthenticatedGuard } from './guards/authenticated.guard';
+import { JwtAuthGuard } from './guards/jwt-auth.guard';
 
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
-
+  logger = new Logger();
   @ApiOperation({ summary: 'Login' })
   @ApiOkResponse({
     description: 'Logged in successfully',
@@ -70,12 +71,14 @@ export class AuthController {
       };
     } catch (e) {
       if (e.code === '23505') {
+        this.logger.error(e.message);
         // PostgreSQL duplicate key error code
         throw new HttpException(
           'Invalid signup request',
           HttpStatus.BAD_REQUEST,
         );
       }
+      this.logger.error(e.message);
       throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }

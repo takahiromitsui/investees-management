@@ -29,7 +29,7 @@ import * as fs from 'fs';
 import { Deal, UpdateDeal } from './deals.entity';
 import { CompaniesService } from '../companies/companies.service';
 import { PageOptionsDto } from '../page-options.dto';
-import { AuthenticatedGuard } from 'src/auth/authenticated.guard';
+import { AuthenticatedGuard } from 'src/auth/guards/authenticated.guard';
 
 @ApiTags('deals')
 @Controller('deals')

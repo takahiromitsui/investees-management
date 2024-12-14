@@ -1,4 +1,4 @@
-import { Injectable, Logger, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { UsersService } from '../users/users.service';
 import { CreateUserDto } from '../users/users.dto';
 import * as bcrypt from 'bcrypt';
@@ -36,7 +36,7 @@ export class AuthService {
       return rest;
     }
   }
-
+  // JWT strategy
   async login(user: any) {
     const payload = { sub: user.id };
     return {
