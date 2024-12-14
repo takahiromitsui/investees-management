@@ -8,6 +8,7 @@ import { AuthenticatedGuard } from './guards/authenticated.guard';
 import { SessionSerializer } from './serializers/session.serializer';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './strategies/jwt.strategy';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
   providers: [
@@ -23,9 +24,13 @@ import { JwtStrategy } from './strategies/jwt.strategy';
     PassportModule.register({
       session: true,
     }),
-    JwtModule.register({
-      secret: 'SECRET', // this should obviously be in env for production
-      signOptions: { expiresIn: '60s' }, // access token
+    JwtModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: async (configService: ConfigService) => ({
+        secret: configService.get('JWT_ACCESS_TOKEN_SECRET'),
+        signOptions: { expiresIn: '60s' },
+      }),
     }),
   ],
   exports: [AuthenticatedGuard],

@@ -6,11 +6,13 @@ import * as passport from 'passport';
 import { RedisStore } from 'connect-redis';
 import { createClient } from 'redis';
 import helmet from 'helmet';
+import { ConfigService } from '@nestjs/config';
 
 const redisClient = createClient();
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  const configService = app.get(ConfigService);
   redisClient.connect().catch(console.error);
   const redisStore = new RedisStore({
     client: redisClient,
@@ -19,7 +21,7 @@ async function bootstrap() {
   app.use(
     session({
       store: redisStore,
-      secret: 'keyboard cat', // should be in env for production
+      secret: configService.get('SESSION_SECRET', 'secret'),
       resave: false,
       saveUninitialized: false,
       cookie: {
@@ -47,6 +49,6 @@ async function bootstrap() {
     methods: ['POST', 'PUT', 'DELETE', 'GET', 'PATCH'],
     credentials: true,
   });
-  await app.listen(8000);
+  await app.listen(configService.get('PORT', 8000));
 }
 bootstrap();
