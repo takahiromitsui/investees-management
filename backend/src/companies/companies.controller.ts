@@ -31,12 +31,16 @@ import { SearchDto } from '../search.dto';
 import { CreateDeal, Deal } from '../deals/deals.entity';
 import { CreateCompanyDto, UpdateCompanyDto } from './companies.dto';
 import { AuthenticatedGuard } from '../auth/guards/authenticated.guard';
+// import { SkipThrottle, Throttle } from '@nestjs/throttler';
 
+// @SkipThrottle()
 @ApiTags('companies')
 @Controller('companies')
 export class CompaniesController {
   constructor(public service: CompaniesService) {}
 
+  // @SkipThrottle({ default: false })
+  // @Throttle({ short: { ttl: 1000, limit: 1 } })
   @UseGuards(AuthenticatedGuard)
   @Get()
   @ApiOperation({ summary: '(protected) Fetch a list of companies' })
