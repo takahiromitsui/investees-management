@@ -69,6 +69,13 @@ export class AuthController {
         body: user,
       };
     } catch (e) {
+      if (e.code === '23505') {
+        // PostgreSQL duplicate key error code
+        throw new HttpException(
+          'Invalid signup request',
+          HttpStatus.BAD_REQUEST,
+        );
+      }
       throw new HttpException(e.message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }

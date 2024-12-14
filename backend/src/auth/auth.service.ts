@@ -10,11 +10,9 @@ export class AuthService {
     private usersService: UsersService,
     private jwtService: JwtService,
   ) {}
-  private readonly logger = new Logger();
   async validate(username: string, password: string) {
     const user = await this.usersService.findOne(username);
     if (!user) {
-      this.logger.error(`User not found with email ${username}`);
       throw new NotFoundException('Invalid password or email');
     }
     const isMatch = await bcrypt.compare(password, user.password);
@@ -23,7 +21,6 @@ export class AuthService {
         id: user.id,
       };
     }
-    this.logger.error(`User not found with password ${password}`);
     throw new NotFoundException('Invalid password or email');
   }
 
@@ -36,10 +33,8 @@ export class AuthService {
     });
     if (user) {
       const { password, ...rest } = user;
-      this.logger.log('Succeeded to create a user');
       return rest;
     }
-    this.logger.error('Failed to create a user');
   }
 
   async login(user: any) {
