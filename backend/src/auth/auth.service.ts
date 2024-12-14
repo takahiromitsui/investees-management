@@ -1,4 +1,8 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  UnauthorizedException,
+} from '@nestjs/common';
 import { UsersService } from '../users/users.service';
 import { CreateUserDto } from '../users/users.dto';
 import * as bcrypt from 'bcrypt';
@@ -47,9 +51,23 @@ export class AuthService {
       secret: this.configService.getOrThrow('JWT_REFRESH_TOKEN_SECRET'),
       expiresIn: date.getTime() + refreshTokenExpiration,
     });
+    const hashedRefreshToken = await bcrypt.hash(refreshToken, 10);
+    await this.usersService.updateRefreshToken(user.id, hashedRefreshToken);
     return {
       access_token: this.jwtService.sign(payload),
       refresh_token: refreshToken,
     };
+  }
+  async verifyUserRefreshToken(userId: number, refreshToken: string) {
+    try {
+      const user = await this.usersService.findOneById(userId);
+      const isMatch = await bcrypt.compare(refreshToken, user.refreshToken);
+      if (!isMatch) {
+        throw new UnauthorizedException();
+      }
+      return user;
+    } catch (e) {
+      throw new UnauthorizedException('Invalid refresh token');
+    }
   }
 }

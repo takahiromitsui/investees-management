@@ -9,6 +9,7 @@ import { SessionSerializer } from './serializers/session.serializer';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { JwtRefreshStrategy } from './strategies/jwt-refresh.strategy';
 
 @Module({
   providers: [
@@ -17,6 +18,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     AuthenticatedGuard,
     SessionSerializer,
     JwtStrategy,
+    JwtRefreshStrategy,
   ],
   controllers: [AuthController],
   imports: [

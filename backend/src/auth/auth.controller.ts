@@ -26,6 +26,7 @@ import { CreateUserDto } from 'src/users/users.dto';
 import { AuthService } from './auth.service';
 import { AuthenticatedGuard } from './guards/authenticated.guard';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
+import { JwtRefreshAuthGuard } from './guards/jwt-refresh-token.guard';
 
 @Controller('auth')
 export class AuthController {
@@ -143,5 +144,16 @@ export class AuthController {
       status: HttpStatus.OK,
       body: req.user,
     };
+  }
+
+  @ApiOperation({ summary: 'Refresh JWT token' })
+  @ApiOkResponse({
+    description: 'Refresh access token',
+  })
+  @ApiUnauthorizedResponse({ description: 'Refresh Failed' })
+  @UseGuards(JwtRefreshAuthGuard)
+  @Post('refresh')
+  refreshToken(@Request() req) {
+    return this.authService.login(req.user);
   }
 }
