@@ -15,14 +15,14 @@ export class SessionSerializer extends PassportSerializer {
   }
   async deserializeUser(
     payload: any,
-    done: (err: Error, user: Omit<User, 'password'>) => void,
+    done: (err: Error, user: Omit<User, 'password' | 'refreshToken'>) => void,
   ) {
     try {
       const user = await this.usersService.findOneById(payload.id);
       if (!user) {
         return done(new Error('User not found'), null);
       }
-      const { password, ...rest } = user;
+      const { password, refreshToken, ...rest } = user;
       done(null, rest);
     } catch (err) {
       done(err, null);

@@ -21,11 +21,11 @@ async function bootstrap() {
   app.use(
     session({
       store: redisStore,
-      secret: configService.get('SESSION_SECRET', 'secret'),
+      secret: configService.getOrThrow('SESSION_SECRET'),
       resave: false,
       saveUninitialized: false,
       cookie: {
-        // secure: false, // true => production
+        secure: configService.get('NODE_ENV') === 'production',
         httpOnly: true,
         maxAge: 1000 * 60 * 60,
       },

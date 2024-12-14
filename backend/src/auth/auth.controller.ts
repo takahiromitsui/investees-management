@@ -66,7 +66,7 @@ export class AuthController {
         };
       }
       return {
-        status: HttpStatus.OK,
+        status: HttpStatus.CREATED,
         body: user,
       };
     } catch (e) {
