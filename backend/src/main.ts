@@ -50,8 +50,12 @@ async function bootstrap() {
     .build();
   const documentFactory = () => SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/docs', app, documentFactory);
+  const FRONTEND_URL = configService.get(
+    'FRONTEND_URL',
+    'http://localhost:3000',
+  );
   app.enableCors({
-    origin: ['http://localhost:3000'],
+    origin: [FRONTEND_URL],
     methods: ['POST', 'PUT', 'DELETE', 'GET', 'PATCH'],
     credentials: true,
   });
