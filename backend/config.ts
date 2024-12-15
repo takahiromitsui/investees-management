@@ -10,6 +10,8 @@ const config: PostgresConnectionOptions = {
   username: process.env.DATABASE_USERNAME || 'postgres',
   password: process.env.DATABASE_PASSWORD || 'password',
   database: process.env.DATABASE_DATABASE || 'investees',
+  ssl:
+    process.env.DATABASE_SSL === 'true' ? { rejectUnauthorized: false } : false,
   synchronize: true,
   migrations: ['src/migration'],
 };

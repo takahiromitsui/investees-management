@@ -8,15 +8,21 @@ import { createClient } from 'redis';
 import helmet from 'helmet';
 import { ConfigService } from '@nestjs/config';
 
-const redisClient = createClient();
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const configService = app.get(ConfigService);
+  const redisClient = createClient({
+    username: configService.get('REDIS_USERNAME', ''),
+    password: configService.get('REDIS_PASSWORD', ''),
+    socket: {
+      host: configService.get('REDIS_HOST', 'localhost'),
+      port: configService.get('REDIS_PORT', 6379),
+    },
+  });
   redisClient.connect().catch(console.error);
   const redisStore = new RedisStore({
     client: redisClient,
-    prefix: 'inverstee-management:',
+    prefix: 'inverstees-management:',
   });
   app.use(
     session({
