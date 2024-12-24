@@ -1,9 +1,6 @@
 package handlers
 
 import (
-	"fmt"
-	"net/http"
-
 	"github.com/takahiromitsui/investees-management/pkg/config"
 )
 
@@ -25,12 +22,4 @@ func NewRepo(appConfig *config.AppConfig) *Repository {
 // SetRepository sets the repository for the handlers
 func SetRepository(repository *Repository) {
 	Repo = repository
-}
-
-func (repo *Repository) Home(w http.ResponseWriter, r* http.Request) {
-	fmt.Fprintf(w, "Home")
-}
-
-func (repo *Repository) About (w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "About")
 }

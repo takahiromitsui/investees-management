@@ -6,6 +6,7 @@ import (
 
 	"github.com/takahiromitsui/investees-management/pkg/config"
 	"github.com/takahiromitsui/investees-management/pkg/handlers"
+	"github.com/takahiromitsui/investees-management/pkg/routes"
 )
 
 
@@ -15,8 +16,7 @@ func main() {
 	handlers.SetRepository(repo)
 
 	mux := http.NewServeMux()
-	mux.HandleFunc("GET /", handlers.Repo.Home)
-	mux.HandleFunc("GET /about", handlers.Repo.About)
+	routes.RegisterRoutes(mux)
 	
 	if err := http.ListenAndServe("localhost:8080", mux); err != nil {
 		fmt.Println(err.Error())
