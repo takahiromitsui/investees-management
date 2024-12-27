@@ -8,6 +8,7 @@ import (
 	"github.com/alexedwards/scs/v2"
 	"github.com/takahiromitsui/investees-management/pkg/config"
 	"github.com/takahiromitsui/investees-management/pkg/handlers"
+	"github.com/takahiromitsui/investees-management/pkg/middleware"
 	"github.com/takahiromitsui/investees-management/pkg/routes"
 )
 
@@ -21,21 +22,30 @@ func main() {
 	session.Cookie.Persist = true
 	session.Cookie.SameSite = http.SameSiteLaxMode
 	session.Cookie.Secure = appConfig.InProduction
-
+	
 	appConfig.Session = session
 
+	// Create a new repository
 	repo := handlers.NewRepo(&appConfig)
 	handlers.SetRepository(repo)
+	// Create a new middleware struct
+	middlewareStruct := middleware.NewMiddlewareStruct(&appConfig)
+	middleware.SetMiddlewareStruct(middlewareStruct)
 
 	mux := http.NewServeMux()
 	routes.RegisterRoutes(mux)
-	var port = "localhost:8080"
-	fmt.Printf("Starting server on port %s\n", port)
 
-	if err := http.ListenAndServe(
-		port,
-		mux,
-	); err != nil {
-		fmt.Println(err.Error())
+	stack := middleware.CreateStack(
+		middleware.SessionLoad,
+		middleware.Logging,
+	)
+
+	port := ":8080"
+	server := http.Server{
+		Addr: port,
+		Handler: stack(mux),
 	}
+
+	fmt.Printf("Starting server on port %s\n", port)
+	server.ListenAndServe()
 }
