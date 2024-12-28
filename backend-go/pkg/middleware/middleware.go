@@ -1,9 +1,7 @@
 package middleware
 
 import (
-	"log"
 	"net/http"
-	"time"
 
 	"github.com/takahiromitsui/investees-management/pkg/config"
 )
@@ -48,24 +46,25 @@ func SessionLoad(next http.Handler) http.Handler {
 	})
 }
 
-type wrappedWriter struct {
-	http.ResponseWriter
-	statusCode int
-}
+// type wrappedWriter struct {
+// 	http.ResponseWriter
+// 	statusCode int
+// }
 
-func (w *wrappedWriter) WriteHeader(code int) {
-	w.statusCode = code
-	w.ResponseWriter.WriteHeader(code)
-}
+// func (w *wrappedWriter) WriteHeader(code int) {
+// 	w.statusCode = code
+// 	w.ResponseWriter.WriteHeader(code)
+// }
 
-func Logging(next http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		start := time.Now()
-		wrapped := &wrappedWriter{
-			ResponseWriter: w,
-			statusCode: http.StatusOK,
-		}
-		next.ServeHTTP(w, r)
-		log.Println(wrapped.statusCode, r.Method, r.URL.Path, time.Since(start))
-	})
-}
+// Logging logs the request method, URL path, and the time it took to process the request
+// func Logging(next http.Handler) http.Handler {
+// 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+// 		start := time.Now()
+// 		wrapped := &wrappedWriter{
+// 			ResponseWriter: w,
+// 			statusCode: http.StatusOK,
+// 		}
+// 		next.ServeHTTP(w, r)
+// 		log.Println(wrapped.statusCode, r.Method, r.URL.Path, time.Since(start))
+// 	})
+// }

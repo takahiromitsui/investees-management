@@ -8,6 +8,7 @@ import (
 
 type AppConfig struct {
 	InfoLog *log.Logger
+	ErrorLog *log.Logger
 	InProduction bool
 	Session *scs.SessionManager
 }
