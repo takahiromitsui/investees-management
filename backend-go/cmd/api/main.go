@@ -9,6 +9,7 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 	"github.com/takahiromitsui/investees-management/pkg/config"
+	"github.com/takahiromitsui/investees-management/pkg/drivers"
 	"github.com/takahiromitsui/investees-management/pkg/handlers"
 	"github.com/takahiromitsui/investees-management/pkg/helpers"
 	"github.com/takahiromitsui/investees-management/pkg/middleware"
@@ -33,12 +34,23 @@ func main() {
 	session.Cookie.Secure = appConfig.InProduction
 	
 	appConfig.Session = session
+	// connect to the database
+	log.Println("Connecting to the database...")
+	db, err := drivers.ConnectSQL("host=localhost port=5432 dbname=bookings user=postgres password=postgres sslmode=disable")
+	if err != nil {
+		log.Fatal("Cannot connect to the database! Dying...")
+	}
+	defer db.SQL.Close()
+
+
 	// Set the app configuration for the helpers package
 	helpers.SetHelpers(&appConfig)
+
 	// Create a new repository => set the repository for the handlers package
 	repo := handlers.NewRepo(&appConfig)
 	handlers.SetRepository(repo)
-	// Create a new middleware struct => set the middleware struct for the middleware package
+
+	// Create a new middleware struct => set the middleware struct for the middleware packages
 	middlewareStruct := middleware.NewMiddlewareStruct(&appConfig)
 	middleware.SetMiddlewareStruct(middlewareStruct)
 
