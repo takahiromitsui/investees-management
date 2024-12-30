@@ -50,15 +50,10 @@ func (m *postgresDBRepo) AllCompanies() ([]models.Company, error) {
 
 			if country.Valid {
 					company.Country = &country.String
-			} else {
-					company.Country = nil
-			}
+			} 
 			if description.Valid {
 					company.Description = &description.String
-			} else {
-					company.Description = nil
-			}
-
+			} 
 			companies = append(companies, company)
 	}
 

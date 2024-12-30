@@ -1,8 +1,10 @@
 package handlers
 
 import (
-	"github.com/takahiromitsui/investees-management/internal/helpers"
+	"encoding/json"
 	"net/http"
+
+	"github.com/takahiromitsui/investees-management/internal/helpers"
 )
 
 // GetCompanies returns a list of companies
@@ -13,11 +15,10 @@ func (repo *Repository) GetCompanies(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	for i := range companies {
-		if companies[i].Country != nil {
-			repo.App.InfoLog.Println(*companies[i].Country)
-	} else {
-			repo.App.InfoLog.Println("Country is nil")
-	}
-	}
+	w.Header().Set("Content-Type", "application/json")
+    err = json.NewEncoder(w).Encode(companies)
+    if err != nil {
+        helpers.ServerError(w, err)
+        return
+    }
 }
