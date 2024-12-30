@@ -6,10 +6,10 @@ import "time"
 type Company struct {
 	ID   int    `json:"id"`
 	Name string `json:"name"`
-	Country string `json:"country"`
+	Country *string `json:"country"`
 	FoundingDate time.Time `json:"foundingDate"`
-	Description string `json:"description"`
-	Deals []Deal `json:"deals"`
+	Description *string `json:"description"`
+	Deals *[]Deal `json:"deals"`
 }
 
 // Define the Deal struct
