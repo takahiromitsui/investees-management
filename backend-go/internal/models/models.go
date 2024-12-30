@@ -16,7 +16,7 @@ type Company struct {
 type Deal struct {
 	ID   int    `json:"id"`
 	Date time.Time `json:"date"`
-	FundingAmount int `json:"fundingAmount"`
+	FundingAmount *int `json:"fundingAmount"`
 	FundingRound string `json:"fundingRound"`
 	CompanyID int `json:"companyID"`
 }
