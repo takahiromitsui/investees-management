@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"time"
 
+	"github.com/takahiromitsui/investees-management/internal/helpers"
 	"github.com/takahiromitsui/investees-management/internal/models"
 )
 
@@ -41,71 +42,55 @@ func (m *postgresDBRepo) AllCompanies() ([]models.Company, error) {
 	companyMap := make(map[int]*models.Company)
 
 	for rows.Next() {
+			// company
 			var company models.Company
-			var country sql.NullString
-			var description sql.NullString
+			var country, description sql.NullString
+			// deal
 			var deal models.Deal
-			var dealID sql.NullInt64
-			var fundingAmount sql.NullInt64
+			var dealID, fundingAmount, companyID sql.NullInt64
 			var foundRound sql.NullString
-			var dealDate sql.NullTime // Use sql.NullTime for nullable date
-			var companyID sql.NullInt64	
+			var dealDate sql.NullTime
+		
 
 			// Scan row into variables
 			err := rows.Scan(
 					&company.ID,
 					&company.Name,
-					&country,
+					&country, // nullable
 					&company.FoundingDate,
-					&description,
-					&dealID,
-					&dealDate,
-					&fundingAmount,
-					&foundRound,
-					&companyID,
+					&description, // nullable
+					&dealID, // nullable
+					&dealDate,	// nullable
+					&fundingAmount,	// nullable
+					&foundRound,	// nullable
+					&companyID,	// nullable
 			)
 			if err != nil {
 					return nil, err
 			}
-
-			// Handle nullable fields
-			if country.Valid {
-					company.Country = &country.String
-			}
-			if description.Valid {
-					company.Description = &description.String
-			}
-
-			// Handle nullable Deal ID and Funding Amount
+			// Assign
+			company.Country = helpers.NullableStringToPointer(country)
+			company.Description = helpers.NullableStringToPointer(description)
+			
 			if dealID.Valid {
 					deal.ID = int(dealID.Int64)
-			} 
-		
-			if fundingAmount.Valid {
-					fundingAmountValue := int(fundingAmount.Int64)
-					deal.FundingAmount = &fundingAmountValue
-			} 
-			
-			if foundRound.Valid {
+					deal.Date = helpers.NullableTimeToTime(dealDate)
+					deal.FundingAmount = helpers.NullableIntToPointer(fundingAmount)
 					deal.FundingRound = foundRound.String
-			} 
-		
-
-			// Handle nullable Date (dealDate)
-			if dealDate.Valid {
-					deal.Date = dealDate.Time // Use the time from sql.NullTime
-			} 
-	
-			if companyID.Valid {
 					deal.CompanyID = int(companyID.Int64)
-			} 
+			}
 		
-			// If company already exists, append the deal
 			if existingCompany, ok := companyMap[company.ID]; ok {
+				if dealID.Valid {
 					*existingCompany.Deals = append(*existingCompany.Deals, deal)
+				}
 			} else {
+				if dealID.Valid {
 					company.Deals = &[]models.Deal{deal}
-					companyMap[company.ID] = &company
+				} else {
+					company.Deals = &[]models.Deal{}
+				}
+				companyMap[company.ID] = &company
 			}
 	}
 
