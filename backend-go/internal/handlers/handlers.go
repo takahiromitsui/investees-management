@@ -1,10 +1,10 @@
 package handlers
 
 import (
-	"github.com/takahiromitsui/investees-management/pkg/config"
-	"github.com/takahiromitsui/investees-management/pkg/drivers"
-	"github.com/takahiromitsui/investees-management/pkg/repositories"
-	"github.com/takahiromitsui/investees-management/pkg/repositories/dbrepo"
+	"github.com/takahiromitsui/investees-management/internal/config"
+	"github.com/takahiromitsui/investees-management/internal/drivers"
+	"github.com/takahiromitsui/investees-management/internal/repositories"
+	"github.com/takahiromitsui/investees-management/internal/repositories/dbrepo"
 )
 
 

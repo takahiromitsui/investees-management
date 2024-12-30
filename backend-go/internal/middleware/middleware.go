@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/takahiromitsui/investees-management/pkg/config"
+	"github.com/takahiromitsui/investees-management/internal/config"
 )
 
 type Middleware func(http.Handler) http.Handler

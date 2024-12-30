@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"github.com/takahiromitsui/investees-management/pkg/config"
+	"github.com/takahiromitsui/investees-management/internal/config"
 )
 
 var appConfig *config.AppConfig

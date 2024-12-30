@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"github.com/takahiromitsui/investees-management/pkg/handlers"
+	"github.com/takahiromitsui/investees-management/internal/handlers"
 )
 
 func RegisterCompanies(mux *http.ServeMux) {

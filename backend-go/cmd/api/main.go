@@ -9,12 +9,12 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 	"github.com/joho/godotenv"
-	"github.com/takahiromitsui/investees-management/pkg/config"
-	"github.com/takahiromitsui/investees-management/pkg/drivers"
-	"github.com/takahiromitsui/investees-management/pkg/handlers"
-	"github.com/takahiromitsui/investees-management/pkg/helpers"
-	"github.com/takahiromitsui/investees-management/pkg/middleware"
-	"github.com/takahiromitsui/investees-management/pkg/routes"
+	"github.com/takahiromitsui/investees-management/internal/config"
+	"github.com/takahiromitsui/investees-management/internal/drivers"
+	"github.com/takahiromitsui/investees-management/internal/handlers"
+	"github.com/takahiromitsui/investees-management/internal/helpers"
+	"github.com/takahiromitsui/investees-management/internal/middleware"
+	"github.com/takahiromitsui/investees-management/internal/routes"
 )
 
 var appConfig config.AppConfig
